@@ -110,140 +110,60 @@
                 <ul class="nav navbar-nav navbar-left">
                     <li class="active"><a href="index.php">Home</a>
                     </li>
-                    <li class="dropdown yamm-fw">
+                    <li class="dropdown ">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Men</a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <div class="yamm-content">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h5>Top</h5>
-                                            <ul>
-                                                <li><a href="category.php">T-shirts</a>
+                            <div class="yamm-content">
+                                <div class="row">
+                                   
+                                        <ul>
+                                                <li><a href="#">T-shirts</a>
                                                 </li>
-                                                <li><a href="category.php">Sweat-shirts</a>
+                                                <li><a href="#">Jackets</a>
                                                 </li>
-                                                <li><a href="category.php">Casual Shirts</a>
+                                                <li><a href="#">Coats</a>
                                                 </li>
-                                                <li><a href="category.php">Jackets</a>
+                                                <li><a href="#">Suits and Vest</a>
                                                 </li>
-                                                <li><a href="category.php">Coats</a>
+                                                <li><a href="#">Jeans</a>
                                                 </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Trousers</h5>
-                                            <ul>
-                                                <li><a href="category.html">Jeans</a>
+                                                <li><a href="#">Pants</a>
                                                 </li>
-                                                <li><a href="category.html">Shorts</a>
-                                                </li>
-                                                <li><a href="category.html">Casual-Pants</a>
-                                                </li>
-                                                <li><a href="category.html">Swimwears</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Sets</h5>
-                                            <ul>
-                                                <li><a href="category.html">Suits</a>
-                                                </li>
-                                                <li><a href="category.html">Vests</a>
-                                                </li>
-                                                <li><a href="category.html">Office-Uniforms</a>
-                                                </li>
-                                                <li><a href="category.html">Sport-Clothings</a>
-                                                </li>
-                                                <li><a href="category.html">Pijama-Clothings</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="banner">
-                                                <a href="#">
-                                                    <img src="img/banner0.jpg" class="img img-responsive" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.yamm-content -->
-                            </li>
-                        </ul>
-                    </li>
 
-                    <li class="dropdown yamm-fw">
+
+                                                
+                                        </ul>
+                                    
+                                </div>
+                            </div>
+                        </ul>      
+                    </li>
+                    <li class="dropdown ">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Ladies</a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <div class="yamm-content">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h5>Top</h5>
-                                            <ul>
-                                                <li><a href="category.php">Ao Dai</a>
+                            <div class="yamm-content">
+                                <div class="row">
+                                   
+                                        <ul>
+                                                <li><a href="#">Ao Dai</a>
                                                 </li>
-                                                <li><a href="category.php">T-shirts</a>
+                                                <li><a href="#">T-shirts</a>
                                                 </li>
-                                                <li><a href="category.php">Shirts</a>
+                                                <li><a href="#">Jackets</a>
                                                 </li>
-                                                <li><a href="category.php">Sweaters</a>
+                                                <li><a href="#">Dress</a>
                                                 </li>
-                                                <li><a href="category.php">Jackets</a>
+                                                <li><a href="#">Jeans</a>
                                                 </li>
-                                                <li><a href="category.php">Coats</a>
+                                                <li><a href="#">Shorts</a>
                                                 </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Dress</h5>
-                                            <ul>
-                                                <li><a href="category.php">Princess Dress</a>
-                                                </li>
-                                                <li><a href="category.php">Ruffled Skirt</a>
-                                                </li>
-                                                <li><a href="category.php">House Dress</a>
-                                                </li>
-                                                <li><a href="category.php">Skirts</a>
-                                                </li>
-                                                <li><a href="category.php">Drop waist Dress</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Trousers</h5>
-                                            <ul>
-                                                <li><a href="category.php">Jeans</a>
-                                                </li>
-                                                <li><a href="category.php">Pants</a>
-                                                </li>
-                                                <li><a href="category.php">Shorts</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Set</h5>
-                                            <ul>
-                                                <li><a href="category.php">Suits</a>
-                                                </li>
-                                                <li><a href="category.php">Vests</a>
-                                                </li>
-                                                <li><a href="category.php">Office-Uniforms</a>
-                                                </li>
-                                                <li><a href="category.php">Sport-Clothings</a>
-                                                </li>
-                                                <li><a href="category.php">Pijama-Clothings</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        
 
-                                    </div>
+                                                
+                                        </ul>
+                                    
                                 </div>
-                                <!-- /.yamm-content -->
-                            </li>
-                        </ul>
+                            </div>
+                        </ul>      
                     </li>
 
                     <li class="dropdown">
