@@ -1,5 +1,5 @@
 <?php
-class DBconnector {
+class DBConnector {
     public function connect(){
         $host='localhost';
         $user='root';
@@ -9,4 +9,5 @@ class DBconnector {
         return $connection;
     }
 }
+
 ?>

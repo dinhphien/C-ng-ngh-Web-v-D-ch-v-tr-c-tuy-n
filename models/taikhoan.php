@@ -4,7 +4,7 @@ class taikhoan {
     private $tentaikhoan;
     private $matkhau;
     private $vaitro;
-    public function _construct($idtaikhoan,$tentaikhoan,$matkhau,$vaitro){
+    public function __construct($idtaikhoan,$tentaikhoan,$matkhau,$vaitro){
         $this->idtaikhoan=$idtaikhoan;
         $this->tentaikhoan=$tentaikhoan;
         $this->matkhau=$matkhau;

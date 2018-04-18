@@ -6,7 +6,7 @@ class nhanvien {
     private $sodienthoai;
     private $quequan;
     private $nhiemvu;
-    public function _construct($idnhanvien,$tennhanvien,$email,$sodienthoai,$quequan,$nhiemvu){
+    public function __construct($idnhanvien,$tennhanvien,$email,$sodienthoai,$quequan,$nhiemvu){
         $this->idnhanvien=$idnhanvien;
         $this->tennhanvien=$tennhanvien;
         $this->email=$email;

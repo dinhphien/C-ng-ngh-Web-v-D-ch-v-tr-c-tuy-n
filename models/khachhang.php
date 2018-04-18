@@ -5,7 +5,6 @@ class khachhang {
     private $email;
     private $sodienthoai;
     private $quequan;
-    private $dssanphamthich;
 
     /**
      * khachhang constructor.
@@ -23,7 +22,6 @@ class khachhang {
         $this->email = $email;
         $this->sodienthoai = $sodienthoai;
         $this->quequan = $quequan;
-        $this->dssanphamthich = $dssanphamthich;
     }
 
     /**
@@ -105,22 +103,5 @@ class khachhang {
     {
         $this->quequan = $quequan;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getDssanphamthich()
-    {
-        return $this->dssanphamthich;
-    }
-
-    /**
-     * @param mixed $dssanphamthich
-     */
-    public function setDssanphamthich($dssanphamthich)
-    {
-        $this->dssanphamthich = $dssanphamthich;
-    }
-
 }
 ?>

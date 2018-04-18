@@ -1,13 +1,16 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
+<!--	<meta charset="utf-8">-->
+<!--    <meta name="robots" content="all,follow">-->
+<!--    <meta name="googlebot" content="index,follow,snippet,archive">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Obaju e-commerce template">
-    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
-    <meta name="keywords" content="">
+<!--    <meta name="description" content="Obaju e-commerce template">-->
+<!--    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">-->
+<!--    <meta name="keywords" content="">-->
 	<title>
 		TKTP Shop
 	</title>
@@ -28,69 +31,14 @@
     <!-- your stylesheet with modifications -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="js/header.js"></script>
+
 
     <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
-	   <!-- *** TOPBAR ***
- _________________________________________________________ -->
-    <div id="top">
-        <div class="container">
-            <div class="col-md-6 offer">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
-            </div>
-           <!--  script here -->
-
-            <div class="col-md-6">
-                <ul class=" menu">
-                    <li><a href="#" data-toggle="modal" data-target="#login-modal" class="btn btn-success" role="button">Login</a>
-                    </li>
-                    <li><a href="register.php" class="btn btn-success" role="button">Register</a>
-                    </li>
-                    <li><a href="contact.php" class="btn btn-success" role="button">Contact</a>
-                    </li>
-                    <li><a href="#" class="btn btn-success" role="button">Recently viewed</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">Customer login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form action="customer-orders.html" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="username-modal" placeholder="Username">
-                                
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password-modal" placeholder="Password">
-                            </div>
-
-                            <p class="text-center">
-                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                            </p>
-
-                        </form>
-
-                        <p class="text-center text-muted">Not registered yet?</p>
-                        <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- *** TOP BAR END *** -->
-
     <!-- *** NAVBAR ***
  _________________________________________________________ -->
 
@@ -219,6 +167,130 @@
                 </ul>
 
             </div>
+
+            <div class="navbar-buttons">
+                <div class="navbar-collapse collapse right" id="basket-overview">
+                    <?php
+                    if(isset($_SESSION['logged_in'])){
+                    ?>
+                    <a href="#" class="btn btn-primary navbar-btn dropdown-toggle" id="btdangnhap" data-toggle="dropdown" data-hover="dropdown" data-delay="50"><i class="fa fa-user"></i><span class="hidden-sm"></span></a>
+                    <ul class="dropdown-menu" style="right:0;">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <ul>
+                                    <li><a href="orders-history.php">Orders history</a>
+                                    </li>
+                                    <li><a href="basket.html">Shopping cart</a>
+                                    </li>
+                                    <li><a href="customer-wishlist.html">Wishlist</a>
+                                    </li>
+                                    <li><a href="customer-account.html">My Acount</a>
+                                    </li>
+                                    <li><a href="index.php">Log out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                        <?php
+                    }
+                    else {
+                        ?>
+                        <a href="#" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="50"><i class="fa fa-user"></i><span class="hidden-sm"></span>Login</a>
+                        <ul class="dropdown-menu" style="right:0;">
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                                        </li>
+                                        <li><a href="#" data-toggle="modal" data-target="#register-modal">Register</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                        <?php
+                    }
+                    ?>
+
+                </div>
+
+                <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="Register">Customer Register</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="customer-orders.html" method="post">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="username-registermodal" placeholder="username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password-registermodal" placeholder="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="fullname-registermodal" placeholder="fullname">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email-registermodal" placeholder="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="mobilephone-registermodal" placeholder="mobilephone">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="Country-registermodal" placeholder="Country">
+                                    </div>
+
+                                    <p class="text-center">
+                                        <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Register</button>
+                                    </p>
+
+                                </form>
+
+                                <p class="text-center text-muted">Register to get more excited things in our pages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="Login">Customer Login</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form >
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="username-modal" placeholder="username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password-modal" placeholder="password" required>
+                                    </div>
+
+                                    <p class="text-center">
+                                        <button id="loginbutton" type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                                    </p>
+                                    <p class="text-center text-muted" id="message_dangnhap"></p>
+                                </form>
+
+                                <p class="text-center text-muted">Not registered yet?</p>
+                                <p class="text-center text-muted"><a href="#" id="registernow" data-toggle="modal" data-target="#register-modal"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
                 <div class="navbar-collapse collapse right" id="search-not-mobile">
                     <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
                         <span class="sr-only">Toggle search</span>
