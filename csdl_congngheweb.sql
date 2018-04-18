@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2018 at 05:31 AM
+-- Generation Time: Apr 18, 2018 at 05:42 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -45,11 +45,11 @@ CREATE TABLE `giohang` (
 
 CREATE TABLE `khachhang` (
   `idkhachhang` int(11) NOT NULL,
+  `idtaikhoan` int(11) NOT NULL,
   `tenkhachhang` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `sodienthoai` varchar(15) DEFAULT NULL,
-  `quequan` varchar(255) DEFAULT NULL,
-  `dssanphamthich` int(11) NOT NULL
+  `quequan` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -60,6 +60,7 @@ CREATE TABLE `khachhang` (
 
 CREATE TABLE `nhanvien` (
   `idnhanvien` int(11) NOT NULL,
+  `idtaikhoan` int(11) NOT NULL,
   `tennhanvien` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `sodienthoai` varchar(15) DEFAULT NULL,
@@ -92,6 +93,7 @@ CREATE TABLE `sanpham` (
 --
 
 CREATE TABLE `sanphamgiohang` (
+  `idkhachhang` int(11) NOT NULL,
   `idsanpham` int(11) NOT NULL,
   `soluong` int(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -104,6 +106,7 @@ CREATE TABLE `sanphamgiohang` (
 
 CREATE TABLE `sanphamthich` (
   `idsanpham` int(11) NOT NULL,
+  `idkhachhang` int(11) NOT NULL,
   `thoigian` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -121,6 +124,14 @@ CREATE TABLE `taikhoan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Dumping data for table `taikhoan`
+--
+
+INSERT INTO `taikhoan` (`idtaikhoan`, `tentaikhoan`, `matkhau`, `vaitro`) VALUES
+(1, 'phien', 'phien', 'admin'),
+(2, 'tuyen', 'tuyen', 'khach hang');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -134,7 +145,15 @@ ALTER TABLE `giohang`
 -- Indexes for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  ADD PRIMARY KEY (`idkhachhang`);
+  ADD PRIMARY KEY (`idkhachhang`),
+  ADD UNIQUE KEY `idtaikhoan` (`idtaikhoan`);
+
+--
+-- Indexes for table `nhanvien`
+--
+ALTER TABLE `nhanvien`
+  ADD PRIMARY KEY (`idnhanvien`),
+  ADD KEY `idtaikhoan` (`idtaikhoan`);
 
 --
 -- Indexes for table `sanpham`
@@ -168,7 +187,23 @@ ALTER TABLE `sanpham`
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `idtaikhoan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idtaikhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `khachhang`
+--
+ALTER TABLE `khachhang`
+  ADD CONSTRAINT `khachhang_ibfk_1` FOREIGN KEY (`idtaikhoan`) REFERENCES `taikhoan` (`idtaikhoan`);
+
+--
+-- Constraints for table `nhanvien`
+--
+ALTER TABLE `nhanvien`
+  ADD CONSTRAINT `nhanvien_ibfk_1` FOREIGN KEY (`idtaikhoan`) REFERENCES `taikhoan` (`idtaikhoan`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
