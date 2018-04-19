@@ -9,7 +9,7 @@ if (!empty($_POST)){
     $dao= new DAO();
     $taikhoan=$dao->getTaiKhoan($username,$password);
     if($taikhoan!=null){
-        $_SESSION['logged-in']=$taikhoan;
+        $_SESSION['logged_in']=$taikhoan;
         $array['mesage']='success';
         $array['tentaikhoan']=$taikhoan->getTentaikhoan();
         $array['vaitro']=$taikhoan->getVaitro();

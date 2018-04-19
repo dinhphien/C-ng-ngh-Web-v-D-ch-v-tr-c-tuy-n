@@ -14,12 +14,11 @@ $(document).ready(function () {
             if($datares.mesage==='success'){
 
                 if($datares.vaitro==='admin'){
-                    window.location='index.php';
+                    alert($datares.vaitro);
 
                 }
                 else{
-
-                    $("#btdangnhap").text($datares.tentaikhoan);
+                    // alert($datares.vaitro);
                     location.reload('index.php');
                 }
             }

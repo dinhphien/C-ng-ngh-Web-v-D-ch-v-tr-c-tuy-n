@@ -1,5 +1,5 @@
+<?php include 'header.php' ?>
 <!DOCTYPE html>
-<?php include 'header-logined.php' ?>
 <html lang="en">
 
 <head>

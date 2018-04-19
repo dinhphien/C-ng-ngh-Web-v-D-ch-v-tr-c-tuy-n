@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <?php include 'header.php' ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 </head>
