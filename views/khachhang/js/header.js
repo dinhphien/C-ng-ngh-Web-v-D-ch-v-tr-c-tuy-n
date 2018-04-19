@@ -36,4 +36,18 @@ $(document).ready(function () {
             location.reload('index.php');
         });
     });
+    $('#buttonregister').click(function () {
+        var datapost ={
+            username_register :$('#username-registermodal').val(),
+            password_register :$('#password-registermodal').val(),
+            fullname_register :$('#fullname-registermodal').val(),
+            email_register :$('#email-registermodal').val(),
+            mobilephone_register :$('#mobilephone-registermodal').val(),
+            address_register :$('#address-registermodal').val()
+
+        }
+        $.post('../../controllers/controllerRegister.php',datapost,function (data,status) {
+
+        })
+    });
 })

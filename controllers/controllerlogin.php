@@ -5,7 +5,6 @@ $array= array();
 if (!empty($_POST)){
     $username=$_POST['username'];
     $password=$_POST['password'];
-
     $dao= new DAO();
     $taikhoan=$dao->getTaiKhoan($username,$password);
     if($taikhoan!=null){

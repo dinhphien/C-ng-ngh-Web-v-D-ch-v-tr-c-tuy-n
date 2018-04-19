@@ -226,28 +226,28 @@ _________________________________________________________ -->
                             <h4 class="modal-title" id="Register">Customer Register</h4>
                         </div>
                         <div class="modal-body">
-                            <form action="customer-orders.html" method="post">
+                            <form >
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="username-registermodal" placeholder="username">
+                                    <input type="text" class="form-control" id="username-registermodal" placeholder="username" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="password-registermodal" placeholder="password">
+                                    <input type="password" class="form-control" id="password-registermodal" placeholder="password" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="fullname-registermodal" placeholder="fullname">
+                                    <input type="text" class="form-control" id="fullname-registermodal" placeholder="fullname" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="email-registermodal" placeholder="email">
+                                    <input type="email" class="form-control" id="email-registermodal" placeholder="email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="mobilephone-registermodal" placeholder="mobilephone">
+                                    <input type="number" class="form-control" id="mobilephone-registermodal" placeholder="mobilephone" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="Country-registermodal" placeholder="Country">
+                                    <input type="text" class="form-control" id="address-registermodal" placeholder="Address" required>
                                 </div>
 
                                 <p class="text-center">
-                                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Register</button>
+                                    <button class="btn btn-primary" id="buttonregister"><i class="fa fa-sign-in"></i> Register</button>
                                 </p>
                                 <p class="text-center text-muted" id="message_register"></p>
                             </form>
