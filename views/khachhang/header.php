@@ -188,7 +188,7 @@ _________________________________________________________ -->
                                     </li>
                                     <li><a href="customer-account.html">My Acount</a>
                                     </li>
-                                    <li><a href="index.php">Log out</a>
+                                    <li><a href="#" id="log_out">Log out</a>
                                     </li>
                                 </ul>
                             </div>

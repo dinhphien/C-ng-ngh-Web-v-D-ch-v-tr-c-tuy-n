@@ -23,11 +23,17 @@ $(document).ready(function () {
                 }
             }
             else {
-                // $("#message_dangnhap").text("Sai tài khoản hoặc mật khẩu");
+                $("#message_dangnhap").text("Sai tài khoản hoặc mật khẩu");
             }
 
 
         });
 
+    });
+    $('#log_out').click(function () {
+        $.post("../../controllers/controllerlogout.php",'',function (data,status) {
+            console.log(data);
+            location.reload('index.php');
+        });
     });
 })
