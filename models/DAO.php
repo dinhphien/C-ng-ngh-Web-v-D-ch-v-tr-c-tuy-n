@@ -31,6 +31,20 @@ class DAO {
             return null;
         }
     }
+    public function insertTaiKhoan($usr,$psd){
+        $sql = "insert into taikhoan(tentaikhoan,matkhau,vaitro) values ('".$usr."','".$psd."','khachhang')";
+        $results=$this->conn->query($sql);
+        return $results;
+    }
+    public function getLastid(){
+        $lastid=$this->conn->insert_id;
+        return $lastid;
+    }
+    public function insertKhachHang($idtaikhoan,$name,$email,$phone,$adrs){
+        $sql="insert into khachhang(idtaikhoan,tenkhachhang,email,sodienthoai,quequan) values ('".$idtaikhoan."','".$name."','".$email."','".$phone."','".$adrs."')";
+        $result=$this->conn->query($sql);
+        return($result);
+    }
 
 }
 

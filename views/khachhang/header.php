@@ -228,19 +228,19 @@ _________________________________________________________ -->
                         <div class="modal-body">
                             <form >
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="username-registermodal" placeholder="username" required>
+                                    <input type="text" class="form-control" id="username-registermodal" placeholder="Username" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="password-registermodal" placeholder="password" required>
+                                    <input type="password" class="form-control" id="password-registermodal" placeholder="Password" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="fullname-registermodal" placeholder="fullname" required>
+                                    <input type="text" class="form-control" id="fullname-registermodal" placeholder="Fullname" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email-registermodal" placeholder="email" required>
+                                    <input type="email" class="form-control" id="email-registermodal" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="mobilephone-registermodal" placeholder="mobilephone" required>
+                                    <input type="number" class="form-control" id="mobilephone-registermodal" placeholder="Mobilephone" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="address-registermodal" placeholder="Address" required>
@@ -249,7 +249,7 @@ _________________________________________________________ -->
                                 <p class="text-center">
                                     <button class="btn btn-primary" id="buttonregister"><i class="fa fa-sign-in"></i> Register</button>
                                 </p>
-                                <p class="text-center text-muted" id="message_register"></p>
+                                <p class="text-center " id="message_register" style="color: red;"></p>
                             </form>
 
                             <p class="text-center text-muted">Register to get more excited things in our pages</p>
@@ -279,12 +279,13 @@ _________________________________________________________ -->
                                 <p class="text-center">
                                     <button id="loginbutton" type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
                                 </p>
-                                <p class="text-center text-muted" id="message_dangnhap"></p>
                             </form>
+                            <div >
+                                <p class="text-center " style="color:red;" id="message_dangnhap"></p>
+                                <p class="text-center text-muted">Not registered yet?</p>
+                                <p class="text-center text-muted"><a href="#" id="registernow" data-toggle="modal" data-target="#register-modal"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
 
-                            <p class="text-center text-muted">Not registered yet?</p>
-                            <p class="text-center text-muted"><a href="#" id="registernow" data-toggle="modal" data-target="#register-modal"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
-
+                            </div>
                         </div>
                     </div>
                 </div>

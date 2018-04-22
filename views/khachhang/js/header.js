@@ -11,22 +11,18 @@ $(document).ready(function () {
             console.log(data);
             var $datares=JSON.parse(data);
 
-            if($datares.mesage==='success'){
+            if($datares.mesage=='success'){
 
                 if($datares.vaitro==='admin'){
-                    alert($datares.vaitro);
-
+                    window.location.href = '';
                 }
                 else{
-                    // alert($datares.vaitro);
                     location.reload('index.php');
                 }
             }
             else {
-                $("#message_dangnhap").text("Sai tài khoản hoặc mật khẩu");
+              $("#message_dangnhap").text("Sai tài khoản hoặc mật khẩu");
             }
-
-
         });
 
     });
@@ -44,9 +40,20 @@ $(document).ready(function () {
             email_register :$('#email-registermodal').val(),
             mobilephone_register :$('#mobilephone-registermodal').val(),
             address_register :$('#address-registermodal').val()
-
         }
-        $.post('../../controllers/controllerRegister.php',datapost,function (data,status) {
+        $.post("../../controllers/controllerRegister.php",datapost,function (data,status){
+            console.log(data);
+            var message =JSON.parse(data);
+            console.log(message);
+            if (message=='true'){
+                $("#message_register").text("Đăng kí thành công");
+                window.setTimeout(function () {
+                    location.reload('index.php');
+                },5000);
+            }
+            else{
+                $("#message_register").text("Tên tài khoản đã tồn tại. Chọn tên tài khoản khác");
+            }
 
         })
     });
