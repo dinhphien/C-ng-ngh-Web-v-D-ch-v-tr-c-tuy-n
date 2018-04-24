@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1cd7ba01-9da4-4d0f-b23b-5ad7209dbc71" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/controllerRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllerRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/khachhang/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/js/header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/controllers/controllerlogin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -56,29 +53,26 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="251" column="102" lean-forward="true" selection-start-line="251" selection-start-column="102" selection-end-line="251" selection-end-column="102" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="4267">
+              <caret line="251" column="102" selection-start-line="251" selection-start-column="102" selection-end-line="251" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/khachhang/js/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" selection-start-line="44" selection-end-line="45" />
+            <state relative-caret-position="412">
+              <caret line="59" selection-start-line="59" selection-end-line="59" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllerRegister.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllerRegister.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/controllerRegister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -86,7 +80,7 @@
       <file leaf-file-name="DAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="663">
               <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
             </state>
           </provider>
@@ -130,8 +124,8 @@
         <option value="$PROJECT_DIR$/models/DBconnector.php" />
         <option value="$PROJECT_DIR$/views/khachhang/header.php" />
         <option value="$PROJECT_DIR$/models/DAO.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/js/header.js" />
         <option value="$PROJECT_DIR$/controllers/controllerRegister.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/js/header.js" />
       </list>
     </option>
   </component>
@@ -152,22 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
-              <item name="views" type="cbb8eebc:String" user="views" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +180,22 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="khachhang" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
+              <item name="views" type="cbb8eebc:String" user="views" />
             </path>
           </expand>
           <select />
@@ -257,29 +251,32 @@
       <workItem from="1524192273301" duration="1139000" />
       <workItem from="1524285893675" duration="4287000" />
       <workItem from="1524322157409" duration="1996000" />
-      <workItem from="1524372101766" duration="11944000" />
+      <workItem from="1524372101766" duration="12645000" />
+      <workItem from="1524408085595" duration="709000" />
+      <workItem from="1524452005885" duration="1201000" />
+      <workItem from="1524545232348" duration="1821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66127000" />
+    <option name="totallyTimeSpent" value="70559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1928181" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1381733" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -288,27 +285,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1928181" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -599,39 +575,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="251" column="102" lean-forward="true" selection-start-line="251" selection-start-column="102" selection-end-line="251" selection-end-column="102" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="4267">
+          <caret line="251" column="102" selection-start-line="251" selection-start-column="102" selection-end-line="251" selection-end-column="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="663">
           <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" selection-start-line="44" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controllerlogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controllerRegister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="59" selection-start-line="59" selection-end-line="59" selection-end-column="3" />
         </state>
       </provider>
     </entry>
