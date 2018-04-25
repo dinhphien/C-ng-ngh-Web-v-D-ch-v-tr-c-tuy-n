@@ -1,5 +1,5 @@
 <?php
-require_once ("DBconnector.php");
+require_once("DBconnector.php");
 require_once ("taikhoan.php");
 class Model_Taikhoan{
     private $conn;

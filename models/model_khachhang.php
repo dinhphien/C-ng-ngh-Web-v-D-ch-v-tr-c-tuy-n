@@ -1,13 +1,9 @@
 <?php
-require_once ("DBconnector.php");
+require_once("DBconnector.php");
 require_once ("khachhang.php");
 class Model_Khachhang{
     private $conn;
 
-    /**
-     * Model_Khachhang constructor.
-     * @param $dao
-     */
     public function __construct()
     {
         $dbconnect= new DBConnector();

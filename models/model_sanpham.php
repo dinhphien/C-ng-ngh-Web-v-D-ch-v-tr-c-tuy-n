@@ -1,5 +1,5 @@
 <?php
-require_once ("DBconnector.php");
+require_once("DBconnector.php");
 require_once ("sanpham.php");
 class Model_Sanpham{
     private $conn;

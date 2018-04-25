@@ -1,5 +1,4 @@
 <?php
-require_once ('DBconnector.php');
 class sanpham {
     private $idsanpham;
     private $tensanpham;
