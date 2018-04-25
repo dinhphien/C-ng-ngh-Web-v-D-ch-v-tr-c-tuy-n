@@ -1,25 +1,18 @@
 <?php
-
-require_once ('DBconnector.php');
-require_once ('taikhoan.php');
-require_once ('sanpham.php');
-require_once ('nhanvien.php');
-require_once ('khachhang.php');
-require_once ('giohang.php');
-
-class DAO {
+require_once ("DBconnector.php");
+require_once ("taikhoan.php");
+class Model_Taikhoan{
     private $conn;
 
     /**
-     * DAO constructor.
-     * @param $conn
+     * Model_Taikhoan constructor.
+     * @param $dao
      */
     public function __construct()
     {
-        $dbconnector= new DBConnector();
-        $this->conn = $dbconnector->connect();
+        $dbconnect= new DBConnector();
+        $this->conn= $dbconnect->connect();
     }
-
     public function getTaiKhoan($usr,$psd){
         $sql="select * from taikhoan where taikhoan.tentaikhoan='".$usr."'and taikhoan.matkhau='".$psd."';";
         $result=$this->conn->query($sql);
@@ -36,15 +29,11 @@ class DAO {
         $results=$this->conn->query($sql);
         return $results;
     }
-    public function getLastid(){
+    public function getLast_id_inserted(){
         $lastid=$this->conn->insert_id;
         return $lastid;
     }
-    public function insertKhachHang($idtaikhoan,$name,$email,$phone,$adrs){
-        $sql="insert into khachhang(idtaikhoan,tenkhachhang,email,sodienthoai,quequan) values ('".$idtaikhoan."','".$name."','".$email."','".$phone."','".$adrs."')";
-        $result=$this->conn->query($sql);
-        return($result);
-    }
+
 
 }
 
