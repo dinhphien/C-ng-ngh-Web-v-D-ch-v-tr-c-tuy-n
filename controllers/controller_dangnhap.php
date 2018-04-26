@@ -1,7 +1,7 @@
 <?php
 require_once ("../models/model_taikhoan.php");
 require_once ("../models/model_khachhang.php");
-class controller_dangnhap{
+class controller_dangnhap extends base_controller {
     private $modelTK;
     private $modelKH;
 
@@ -16,7 +16,7 @@ class controller_dangnhap{
         $this->modelKH = new Model_Khachhang();
     }
     public function Login(){
-         
+
     }
     public function Logout(){
 

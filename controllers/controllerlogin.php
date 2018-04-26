@@ -18,6 +18,5 @@ if (!empty($_POST)){
         $array['mesage']='failed';
         echo json_encode($array);
     }
-
 }
 ?>
