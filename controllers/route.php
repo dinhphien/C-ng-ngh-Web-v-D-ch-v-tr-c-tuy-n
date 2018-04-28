@@ -8,6 +8,7 @@ else{
     $controller="controller_error";
     $action="error";
 }
+//echo json_encode($controller);
 require_once ($controller.".php");
 $control= new $controller;
 $control->$action();

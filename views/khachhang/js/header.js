@@ -7,8 +7,9 @@ $(document).ready(function () {
             username: $("#username-modal").val(),
             password: $("#password-modal").val()
         }
-        $.post("../../controllers/controllerlogin.php",postdata,function (data,status) {
+        $.post("../../controllers/route.php?controller=controller_dangnhap&action=Login",postdata,function (data,status) {
             console.log(data);
+            // alert(data);
             var $datares=JSON.parse(data);
 
             if($datares.mesage=='success'){
@@ -27,7 +28,7 @@ $(document).ready(function () {
 
     });
     $('#log_out').click(function () {
-        $.post("../../controllers/controllerlogout.php",'',function (data,status) {
+        $.post("../../controllers/route.php?controller=controller_dangnhap&action=Logout",'',function (data,status) {
             console.log(data);
             location.reload('index.php');
         });
@@ -41,8 +42,9 @@ $(document).ready(function () {
             mobilephone_register :$('#mobilephone-registermodal').val(),
             address_register :$('#address-registermodal').val()
         }
-        $.post("../../controllers/controllerRegister.php",datapost,function (data,status){
+        $.post("../../controllers/route.php?controller=controller_dangnhap&action=Register",datapost,function (data,status){
             console.log(data);
+            // alert(data);
             var message =JSON.parse(data);
             console.log(message);
             if (message=='true'){
