@@ -60,7 +60,6 @@
                     <div class="box">
                         <h1>My account</h1>
                         <p class="lead">Change your personal details or your password here.</p>
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
                         <h3>Change password</h3>
 

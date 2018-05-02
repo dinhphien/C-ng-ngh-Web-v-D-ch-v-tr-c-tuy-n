@@ -9,13 +9,13 @@ $(document).ready(function () {
         }
         $.post("../../controllers/route.php?controller=controller_dangnhap&action=Login",postdata,function (data,status) {
             console.log(data);
-            // alert(data);
+            alert(data);
             var $datares=JSON.parse(data);
 
             if($datares.mesage=='success'){
 
-                if($datares.vaitro==='admin'){
-                    window.location.href = '';
+                if($datares.vaitro=='admin'){
+                    location.href = "../admin/index_admin.php";
                 }
                 else{
                     location.reload('index.php');
@@ -30,7 +30,7 @@ $(document).ready(function () {
     $('#log_out').click(function () {
         $.post("../../controllers/route.php?controller=controller_dangnhap&action=Logout",'',function (data,status) {
             console.log(data);
-            location.reload('index.php');
+            location.href='index.php';
         });
     });
     $('#buttonregister').click(function () {

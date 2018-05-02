@@ -48,8 +48,8 @@ _________________________________________________________ -->
         <div class="navbar-header">
 
             <a class="navbar-brand home" href="index.php" data-animate-hover="bounce">
-                <img src="img/logo.png" alt="Obaju logo" class="hidden-xs">
-                <img src="img/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                <img src="img/logo.png" alt="TKTP Shop" class="hidden-xs">
+                <img src="img/logo.png" alt="TKTP Shop" class="visible-xs"><span class="sr-only">TKTP Shop</span>
             </a>
         </div>
         <!--/.navbar-header -->
@@ -57,26 +57,28 @@ _________________________________________________________ -->
         <div class="navbar-collapse collapse" id="navigation">
 
             <ul class="nav navbar-nav navbar-left">
-                <li class="active"><a href="index.php">Home</a>
+                <li class="active"><a href="index.php">Trang chủ</a>
                 </li>
                 <li class="dropdown ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Men</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nam</a>
                     <ul class="dropdown-menu">
                         <div class="yamm-content">
                             <div class="row">
 
                                 <ul>
-                                    <li><a href="#">T-shirts</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Phông">Áo Phông</a>
                                     </li>
-                                    <li><a href="#">Jackets</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Sơ Mi">Áo Sơ Mi</a>
                                     </li>
-                                    <li><a href="#">Coats</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Khoác">Áo Khoác</a>
                                     </li>
-                                    <li><a href="#">Suits and Vest</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Vest">Áo Vest</a>
                                     </li>
-                                    <li><a href="#">Jeans</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Quần Âu">Quần Âu</a>
                                     </li>
-                                    <li><a href="#">Pants</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Quần Jean">Quần Jean</a>
+                                    </li>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Quần Shorts">Quần Short</a>
                                     </li>
 
 
@@ -88,23 +90,23 @@ _________________________________________________________ -->
                     </ul>
                 </li>
                 <li class="dropdown ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Ladies</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nữ</a>
                     <ul class="dropdown-menu">
                         <div class="yamm-content">
                             <div class="row">
 
                                 <ul>
-                                    <li><a href="#">Ao Dai</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Áo Dài">Áo Dài</a>
                                     </li>
-                                    <li><a href="#">T-shirts</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Áo Phông">Áo Phông</a>
                                     </li>
-                                    <li><a href="#">Jackets</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Áo Khoác">Áo Khoác</a>
                                     </li>
-                                    <li><a href="#">Dress</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Váy">Váy</a>
                                     </li>
-                                    <li><a href="#">Jeans</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Chân Váy">Chân Váy</a>
                                     </li>
-                                    <li><a href="#">Shorts</a>
+                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Quần Jean">Quần Jeans</a>
                                     </li>
 
 
@@ -116,55 +118,16 @@ _________________________________________________________ -->
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="50">What's new</a>
-                    <ul class="dropdown-menu">
-                        <div class="yamm-content">
-                            <div class="row">
-
-                                <ul>
-                                    <li><a href="post.html">New-things</a>
-                                    </li>
-                                    <li><a href="post.html">Sales and Events</a>
-                                    </li>
-                                    <li><a href="faq.html">Look and Trends</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </ul>
+                    <a href="post.php">Tin Tức</a>
                 </li>
 
                 <li class=" dropdown yamm-fw">
-                    <a href="blog.php" data-delay="200">Blog post</a>
+                    <a href="blog.php">Giới thiệu</a>
                 </li>
 
                 <li class="dropdown ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Help</a>
-                    <ul class="dropdown-menu">
-                        <div class="yamm-content">
-                            <div class="row">
-
-                                <ul>
-                                    <li><a href="faq.php">FAQ</a>
-                                    </li>
-
-                                    <li><a href="contact.php">Contact</a>
-                                    </li>
-                                    <li><a href="terms and conditions.php">Terms and contditions</a>
-                                    </li>
-
-                                    <li><a href="About us.php">About us</a>
-                                    </li>
-
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </ul>
+                    <a href="contact.php" >Liên hệ</a>
                 </li>
-
             </ul>
 
         </div>
@@ -180,15 +143,13 @@ _________________________________________________________ -->
                         <div class="yamm-content">
                             <div class="row">
                                 <ul>
-                                    <li><a href="orders-history.php">Orders history</a>
+                                    <li><a href="basket.php">Giỏ Hàng</a>
                                     </li>
-                                    <li><a href="basket.html">Shopping cart</a>
+                                    <li><a href="customer-wishlist.php">Danh sách yêu thích</a>
                                     </li>
-                                    <li><a href="customer-wishlist.html">Wishlist</a>
+                                    <li><a href="customer-account.php">Tài Khoản</a>
                                     </li>
-                                    <li><a href="customer-account.html">My Acount</a>
-                                    </li>
-                                    <li><a href="#" id="log_out">Log out</a>
+                                    <li><a href="#" id="log_out">Đăng Xuất</a>
                                     </li>
                                 </ul>
                             </div>
@@ -198,14 +159,14 @@ _________________________________________________________ -->
                 }
                 else {
                     ?>
-                    <a href="#" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="50"><i class="fa fa-user"></i><span class="hidden-sm"></span>Login</a>
+                    <a href="#" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="50"><i class="fa fa-user"></i><span class="hidden-sm"></span>Đăng Nhập</a>
                     <ul class="dropdown-menu" style="right:0;">
                         <div class="yamm-content">
                             <div class="row">
                                 <ul>
-                                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Đăng Nhập</a>
                                     </li>
-                                    <li><a href="#" data-toggle="modal" data-target="#register-modal">Register</a>
+                                    <li><a href="#" data-toggle="modal" data-target="#register-modal">Đăng Kí</a>
                                     </li>
                                 </ul>
                             </div>
@@ -223,36 +184,36 @@ _________________________________________________________ -->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="Register">Customer Register</h4>
+                            <h4 class="modal-title" id="Register">Đăng Kí</h4>
                         </div>
                         <div class="modal-body">
                             <form >
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="username-registermodal" placeholder="Username" required>
+                                    <input type="text" class="form-control" id="username-registermodal" placeholder="Tên tài khoản" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="password-registermodal" placeholder="Password" required>
+                                    <input type="password" class="form-control" id="password-registermodal" placeholder="Mật khẩu" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="fullname-registermodal" placeholder="Fullname" required>
+                                    <input type="text" class="form-control" id="fullname-registermodal" placeholder="Tên khách hàng" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="email-registermodal" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" id="mobilephone-registermodal" placeholder="Mobilephone" required>
+                                    <input type="number" class="form-control" id="mobilephone-registermodal" placeholder="Số điện thoại" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="address-registermodal" placeholder="Address" required>
+                                    <input type="text" class="form-control" id="address-registermodal" placeholder="Địa chỉ" required>
                                 </div>
 
                                 <p class="text-center">
-                                    <button class="btn btn-primary" id="buttonregister"><i class="fa fa-sign-in"></i> Register</button>
+                                    <button class="btn btn-primary" id="buttonregister"><i class="fa fa-sign-in"></i>Đăng kí</button>
                                 </p>
                                 <p class="text-center " id="message_register" style="color: red;"></p>
                             </form>
 
-                            <p class="text-center text-muted">Register to get more excited things in our pages</p>
+                            <p class="text-center text-muted">Đăng kí để truy cập vào các dịch vụ tiện ích khác của chúng tôi.</p>
                         </div>
                     </div>
                 </div>
@@ -265,25 +226,25 @@ _________________________________________________________ -->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="Login">Customer Login</h4>
+                            <h4 class="modal-title" id="Login">Đăng Nhập</h4>
                         </div>
                         <div class="modal-body">
                             <form >
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="username-modal" placeholder="username" required>
+                                    <input type="text" class="form-control" id="username-modal" placeholder="Tên tài khoản" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" id="password-modal" placeholder="password" required>
+                                    <input type="password" class="form-control" id="password-modal" placeholder="Mật khẩu" required>
                                 </div>
 
                                 <p class="text-center">
-                                    <button id="loginbutton" type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                                    <button id="loginbutton" type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i>Đăng Nhập</button>
                                 </p>
                             </form>
                             <div >
                                 <p class="text-center " style="color:red;" id="message_dangnhap"></p>
-                                <p class="text-center text-muted">Not registered yet?</p>
-                                <p class="text-center text-muted"><a href="#" id="registernow" data-toggle="modal" data-target="#register-modal"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                                <p class="text-center text-muted">Chưa có tài khoản ?</p>
+                                <p class="text-center text-muted"><a href="#" id="registernow" data-toggle="modal" data-target="#register-modal"><strong>Đăng kí ngay</strong></a></p>
 
                             </div>
                         </div>
