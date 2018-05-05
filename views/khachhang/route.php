@@ -9,7 +9,7 @@ else{
     $action="error";
 }
 //echo json_encode($controller);
-//echo $_GET['type_sp'];
+//echo $_GET['controller'];
 //echo $_GET['name_sp'];
 require_once (__DIR__."/../../controllers/".$controller.".php");
 $control= new $controller;

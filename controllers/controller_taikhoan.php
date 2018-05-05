@@ -2,12 +2,12 @@
 require_once (__DIR__."/base_controller.php");
 require_once (__DIR__."/../models/model_taikhoan.php");
 require_once (__DIR__."/../models/model_khachhang.php");
-class controller_dangnhap extends base_controller {
+class controller_taikhoan extends base_controller {
     private $modelTK;
     private $modelKH;
 
     /**
-     * controller_dangnhap constructor.
+     * controller_taikhoan constructor.
      * @param $modelTK
      * @param $modelKH
      */

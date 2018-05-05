@@ -7,7 +7,7 @@ $(document).ready(function () {
             username: $("#username-modal").val(),
             password: $("#password-modal").val()
         }
-        $.post("route.php?controller=controller_dangnhap&action=Login",postdata,function (data,status) {
+        $.post("route.php?controller=controller_taikhoan&action=Login",postdata,function (data,status) {
             console.log(data);
             var $datares=JSON.parse(data);
             // alert($datares.vaitro);
@@ -22,13 +22,16 @@ $(document).ready(function () {
             }
             else {
               $("#message_dangnhap").text("Sai tài khoản hoặc mật khẩu");
+                window.setTimeout(function () {
+                    location.reload('index.php');
+                },5000);
             }
         });
 
     });
     $('#log_out').click(function (){
         // alert('dung roi');
-        $.post("route.php?controller=controller_dangnhap&action=Logout",'',function (data,status) {
+        $.post("route.php?controller=controller_taikhoan&action=Logout",'',function (data,status) {
             console.log(data);
             location.href='index.php';
         });
@@ -42,7 +45,7 @@ $(document).ready(function () {
             mobilephone_register :$('#mobilephone-registermodal').val(),
             address_register :$('#address-registermodal').val()
         }
-        $.post("route.php?controller=controller_dangnhap&action=Register",datapost,function (data,status){
+        $.post("route.php?controller=controller_taikhoan&action=Register",datapost,function (data,status){
             console.log(data);
             // alert(data);
             var message =JSON.parse(data);
