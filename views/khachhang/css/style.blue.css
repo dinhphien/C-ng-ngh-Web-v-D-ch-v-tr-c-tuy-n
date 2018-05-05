@@ -475,9 +475,9 @@ h1 {
 }
 #content .product .flip-container {
   cursor: pointer;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  perspective: 1000;
+  /*-webkit-perspective: 1000;*/
+  /*-moz-perspective: 1000;*/
+  /*perspective: 1000;*/
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -565,9 +565,9 @@ h1 {
   color: #555555;
 }
 #content .product .text p.price {
-  font-size: 18px;
+  font-size: 6px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 #content .product .text p.price del {
   color: #999999;

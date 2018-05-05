@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 if(isset($_GET["controller"])&&isset($_GET["action"])){
     $controller= $_GET["controller"];
      $action= $_GET["action"];
@@ -9,7 +9,9 @@ else{
     $action="error";
 }
 //echo json_encode($controller);
-require_once ($controller.".php");
+//echo $_GET['type_sp'];
+//echo $_GET['name_sp'];
+require_once (__DIR__."/../../controllers/".$controller.".php");
 $control= new $controller;
 $control->$action();
 ?>

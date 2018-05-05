@@ -25,7 +25,7 @@ class Model_Taikhoan{
         }
     }
     public function insertTaiKhoan($usr,$psd){
-        $sql = "insert into taikhoan(tentaikhoan,matkhau,vaitro) values ('".$usr."','".$psd."','khachhang')";
+        $sql = "insert into taikhoan(tentaikhoan,matkhau,vaitro) values ('".$usr."','".$psd."','user')";
         $results=$this->conn->query($sql);
         return $results;
     }

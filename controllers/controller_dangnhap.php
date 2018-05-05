@@ -1,7 +1,7 @@
 <?php
-require_once ("base_controller.php");
-require_once ("../models/model_taikhoan.php");
-require_once ("../models/model_khachhang.php");
+require_once (__DIR__."/base_controller.php");
+require_once (__DIR__."/../models/model_taikhoan.php");
+require_once (__DIR__."/../models/model_khachhang.php");
 class controller_dangnhap extends base_controller {
     private $modelTK;
     private $modelKH;
@@ -23,7 +23,13 @@ class controller_dangnhap extends base_controller {
             $password=$_POST['password'];
             $taikhoan=$this->modelTK->getTaiKhoan($username,$password);
             if($taikhoan!=null){
-                $_SESSION['logged_in']=$taikhoan;
+                session_start();
+                if($taikhoan->getVaitro()=="user"){
+                    $_SESSION['logged_user']=$taikhoan;
+                }
+                else{
+                    $_SESSION['logged_admin']=$taikhoan;
+                }
                 $array['mesage']='success';
                 $array['tentaikhoan']=$taikhoan->getTentaikhoan();
                 $array['vaitro']=$taikhoan->getVaitro();
@@ -35,6 +41,7 @@ class controller_dangnhap extends base_controller {
 
     }
     public function Logout(){
+        session_start();
         session_destroy();
         echo 'suceess';
     }

@@ -1,5 +1,5 @@
 <?php
-require_once ("../../models/taikhoan.php");
+require_once (__DIR__."/../../models/taikhoan.php");
 session_start();
 ?>
 
@@ -75,7 +75,7 @@ session_start();
         <div class="sideProfile">
             <a href="#" title="" class="profileFace"><img width="40" src="images/user.png" /></a>
             <span>Xin chào: <strong>Admin!</strong></span>
-            <span><?php echo $_SESSION['logged_in']->getTentaikhoan(); ?></span>
+            <span><?php echo $_SESSION['logged_admin']->getTentaikhoan(); ?></span>
             <div class="clear"></div>
         </div>
         <div class="sidebarSep"></div>

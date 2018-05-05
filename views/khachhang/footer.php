@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-      <!-- *** FOOTER ***
- _________________________________________________________ -->
+
         <div id="footer" >
             <div class="container">
                 <div class="row">
@@ -169,5 +162,3 @@
     <script src="js/bootstrap-hover-dropdown.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
-</body>
-</html>

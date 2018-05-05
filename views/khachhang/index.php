@@ -1,13 +1,5 @@
 <?php  include 'header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    
-</head>
-
-<body>
     <div id="all">
 
         <div id="content">
@@ -1046,7 +1038,5 @@
 
         </div>
         <!-- /#content -->
-</body>
-</html>
 <?php  include 'footer.php';
 ?>

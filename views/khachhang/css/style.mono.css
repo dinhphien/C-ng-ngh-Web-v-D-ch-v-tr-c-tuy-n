@@ -555,8 +555,8 @@ h1 {
   padding: 10px 10px 0;
 }
 #content .product .text h3 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
   height: 39.6px;
   text-align: center;
   overflow: hidden;
@@ -565,7 +565,7 @@ h1 {
   color: #555555;
 }
 #content .product .text p.price {
-  font-size: 18px;
+  font-size: 6px;
   text-align: center;
   font-weight: 300;
 }

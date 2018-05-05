@@ -6,20 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="1cd7ba01-9da4-4d0f-b23b-5ad7209dbc71" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/catalog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/slide.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/slide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controller_dangnhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_dangnhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controller_sanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_sanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/route.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_sanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_sanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_taikhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_taikhoan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/khachhang/customer-account.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/customer-account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/css/style.blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/css/style.blue.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/css/style.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/css/style.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/css/style.mono.css" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/css/style.mono.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/khachhang/js/modernizr.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/js/modernizr.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,20 +31,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="detail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/khachhang/detail.php">
+      <file leaf-file-name="controller_sanpham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="327">
+              <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testview.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
+      <file leaf-file-name="model_sanpham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="130" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="130" />
+            <state relative-caret-position="289">
+              <caret line="49" column="104" lean-forward="true" selection-start-line="49" selection-start-column="104" selection-end-line="49" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="74" column="108" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/khachhang/route.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -51,26 +70,38 @@
       <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="36" column="61" lean-forward="true" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+            <state relative-caret-position="412">
+              <caret line="147" column="40" lean-forward="true" selection-start-line="144" selection-start-column="35" selection-end-line="147" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller_sanpham.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
+      <file leaf-file-name="detail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/khachhang/detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="425">
+              <caret line="79" column="136" selection-start-line="79" selection-start-column="136" selection-end-line="79" selection-end-column="136" />
+              <folding>
+                <element signature="e#2981#3009#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
+      <file leaf-file-name="style.default.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/khachhang/css/style.default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state relative-caret-position="264">
+              <caret line="607" column="21" lean-forward="true" selection-start-line="607" selection-start-column="1" selection-end-line="607" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanpham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/sanpham.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="72" column="36" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -88,19 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/giohang.php" />
-        <option value="$PROJECT_DIR$/models/khachhang.php" />
-        <option value="$PROJECT_DIR$/models/nhanvien.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/testheader.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/index.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/orders-history.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/About us.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/basket.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/blog.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/contact.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/customer-order.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/customer-wishlist.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/detail.php" />
         <option value="$PROJECT_DIR$/views/khachhang/faq.php" />
         <option value="$PROJECT_DIR$/views/khachhang/post.php" />
         <option value="$PROJECT_DIR$/views/khachhang/terms and conditions.php" />
@@ -108,9 +126,7 @@
         <option value="$PROJECT_DIR$/models/DBconnector.php" />
         <option value="$PROJECT_DIR$/models/taikhoan.php" />
         <option value="$PROJECT_DIR$/models/DAO.php" />
-        <option value="$PROJECT_DIR$/models/model_sanpham.php" />
         <option value="$PROJECT_DIR$/models/model_nhanvien.php" />
-        <option value="$PROJECT_DIR$/models/model_taikhoan.php" />
         <option value="$PROJECT_DIR$/controllers/Base_Controller.php" />
         <option value="$PROJECT_DIR$/models/sanpham.php" />
         <option value="$PROJECT_DIR$/models/db_connector.php" />
@@ -119,10 +135,8 @@
         <option value="$PROJECT_DIR$/controllers/controllerlogin.php" />
         <option value="$PROJECT_DIR$/views/khachhang/testview.php" />
         <option value="$PROJECT_DIR$/controllers/test_controller.php" />
-        <option value="$PROJECT_DIR$/controllers/route.php" />
         <option value="$PROJECT_DIR$/controllers/base_controller.php" />
         <option value="$PROJECT_DIR$/controllers/controllerRegister.php" />
-        <option value="$PROJECT_DIR$/controllers/controller_dangnhap.php" />
         <option value="$PROJECT_DIR$/views/khachhang/customer-account.php" />
         <option value="$PROJECT_DIR$/views/admin/index.html" />
         <option value="$PROJECT_DIR$/views/admin/footer_admin.php" />
@@ -134,11 +148,28 @@
         <option value="$PROJECT_DIR$/views/admin/user.php" />
         <option value="$PROJECT_DIR$/views/admin/transaction.php" />
         <option value="$PROJECT_DIR$/views/admin/catalog.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/css/style.mono.css" />
+        <option value="$PROJECT_DIR$/views/khachhang/css/style.blue.css" />
+        <option value="$PROJECT_DIR$/views/khachhang/index.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/footer.php" />
+        <option value="$PROJECT_DIR$/controllers/route.php" />
+        <option value="$PROJECT_DIR$/controllers/config.php" />
+        <option value="$PROJECT_DIR$/controllers/route.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/route.php" />
+        <option value="$PROJECT_DIR$/models/model_taikhoan.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_dangnhap.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_dangnhap.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/js/header.js" />
         <option value="$PROJECT_DIR$/views/khachhang/js/header.js" />
         <option value="$PROJECT_DIR$/views/admin/header_admin.php" />
-        <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/category.php" />
         <option value="$PROJECT_DIR$/views/khachhang/header.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/header.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/category.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/css/style.default.css" />
+        <option value="$PROJECT_DIR$/models/model_sanpham.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/detail.php" />
       </list>
     </option>
   </component>
@@ -148,7 +179,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="258" />
     <option name="y" value="18" />
     <option name="width" value="1401" />
@@ -159,6 +190,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="khachhang" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -175,47 +233,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="khachhang" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/BTL_Công nghệ Web và Dịch vụ trực tuyến/views/khachhang/header.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_2_20172" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -272,15 +293,23 @@
       <workItem from="1524838583859" duration="625000" />
       <workItem from="1524927583653" duration="4615000" />
       <workItem from="1525053463322" duration="10433000" />
-      <workItem from="1525229339617" duration="6341000" />
+      <workItem from="1525229339617" duration="19775000" />
+      <workItem from="1525311540606" duration="16523000" />
+      <workItem from="1525393815710" duration="2076000" />
+      <workItem from="1525395974406" duration="166000" />
+      <workItem from="1525396369852" duration="6717000" />
+      <workItem from="1525406629718" duration="1227000" />
+      <workItem from="1525407978354" duration="2102000" />
+      <workItem from="1525428881025" duration="6753000" />
+      <workItem from="1525481905807" duration="13462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111845000" />
+    <option name="totallyTimeSpent" value="174305000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1787666" />
@@ -311,63 +340,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="38" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/js/front.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/giohang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/testheader.php" />
-    <entry file="file://$PROJECT_DIR$/views/khachhang/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/basket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/customer-order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/faq.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -382,24 +354,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/orders-history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/customer-wishlist.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/css/style.blue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="492" column="25" selection-start-line="492" selection-start-column="25" selection-end-line="492" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -425,38 +383,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/sanpham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/taikhoan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/model_nhanvien.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/DBconnector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -467,55 +397,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/test_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controllerlogin.php" />
     <entry file="file://$PROJECT_DIR$/controllers/controllerlogout.php" />
     <entry file="file://$PROJECT_DIR$/controllers/controllerRegister.php" />
-    <entry file="file://$PROJECT_DIR$/controllers/base_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_taikhoan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_khachhang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/customer-account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3128">
           <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_dangnhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -576,59 +464,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/header_admin.php">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/css/style.violet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="221" column="52" lean-forward="true" selection-start-line="221" selection-start-column="52" selection-end-line="221" selection-end-column="52" />
+        <state relative-caret-position="179">
+          <caret line="597" column="10" selection-start-line="597" selection-start-column="10" selection-end-line="597" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/index.php">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/css/style.mono.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" selection-start-line="95" selection-end-line="96" />
+        <state relative-caret-position="230">
+          <caret line="566" column="26" selection-start-line="566" selection-start-column="26" selection-end-line="566" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/js/header.js">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/css/style.blue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="69">
+          <caret line="476" column="18" lean-forward="true" selection-start-line="476" selection-start-column="18" selection-end-line="476" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/detail.php">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="179">
+          <caret line="4" column="23275" selection-start-line="4" selection-start-column="23275" selection-end-line="4" selection-end-column="23275" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100453">
+          <caret line="5909" selection-start-line="5909" selection-end-line="5910" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/taikhoan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/base_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DBconnector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="130" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="130" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
+    <entry file="file://$PROJECT_DIR$/controllers/test_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/orders-history.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="36" column="61" lean-forward="true" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/route.php" />
+    <entry file="file://$PROJECT_DIR$/models/model_khachhang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_taikhoan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="104" lean-forward="true" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_dangnhap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/header_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/index_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="1039" column="26" selection-start-line="1039" selection-start-column="26" selection-end-line="1039" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        <state relative-caret-position="174">
+          <caret line="74" column="108" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/css/style.default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="607" column="21" lean-forward="true" selection-start-line="607" selection-start-column="1" selection-end-line="607" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="49" column="104" lean-forward="true" selection-start-line="49" selection-start-column="104" selection-end-line="49" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/sanpham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="72" column="36" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="147" column="40" lean-forward="true" selection-start-line="144" selection-start-column="35" selection-end-line="147" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="79" column="136" selection-start-line="79" selection-start-column="136" selection-end-line="79" selection-end-column="136" />
+          <folding>
+            <element signature="e#2981#3009#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

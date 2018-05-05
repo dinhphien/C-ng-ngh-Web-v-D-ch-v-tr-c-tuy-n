@@ -1,5 +1,5 @@
 <?php
-require_once ('../../models/taikhoan.php');
+require_once (__DIR__."/../../models/taikhoan.php");
 session_start();
 ?>
 <!DOCTYPE html>
@@ -21,10 +21,10 @@ session_start();
 
     <!-- styles -->
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
+    <link href="css/animate.min.css"  rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.theme.css"  rel="stylesheet">
 
     <!-- theme stylesheet -->
     <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
@@ -34,10 +34,10 @@ session_start();
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/respond.min.js"></script>
-    <script src="js/header.js"></script>
+    <script src="js/header.js" ></script>
 
 
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png" >
 </head>
 <body>
 <!-- *** NAVBAR ***
@@ -60,25 +60,25 @@ _________________________________________________________ -->
                 <li class="active"><a href="index.php">Trang chủ</a>
                 </li>
                 <li class="dropdown ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nam</a>
+                    <a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nam</a>
                     <ul class="dropdown-menu">
                         <div class="yamm-content">
                             <div class="row">
-
                                 <ul>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Phông">Áo Phông</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Phông">Áo Phông</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Sơ Mi">Áo Sơ Mi</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Khoác">Áo Khoác</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Sơ Mi">Áo Sơ Mi</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Áo Vest">Áo Vest</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Khoác">Áo Khoác</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Quần Âu">Quần Âu</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Vest">Áo Vest</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Quần Jean">Quần Jean</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Âu">Quần Âu</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nam&name_sp=Quần Shorts">Quần Short</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Jean">Quần Jean</a>
+                                    </li>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Short">Quần Short</a>
                                     </li>
 
 
@@ -90,23 +90,23 @@ _________________________________________________________ -->
                     </ul>
                 </li>
                 <li class="dropdown ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nữ</a>
+                    <a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nữ</a>
                     <ul class="dropdown-menu">
                         <div class="yamm-content">
                             <div class="row">
 
                                 <ul>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Áo Dài">Áo Dài</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Dài">Áo Dài</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Áo Phông">Áo Phông</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Phông">Áo Phông</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Áo Khoác">Áo Khoác</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Khoác">Áo Khoác</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Váy">Váy</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Váy">Váy</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Chân Váy">Chân Váy</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Chân Váy">Chân Váy</a>
                                     </li>
-                                    <li><a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&type_sp=Nữ&name_sp=Quần Jean">Quần Jeans</a>
+                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Quần Jean">Quần Jean</a>
                                     </li>
 
 
@@ -135,10 +135,10 @@ _________________________________________________________ -->
         <div class="navbar-buttons">
             <div class="navbar-collapse collapse right" id="basket-overview">
                 <?php
-                if(isset($_SESSION['logged_in'])){
+                if(isset($_SESSION['logged_user'])){
                     ?>
                     <a href="#" class="btn btn-primary navbar-btn dropdown-toggle" id="btdangnhap" data-toggle="dropdown" data-hover="dropdown" data-delay="50"><i class="fa fa-user"></i><span class="hidden-sm"></span>
-                    <?php echo $_SESSION['logged_in']->getTentaikhoan(); ?></a>
+                    <?php echo $_SESSION['logged_user']->getTentaikhoan(); ?></a>
                     <ul class="dropdown-menu" style="right:0;">
                         <div class="yamm-content">
                             <div class="row">

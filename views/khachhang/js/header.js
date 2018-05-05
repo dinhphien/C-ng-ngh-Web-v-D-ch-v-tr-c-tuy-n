@@ -7,11 +7,10 @@ $(document).ready(function () {
             username: $("#username-modal").val(),
             password: $("#password-modal").val()
         }
-        $.post("../../controllers/route.php?controller=controller_dangnhap&action=Login",postdata,function (data,status) {
+        $.post("route.php?controller=controller_dangnhap&action=Login",postdata,function (data,status) {
             console.log(data);
-            alert(data);
             var $datares=JSON.parse(data);
-
+            // alert($datares.vaitro);
             if($datares.mesage=='success'){
 
                 if($datares.vaitro=='admin'){
@@ -27,8 +26,9 @@ $(document).ready(function () {
         });
 
     });
-    $('#log_out').click(function () {
-        $.post("../../controllers/route.php?controller=controller_dangnhap&action=Logout",'',function (data,status) {
+    $('#log_out').click(function (){
+        // alert('dung roi');
+        $.post("route.php?controller=controller_dangnhap&action=Logout",'',function (data,status) {
             console.log(data);
             location.href='index.php';
         });
@@ -42,7 +42,7 @@ $(document).ready(function () {
             mobilephone_register :$('#mobilephone-registermodal').val(),
             address_register :$('#address-registermodal').val()
         }
-        $.post("../../controllers/route.php?controller=controller_dangnhap&action=Register",datapost,function (data,status){
+        $.post("route.php?controller=controller_dangnhap&action=Register",datapost,function (data,status){
             console.log(data);
             // alert(data);
             var message =JSON.parse(data);

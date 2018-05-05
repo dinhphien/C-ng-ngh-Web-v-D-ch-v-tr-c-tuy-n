@@ -1,35 +1,71 @@
-<?php  include 'header.php';
+<?php
+require_once("C:/xampp/htdocs/BTL_Web/models/sanpham.php");
+include 'header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-</head>
-
-<body>
     <div id="all">
 
         <div id="content">
             <div class="container">
-
                 <div class="col-md-12">
                     <ul class="breadcrumb">
                         <li><a href="index.php">Home</a>
                         </li>
-                        <li><?php if(!empty($_GET['type_sp'])) echo $_GET['type_sp'];?></li>
+                        <?php
+                        if(!empty($_GET['type_sp'])){
+                        ?>
+                            <li><a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=<?php echo $_GET['type_sp'];?>"><?php echo $_GET['type_sp'];?></a></li>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        if(!empty($_GET['type_sp'])&&!empty($_GET['name_sp'])){
+
+                        ?>
                         <li>
-                            <a href="../../controllers/route.php?controller=controller_sanpham&action=showSP&
-                            type_sp=<?php if(!empty($_GET['type_sp'])) echo $_GET['type_sp'];?>&
-                            name_sp=<?php if(!empty($_GET['name_sp'])) echo $_GET['name_sp']; ?>">
-                                <?php if(!empty($_GET['name_sp'])) echo $_GET['name_sp'];?></a>
+                            <a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=<?php echo $_GET['type_sp'];?>&name_sp=<?php echo $_GET['name_sp']; ?>">
+                                <?php  echo $_GET['name_sp'];?></a>
                         </li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </div>
 
                 <div class="col-md-3">
                     <!-- *** MENUS AND FILTERS ***
  _________________________________________________________ -->
+
+                    <div class="panel panel-default sidebar-menu">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Giá</h3>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <form>
+                                <div class="form-group">
+                                    <input type="radio" name="gia_sp" value="1"> 200.000-500.000VNĐ
+                                    <br>
+                                    <input type="radio" name="gia_sp" value="2"> 500.000-1000.000VNĐ
+                                    <br>
+                                    <input type="radio" name="gia_sp" value="3"> 1000.000-2000.000VNĐ
+                                    <br>
+                                    <input type="radio" name="gia_sp" value="4"> 2000.000-5000.000VNĐ
+                                    <br>
+                                    <input type="radio" name="gia_sp" value="5"> 5000.000-10.000.000VNĐ
+                                    <br>
+                                    <input type="radio" name="gia_sp" value="6" checked> Tất Cả
+                                    <br>
+                                </div>
+
+                                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i>Thêm</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+
 
                     <div class="panel panel-default sidebar-menu">
 
@@ -41,348 +77,198 @@
 
                             <form>
                                 <div class="form-group">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox">Armani (10)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox">Versace (12)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox">Carlo Bruni (15)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox">Jack Honey (14)
-                                        </label>
-                                    </div>
+                                            <input type="radio" name="size_sp" value="S"> S
+                                        <br>
+                                            <input type="radio" name="size_sp" value="M"> M
+                                        <br>
+                                            <input type="radio" name="size_sp" value="L"> L
+                                        <br>
+                                            <input type="radio" name="size_sp" value="XL"> XL
+                                        <br>
+                                            <input type="radio" name="size_sp" value="XXL"> XXL
+                                        <br>
+                                            <input type="radio" name="size_sp" value="All" checked> Tất Cả
+                                        <br>
+
                                 </div>
-
-                                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
-
+                                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i>Thêm</button>
                             </form>
 
                         </div>
                     </div>
 
+
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Colours <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>
+                            <h3 class="panel-title">Màu sắc </h3>
                         </div>
 
                         <div class="panel-body">
 
                             <form>
                                 <div class="form-group">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> <span class="colour white"></span> White (14)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> <span class="colour blue"></span> Blue (10)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> <span class="colour green"></span> Green (20)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> <span class="colour yellow"></span> Yellow (13)
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> <span class="colour red"></span> Red (10)
-                                        </label>
-                                    </div>
+                                            <input type="checkbox" name="mausac_sp" value="Trắng"> <span class="colour white"></span> Trắng
+                                        <br>
+                                            <input type="checkbox" name="mausac_sp" value="Xanh Dương"> <span class="colour blue"></span>  Xanh Dương
+                                        <br>
+                                            <input type="checkbox" name="mausac_sp" value="Xanh Lá Cây"> <span class="colour green"></span>  Xanh Lá Cây
+                                        <br>
+                                            <input type="checkbox" name="mausac_sp" value="Đỏ"> <span class="colour red"></span>  Đỏ
+                                        <br>
+                                            <input type="checkbox" name="mausac_sp" value="Vàng"> <span class="colour yellow"></span>  Vàng
                                 </div>
-
-                                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
-
+                                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Thêm</button>
                             </form>
 
                         </div>
                     </div>
                 </div>
 
+
                 <div class="col-md-9">
-                    <div class="box info-bar">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4 products-showing">
-                                Showing <strong>12</strong> of <strong>25</strong> products
-                            </div>
-
-                            <div class="col-sm-12 col-md-8  products-number-sort">
-                                <div class="row">
-                                    <form class="form-inline">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="products-number">
-                                                <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="products-sort-by">
-                                                <strong>Sort by</strong>
-                                                <select name="sort-by" class="form-control">
-                                                    <option>Price</option>
-                                                    <option>Name</option>
-                                                    <option>Sales first</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="row products">
-
+                        <?php
+                        if(!empty($data)){
+                            foreach ($data as $sp) {
+                                ?>
                         <div class="col-md-4 col-sm-6">
                             <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="img/product1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="img/product1_2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="img/product1.jpg" alt="" class="img-responsive">
+                                <a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp-> getIdsanpham();?>" class="visible">
+                                    <img src="<?php echo $sp->getUrlanhsanpham(); ?>" alt="" class="img-responsive">
                                 </a>
+
                                 <div class="text">
-                                    <h3><a href="detail.html">Fur coat with very but very very long name</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><?php echo $sp->getTensanpham(); ?></h3>
+                                    <p class="price">Giá : <?php  echo $sp->getGiasanpham();?> <br>
+                                        Size: <?php echo $sp->getSizesanpham();?></p>
                                     <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        <a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp-> getIdsanpham();?>" class="btn btn-default">Chi tiết</a>
+                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>
                                     </p>
                                 </div>
-                                <!-- /.text -->
                             </div>
-                            <!-- /.product -->
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="img/product2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="img/product2_2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="img/product2.jpg" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">White Blouse Armani</a></h3>
-                                    <p class="price"><del>$280</del> $143.00</p>
-                                    <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                    </p>
-                                </div>
-                                <!-- /.text -->
+                     <?php
+                       }
+                     }
+                     ?>
 
-                                <div class="ribbon sale">
-                                    <div class="theribbon">SALE</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
 
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="product">-->
+<!--                                <a href="detail.html" class="visible">-->
+<!--                                    <img src="img/product2.jpg" alt="" class="img-responsive">-->
+<!--                                </a>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>White Blouse Armani</h3>-->
+<!--                                    <p class="price">Giá :$143.00VNĐ <br>-->
+<!--                                        Size: M</p>-->
+<!--                                    <p class="buttons">-->
+<!--                                        <button class="btn btn-default">Chi tiết</button>-->
+<!--                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="product">-->
+<!--                                <a href="detail.html" class="visible">-->
+<!--                                    <img src="img/product3.jpg" alt="" class="img-responsive">-->
+<!--                                </a>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Black Blouse Versace</h3>-->
+<!--                                    <p class="price">Giá :$143.00VNĐ <br>-->
+<!--                                        Size: M</p>-->
+<!--                                    <p class="buttons">-->
+<!--                                        <button class="btn btn-default">Chi tiết</button>-->
+<!--                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>-->
+<!--                                    </p>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="img/product3.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="img/product3_2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="img/product3.jpg" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
-                                    <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                    </p>
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="product">-->
+<!--                                <a href="detail.html" class="visible">-->
+<!--                                    <img src="img/product3.jpg" alt="" class="img-responsive">-->
+<!--                                </a>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Fur coat but  very very long name name name name </h3>-->
+<!--                                    <p class="price">Giá :$143.00VNĐ <br>-->
+<!--                                        Size: M</p>-->
+<!--                                    <p class="buttons">-->
+<!--                                        <button class="btn btn-default">Chi tiết</button>-->
+<!--                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>-->
+<!--                                    </p>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                                </div>
-                                <!-- /.text -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="product">-->
+<!--                                <a href="detail.html" class="visible">-->
+<!--                                    <img src="img/product3.jpg" alt="" class="img-responsive">-->
+<!--                                </a>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Fur coat but  very very long name name name name </h3>-->
+<!--                                    <p class="price">Giá :$143.00VNĐ <br>-->
+<!--                                        Size: M</p>-->
+<!--                                    <p class="buttons">-->
+<!--                                        <button class="btn btn-default">Chi tiết</button>-->
+<!--                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>-->
+<!--                                    </p>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="img/product3.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="img/product3_2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="img/product3.jpg" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
-                                    <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                    </p>
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="product">-->
+<!--                                <a href="detail.html" class="visible">-->
+<!--                                    <img src="img/product2.jpg" alt="" class="img-responsive">-->
+<!--                                </a>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>White Blouse Versace</h3>-->
+<!--                                    <p class="price">Giá :$143.00VNĐ <br>-->
+<!--                                        Size: M</p>-->
+<!--                                    <p class="buttons">-->
+<!--                                        <button class="btn btn-default">Chi tiết</button>-->
+<!--                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>-->
+<!--                                    </p>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                                </div>
-                                <!-- /.text -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="img/product2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="img/product2_2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="img/product2.jpg" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">White Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
-                                    <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                    </p>
-
-                                </div>
-                                <!-- /.text -->
-
-                                <div class="ribbon new">
-                                    <div class="theribbon">NEW</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-                            </div>
-                            <!-- /.product -->
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                            <div class="product">
-                                <div class="flip-container">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="detail.html">
-                                                <img src="img/product1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="detail.html">
-                                                <img src="img/product1_2.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="detail.html" class="invisible">
-                                    <img src="img/product1.jpg" alt="" class="img-responsive">
-                                </a>
-                                <div class="text">
-                                    <h3><a href="detail.html">Fur coat</a></h3>
-                                    <p class="price">$143.00</p>
-                                    <p class="buttons">
-                                        <a href="detail.html" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                    </p>
-
-                                </div>
-                                <!-- /.text -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">GIFT</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                            </div>
-                            <!-- /.product -->
-                        </div>
-                        <!-- /.col-md-4 -->
+<!--                        <div class="col-md-4 col-sm-6">-->
+<!--                            <div class="product">-->
+<!--                                <a href="detail.html" class="visible">-->
+<!--                                    <img src="img/product1.jpg" alt="" class="img-responsive">-->
+<!--                                </a>-->
+<!--                                <div class="text">-->
+<!--                                    <h3>Fur coat but  very very long name name name name </h3>-->
+<!--                                    <p class="price">Giá :$143.00VNĐ <br>-->
+<!--                                        Size: M</p>-->
+<!--                                    <p class="buttons">-->
+<!--                                        <button class="btn btn-default">Chi tiết</button>-->
+<!--                                        <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>-->
+<!--                                    </p>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
                     <!-- /.products -->
 
                     <div class="pages">
-
-                        <p class="loadMore">
-                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>
-                        </p>
+<!--                        <p class="loadMore">-->
+<!--                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>-->
+<!--                        </p>-->
 
                         <ul class="pagination">
                             <li><a href="#">&laquo;</a>
@@ -412,7 +298,4 @@
 
     </div>
     <!-- /#all -->
-</body>
-
-</html>
 <?php include 'footer.php' ?>
