@@ -59,73 +59,23 @@ _________________________________________________________ -->
             <ul class="nav navbar-nav navbar-left">
                 <li class="active"><a href="index.php">Trang chủ</a>
                 </li>
-                <li class="dropdown ">
-                    <a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nam</a>
-                    <ul class="dropdown-menu">
-                        <div class="yamm-content">
-                            <div class="row">
-                                <ul>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Phông">Áo Phông</a>
-                                    </li>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Sơ Mi">Áo Sơ Mi</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Khoác">Áo Khoác</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Vest">Áo Vest</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Âu">Quần Âu</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Jean">Quần Jean</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Short">Quần Short</a>
-                                    </li>
+                <li>
+                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam">Thời trang Nam</a>
 
-
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </ul>
                 </li>
-                <li class="dropdown ">
-                    <a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Thời trang Nữ</a>
-                    <ul class="dropdown-menu">
-                        <div class="yamm-content">
-                            <div class="row">
-
-                                <ul>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Dài">Áo Dài</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Phông">Áo Phông</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Khoác">Áo Khoác</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Váy">Váy</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Chân Váy">Chân Váy</a>
-                                    </li>
-                                    <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Quần Jean">Quần Jean</a>
-                                    </li>
-
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </ul>
+                <li>
+                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nữ">Thời trang Nữ</a>
                 </li>
 
-                <li class="dropdown">
+                <li>
                     <a href="post.php">Tin Tức</a>
                 </li>
 
-                <li class=" dropdown yamm-fw">
+                <li>
                     <a href="blog.php">Giới thiệu</a>
                 </li>
 
-                <li class="dropdown ">
+                <li>
                     <a href="contact.php" >Liên hệ</a>
                 </li>
             </ul>
@@ -206,12 +156,11 @@ _________________________________________________________ -->
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="address-registermodal" placeholder="Địa chỉ" required>
                                 </div>
-
-                                <p class="text-center">
-                                    <button class="btn btn-primary" id="buttonregister"><i class="fa fa-sign-in"></i>Đăng kí</button>
-                                </p>
                                 <p class="text-center " id="message_register" style="color: red;"></p>
                             </form>
+                            <p class="text-center">
+                                <button class="btn btn-primary" id="buttonregister"><i class="fa fa-sign-in"></i>Đăng kí</button>
+                            </p>
 
                             <p class="text-center text-muted">Đăng kí để truy cập vào các dịch vụ tiện ích khác của chúng tôi.</p>
                         </div>
@@ -236,11 +185,10 @@ _________________________________________________________ -->
                                 <div class="form-group">
                                     <input type="password" class="form-control" id="password-modal" placeholder="Mật khẩu" required>
                                 </div>
-
-                                <p class="text-center">
-                                    <button id="loginbutton" type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i>Đăng Nhập</button>
-                                </p>
                             </form>
+                            <p class="text-center">
+                                <button id="loginbutton" type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i>Đăng Nhập</button>
+                            </p>
                             <div >
                                 <p class="text-center " style="color:red;" id="message_dangnhap"></p>
                                 <p class="text-center text-muted">Chưa có tài khoản ?</p>
@@ -251,6 +199,25 @@ _________________________________________________________ -->
                     </div>
                 </div>
             </div>
+
+
+            <div class="modal fade" id="warning-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="title_thôngbáo"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div >
+                                <p class="text-center " style="color:red;" id="mesage_thôngbáo"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="navbar-collapse collapse right" id="search-not-mobile">
                 <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">

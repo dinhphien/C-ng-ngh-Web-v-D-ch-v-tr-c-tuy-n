@@ -96,7 +96,6 @@ session_start();
 
                 <a href="admin/tran.html" class=" exp" >
                     <span>Quản lý bán hàng</span>
-                    <strong>2</strong>
                 </a>
 
                 <ul class="sub">
@@ -115,7 +114,6 @@ session_start();
 
                 <a href="product.php" class=" exp" >
                     <span>Sản phẩm</span>
-                    <strong>3</strong>
                 </a>
 
                 <ul class="sub">
@@ -127,10 +125,6 @@ session_start();
                         <a href="catalog.php">
                             Danh mục							</a>
                     </li>
-                    <li >
-                        <a href="comment.html">
-                            Phản hồi							</a>
-                    </li>
                 </ul>
 
             </li>
@@ -138,7 +132,6 @@ session_start();
 
                 <a href="admin/account.html" class=" exp" >
                     <span>Tài khoản</span>
-                    <strong>3</strong>
                 </a>
 
                 <ul class="sub">
@@ -157,30 +150,10 @@ session_start();
                 </ul>
 
             </li>
-            <li class="support">
-
-                <a href="admin/support.html" class=" exp" >
-                    <span>Hỗ trợ và liên hệ</span>
-                    <strong>2</strong>
-                </a>
-
-                <ul class="sub">
-                    <li >
-                        <a href="admin/support.html">
-                            Hỗ trợ							</a>
-                    </li>
-                    <li >
-                        <a href="admin/contact.html">
-                            Liên hệ							</a>
-                    </li>
-                </ul>
-
-            </li>
             <li class="content">
 
                 <a href="admin/content.html" class=" exp" >
                     <span>Nội dung</span>
-                    <strong>4</strong>
                 </a>
 
                 <ul class="sub">
@@ -219,11 +192,16 @@ session_start();
     <div class="topNav">
         <div class="wrapper">
             <div class="welcome">
-                <span>Xin chào: <b>Admin!</b></span>
+                <span>Xin chào: <b>admin!</b></span>
             </div>
 
             <div class="userNav">
                 <ul>
+                    <li><a href="" target="_blank">
+                            <img style="margin-top:7px;" src="images/icons/light/home.png" />
+                            <span>Trang chủ</span>
+                        </a></li>
+
                     <!-- Logout -->
                     <li><a href="admin/home/logout.html">
                             <img src="images/icons/topnav/logout.png" alt="" />
@@ -236,3 +214,16 @@ session_start();
             <div class="clear"></div>
         </div>
     </div>
+
+    !-- Common -->
+    <!-- Title area -->
+    <div class="titleArea">
+        <div class="wrapper">
+            <div class="pageTitle">
+                <h5>Phản hồi</h5>
+                <span>Quản lý phản hồi</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="line"></div>

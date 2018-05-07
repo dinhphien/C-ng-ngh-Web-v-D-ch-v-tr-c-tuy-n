@@ -57,6 +57,20 @@ class Model_Sanpham{
         }
         return $array_sp;
     }
+    public function themSP_giohang($id_tk,$id_sp){
+        $sql1="select * from sanphamgiohang where sanphamgiohang.idkhachhang='".$id_tk."'and sanphamgiohang.idsanpham='".$id_sp."';";
+        $result1=$this->conn->query($sql1);
+        $result2="false";
+        if($result1->num_rows==0){
+            $sql2="insert into sanphamgiohang(idkhachhang,idsanpham,soluong) values ('".$id_tk."','".$id_sp."','1')";
+            $result2=$this->conn->query($sql2);
+        }
+        else{
+            $result2='false';
+        }
+        return $result2;
+
+    }
 
 }
 ?>

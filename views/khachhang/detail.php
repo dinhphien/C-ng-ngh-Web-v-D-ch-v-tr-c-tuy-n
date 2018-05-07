@@ -7,14 +7,85 @@ include 'header.php';
         <div id="content">
             <div class="container">
                 <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="index.php">Trang chủ</a>
+                        </li>
+                        <li><a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=<?php echo $sp->getLoaisanpham();?>"><?php  echo $sp->getLoaisanpham();?></a>
+                        </li>
+                        <li><a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=<?php echo $sp->getLoaisanpham();?>&name_sp=<?php echo $sp->getTensanpham(); ?>"><?php echo $sp->getTensanpham(); ?></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3">
+                    <!-- *** MENUS AND FILTERS ***
+ _________________________________________________________ -->
+                    <div class="panel panel-default sidebar-menu">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Danh mục</h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked category-menu">
+                                <li>
+                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam">thời trang nam</a>
+                                    <ul>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Phông">Áo Phông</a>
+                                        </li>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Sơ Mi">Áo Sơ Mi</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Khoác">Áo Khoác</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Vest">Áo Vest</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Âu">Quần Âu</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Jean">Quần Jean</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Quần Short">Quần Short</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nữ">Thời trang nữ</a>
+                                    <ul>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Dài">Áo Dài</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Phông">Áo Phông</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Khoác">Áo Khoác</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Váy">Váy</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Chân Váy">Chân Váy</a>
+                                        </li>
+                                        <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Quần Jean">Quần Jean</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="banner">
+                        <a href="#">
+                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
 
                     <div class="row" id="productMain">
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
                             <div id="mainImage">
                                 <img src="<?php echo $sp->getUrlanhsanpham(); ?>" alt="" class="img-responsive">
                             </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-6">
                             <div class="box">
                                 <h1 class="text-center"><?php echo $sp->getTensanpham(); ?></h1>
                                 <p>Loại sản phẩm : <?php  echo $sp->getLoaisanpham();?></p><br>
@@ -23,8 +94,7 @@ include 'header.php';
                                 <p> Số lượng : <?php  echo $sp->getSoluongsanpham();?></p><br>
 
                                 <p class="text-center buttons">
-                                    <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
-                                    <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Ưa thích</a>
+                                    <button id="<?php echo $sp->getIdsanpham(); ?>" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </p>
                                 <p class="goToDescription"><a href="#details" class="scroll-to">Xem thêm </a>
                                 </p>
@@ -47,7 +117,7 @@ include 'header.php';
                             </ul>
                             <h4>Kích cỡ và màu sắc :</h4>
                             <ul>
-                                <li>Kích cỡ : <?php  echo $sp->getSizesanpham();?></li>
+                                <li>Kích cỡ : Size <?php  echo $sp->getSizesanpham();?></li>
                                 <li>Màu sắc : <?php  echo $sp->getMausacsanpham();?></li>
                             </ul>
 
@@ -59,7 +129,7 @@ include 'header.php';
                     </div>
 
                     <div >
-                        <h3 class="title" style=" text-align: center;">Sản phẩm tương tự </h3>
+                        <h3 class="title" style=" text-align: center;">Sản phẩm khác dành cho <?php  echo $sp->getLoaisanpham();?> </h3>
                     </div>
                     <?php
                     if(count($data_sp)!=0){
@@ -74,11 +144,11 @@ include 'header.php';
                                     </a>
                                     <div class="text">
                                         <h3><?php echo $item->getTensanpham(); ?></h3>
-                                        <p class="price">Giá : <?php echo $item->getGiasanpham(); ?> <br>
+                                        <p class="price">Giá : <?php echo $item->getGiasanpham(); ?> VNĐ<br>
                                             Size: <?php echo $item->getSizesanpham(); ?></p>
                                         <p class="buttons">
                                             <a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $item-> getIdsanpham();?>" class="btn btn-default">Chi tiết</a>
-                                            <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>
+                                            <button id="<?php echo $item->getIdsanpham(); ?>" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>
                                         </p>
                                     </div>
                                 </div>

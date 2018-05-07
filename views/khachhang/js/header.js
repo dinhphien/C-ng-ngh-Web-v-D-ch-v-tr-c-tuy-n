@@ -24,7 +24,7 @@ $(document).ready(function () {
               $("#message_dangnhap").text("Sai tài khoản hoặc mật khẩu");
                 window.setTimeout(function () {
                     location.reload('index.php');
-                },5000);
+                },3000);
             }
         });
 
