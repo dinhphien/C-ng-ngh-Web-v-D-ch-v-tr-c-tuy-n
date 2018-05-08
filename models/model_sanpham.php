@@ -71,6 +71,18 @@ class Model_Sanpham{
         return $result2;
 
     }
+    public function getSP_giohang_by_idkhachhang($idkhachhang){
+        $sql="select * from sanpham,sanphamgiohang where sanpham.idsanpham=sanphamgiohang.idsanpham and sanphamgiohang.idkhachhang='".$idkhachhang."';";
+        $result=$this->conn->query($sql);
+        $array_sp_giohang= array();
+        While($row=$result->fetch_assoc()){
+             $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+                $row['soluongsanphamgiohang'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp_giohang,$sp);
+        }
+        return $array_sp_giohang;
+
+    }
 
 }
 ?>

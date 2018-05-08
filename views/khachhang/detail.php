@@ -168,3 +168,4 @@ include 'header.php';
     </div>
     <!-- /#all -->
 <?php include 'footer.php' ?>
+<script src="js/detail.js"></script>

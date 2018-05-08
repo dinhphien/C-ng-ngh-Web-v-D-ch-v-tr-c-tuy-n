@@ -20,6 +20,15 @@ class controller_giohang extends base_controller{
          $result=$this->modelSP->themSP_giohang($tk->getIdtaikhoan(),$_POST['id']);
          echo json_encode($result);
      }
+     public function showSP_giohang(){
+         session_start();
+         $tk=$_SESSION['logged_user'];
+         $result=$this->modelSP->getSP_giohang_by_idkhachhang($tk->getIdtaikhoan());
+         $array_sp=$result;
+         require_once (__DIR__."/../views/khachhang/basket.php");
+
+
+     }
      public function remove_SP(){
 
      }

@@ -1,6 +1,10 @@
 <?php
 require_once (__DIR__."/../../models/taikhoan.php");
-session_start();
+//
+if(!isset($_SESSION))
+{
+    session_start();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -93,9 +97,7 @@ _________________________________________________________ -->
                         <div class="yamm-content">
                             <div class="row">
                                 <ul>
-                                    <li><a href="basket.php">Giỏ Hàng</a>
-                                    </li>
-                                    <li><a href="customer-wishlist.php">Danh sách yêu thích</a>
+                                    <li><a href="route.php?controller=controller_giohang&action=showSP_giohang">Giỏ Hàng</a>
                                     </li>
                                     <li><a href="customer-account.php">Tài Khoản</a>
                                     </li>

@@ -1,4 +1,6 @@
-<?php include 'header.php' ?>
+<?php include 'header.php';
+ require_once ("../../models/sanpham.php");
+?>
 
     <div id="all">
 
@@ -9,7 +11,7 @@
                     <ul class="breadcrumb">
                         <li><a href="index.php">Trang chủ</a>
                         </li>
-                        <li><a href="basket.php">Giỏ hàng</a></li>
+                        <li><a href="route.php?controller=controller_giohang&action=showSP_giohang">Giỏ hàng</a></li>
                     </ul>
                 </div>
 
@@ -17,10 +19,10 @@
 
                     <div class="box">
 
-                        <form method="post" action="checkout1.html">
+                        <form method="post">
 
                             <h1>Giỏ hàng </h1>
-                            <p class="text-muted">Bạn đang có 3 sản phẩm trong giỏ hàng</p>
+                            <p class="text-muted">Bạn đang có <?php echo count($array_sp); ?> sản phẩm trong giỏ hàng</p>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -28,51 +30,47 @@
                                             <th colspan="2">Sản phẩm</th>
                                             <th>Số lượng </th>
                                             <th>Đơn giá (VNĐ)</th>
-<!--                                            <th>Chiết khấu</th>-->
-                                            <th colspan="2">Thành tiền (VNĐ)</th>
+                                            <th>Thành tiền (VNĐ)</th>
                                             <th>Xóa</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php
+                                    foreach ( $array_sp as $sp_giohang) {
+
+                                    ?>
                                         <tr>
                                             <td>
-                                                <a href="#">
-                                                    <img src="img/detailsquare.jpg" alt="White Blouse Armani">
+                                                <a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp_giohang-> getIdsanpham();?>">
+                                                    <img src="<?php echo $sp_giohang->getUrlanhsanpham(); ?>" alt="">
                                                 </a>
+
                                             </td>
-                                            <td><a href="#">White Blouse Armani</a>
+                                            <td><a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp_giohang-> getIdsanpham();?>"><?php echo $sp_giohang->getTensanpham(); ?> </a>
                                             </td>
                                             <td>
-                                                <input type="number"min="1" value="2" class="form-control">
+                                                <input type="number"min="1" value="<?php echo $sp_giohang->getSoluongsanpham();?>" class="form-control">
                                             </td>
-                                            <td>$123.00000</td>
-<!--                                            <td>$0.00</td>-->
-                                            <td>$246.00000</td>
-                                            <td><a class=""><i class="fa fa-trash-o"></i></a>
+                                            <td><?php echo $sp_giohang->getGiasanpham();  ?></td>
+                                            <td><?php echo $sp_giohang->getGiasanpham()*$sp_giohang->getSoluongsanpham();  ?></td>
+                                            <td><button class="btn btn-default"><i class="fa fa-trash-o"></i></button>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#">
-                                                    <img src="img/basketsquare.jpg" alt="Black Blouse Armani">
-                                                </a>
-                                            </td>
-                                            <td><a href="#">Black Blouse Armani</a>
-                                            </td>
-                                            <td>
-                                                <input type="number" min="1" value="1" class="form-control">
-                                            </td>
-                                            <td>$200.0000</td>
-<!--                                            <td>$0.00</td>-->
-                                            <td>$200.0000</td>
-                                            <td><a class=""><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
+                                    <?php
+                                    }
+                                    ?>
+
                                     </tbody>
                                     <tfoot>
+                                     <?php
+                                     $total_gia=0;
+                                     foreach ( $array_sp as $sp_giohang) {
+                                         $total_gia+=$sp_giohang->getGiasanpham();
+                                     }
+                                     ?>
                                         <tr>
-                                            <th colspan="5">Tổng cộng </th>
-                                            <th colspan="2">$446.00</th>
+                                            <th colspan="4">Tổng cộng </th>
+                                            <th colspan="2"><?php echo $total_gia;?> VNĐ</th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -86,8 +84,6 @@
                                 </div>
                                 <div class="pull-right">
                                     <button class="btn btn-default"><i class="fa fa-refresh"></i>Cập nhật giỏ hàng</button>
-                                    <button type="submit" class="btn btn-primary">Thanh toán online <i class="fa fa-chevron-right"></i>
-                                    </button>
                                 </div>
                             </div>
 
@@ -104,18 +100,18 @@
                         <div class="box-header">
                             <h3>Thông tin đơn hàng</h3>
                         </div>
-                        <p class="text-muted">Hàng sẽ được giao trong vòng 7 ngày kể từ khi đặt hàng</p>
+                        <p class="text-muted">Tổng quan</p>
 
                         <div class="table-responsive">
                             <table class="table">
                                 <tbody>
                                     <tr>
                                         <td> (Tạm tính) Giá sản phẩm </td>
-                                        <th>446.000 VNĐ</th>
+                                        <th><?php echo $total_gia;?> VNĐ</th>
                                     </tr>
                                     <tr>
                                         <td>(Tạm tính) Phí vận chuyển</td>
-                                        <th>30.000 VNĐ</th>
+                                        <th>30000 VNĐ</th>
                                     </tr>
 <!--                                    <tr>-->
 <!--                                        <td>Tax</td>-->
@@ -123,12 +119,12 @@
 <!--                                    </tr>-->
                                     <tr class="total">
                                         <td>Tổng cộng</td>
-                                        <th>456.000 VNĐ</th>
+                                        <th><?php echo $total_gia+30000;?> VNĐ</th>
                                     </tr>
                                 </tbody>
                             </table>
                             <div >
-                                <button style="width: 100%" type="submit" class="btn btn-primary">Đặt hàng</button>
+                                <button  id="button_dat_hang" style="width: 100%" type="submit" class="btn btn-primary">Đặt hàng</button>
                             </div>
                         </div>
 
@@ -143,4 +139,23 @@
         <!-- /#content -->
     </div>
     <!-- /#all -->
+<div class="modal fade" id="basket-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thông báo</h4>
+            </div>
+            <div class="modal-body">
+                <div >
+                    <p class="text-center" style="color: red">Vui lòng chọn hình thức thanh toán</p>
+                    <button id="button_shipcode" class="btn btn-primary">Ship Code</button>
+                    <button  id="button_thanhtoanonline" class="btn btn-primary" style="float: right">Thanh toán online</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php include 'footer.php' ?>
+<script src="js/basket.js"></script>
