@@ -18,11 +18,16 @@
                 <div class="col-md-9" id="basket">
 
                     <div class="box">
-
-                        <form method="post">
-
+                        <?php
+                        $total_gia=0;
+                        $total_sanpham=0;
+                        foreach ( $array_sp as $sp_giohang) {
+                            $total_gia+=$sp_giohang->getGiasanpham();
+                            $total_sanpham+=$sp_giohang->getSoluongsanpham();
+                        }
+                        ?>
                             <h1>Giỏ hàng </h1>
-                            <p class="text-muted">Bạn đang có <?php echo count($array_sp); ?> sản phẩm trong giỏ hàng</p>
+                            <p id="tong_sp_giohang" class="text-muted" style="color: red">Bạn đang có <?php echo $total_sanpham; ?> sản phẩm trong giỏ hàng</p>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -37,9 +42,8 @@
                                     <tbody>
                                     <?php
                                     foreach ( $array_sp as $sp_giohang) {
-
                                     ?>
-                                        <tr>
+                                        <tr >
                                             <td>
                                                 <a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp_giohang-> getIdsanpham();?>">
                                                     <img src="<?php echo $sp_giohang->getUrlanhsanpham(); ?>" alt="">
@@ -48,12 +52,12 @@
                                             </td>
                                             <td><a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp_giohang-> getIdsanpham();?>"><?php echo $sp_giohang->getTensanpham(); ?> </a>
                                             </td>
-                                            <td>
+                                            <td class="soluong_sp">
                                                 <input type="number"min="1" value="<?php echo $sp_giohang->getSoluongsanpham();?>" class="form-control">
                                             </td>
-                                            <td><?php echo $sp_giohang->getGiasanpham();  ?></td>
-                                            <td><?php echo $sp_giohang->getGiasanpham()*$sp_giohang->getSoluongsanpham();  ?></td>
-                                            <td><button class="btn btn-default"><i class="fa fa-trash-o"></i></button>
+                                            <td class="dongia_sp"><?php echo $sp_giohang->getGiasanpham();  ?></td>
+                                            <td class="thanhtien"><?php echo $sp_giohang->getGiasanpham()*$sp_giohang->getSoluongsanpham();  ?></td>
+                                            <td><button id="<?php echo $sp_giohang->getIdsanpham(); ?>" class="btn btn-default"><i class="fa fa-trash-o"></i></button>
                                             </td>
                                         </tr>
                                     <?php
@@ -62,15 +66,10 @@
 
                                     </tbody>
                                     <tfoot>
-                                     <?php
-                                     $total_gia=0;
-                                     foreach ( $array_sp as $sp_giohang) {
-                                         $total_gia+=$sp_giohang->getGiasanpham();
-                                     }
-                                     ?>
                                         <tr>
-                                            <th colspan="4">Tổng cộng </th>
-                                            <th colspan="2"><?php echo $total_gia;?> VNĐ</th>
+                                            <th colspan="2">Tổng cộng </th>
+                                            <th colspan="2" id="tongsanpham_giohang"><?php echo $total_sanpham;?></th>
+                                            <th colspan="2" id="tonggiatri_giohang"><?php echo $total_gia;?></th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -80,14 +79,13 @@
 
                             <div class="box-footer">
                                 <div class="pull-left">
-                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam" class="btn btn-default"><i class="fa fa-chevron-left"></i>Tiếp tục mua sắm</a>
+                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam" class="btn btn-primary"><i class="fa fa-chevron-left"></i>Tiếp tục mua sắm</a>
                                 </div>
                                 <div class="pull-right">
-                                    <button class="btn btn-default"><i class="fa fa-refresh"></i>Cập nhật giỏ hàng</button>
+                                    <button class="btn btn-primary"><i class="fa fa-refresh"></i>Cập nhật giỏ hàng</button>
                                 </div>
                             </div>
 
-                        </form>
 
                     </div>
                     <!-- /.box -->
@@ -113,10 +111,6 @@
                                         <td>(Tạm tính) Phí vận chuyển</td>
                                         <th>30000 VNĐ</th>
                                     </tr>
-<!--                                    <tr>-->
-<!--                                        <td>Tax</td>-->
-<!--                                        <th>$0.00</th>-->
-<!--                                    </tr>-->
                                     <tr class="total">
                                         <td>Tổng cộng</td>
                                         <th><?php echo $total_gia+30000;?> VNĐ</th>

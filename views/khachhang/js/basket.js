@@ -9,6 +9,15 @@ $(document).ready(function () {
      $('#warning-modal').modal('show');
      window.setTimeout(function () {
          $("#warning-modal").modal("hide");
-     },7000);
+     },5000);
+ });
+ $("tr td button ").click(function () {
+     var currentrow=$(this).closest('tr');
+     var total_sp=parseInt($("#tongsanpham_giohang").text())-parseInt(currentrow.find("td input").val());
+     var total_giatri=parseInt($("#tonggiatri_giohang").text())-parseInt(currentrow.find("td:eq(4)").text());
+     $("#tonggiatri_giohang").text(total_giatri);
+     $("#tongsanpham_giohang").text(total_sp);
+     $("#tong_sp_giohang").text("Bạn đang có "+total_sp+" sản phẩm trong giỏ hàng");
+     currentrow.hide();
  });
 });
