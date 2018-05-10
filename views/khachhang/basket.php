@@ -29,7 +29,7 @@
                             <h1>Giỏ hàng </h1>
                             <p id="tong_sp_giohang" class="text-muted" style="color: red">Bạn đang có <?php echo $total_sanpham; ?> sản phẩm trong giỏ hàng</p>
                             <div class="table-responsive">
-                                <table class="table">
+                                <table id="tb_giohang" class="table">
                                     <thead>
                                         <tr>
                                             <th colspan="2">Sản phẩm</th>
@@ -53,7 +53,7 @@
                                             <td><a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=<?php echo $sp_giohang-> getIdsanpham();?>"><?php echo $sp_giohang->getTensanpham(); ?> </a>
                                             </td>
                                             <td class="soluong_sp">
-                                                <input type="number"min="1" value="<?php echo $sp_giohang->getSoluongsanpham();?>" class="form-control">
+                                                <input type="number" min="1"  style="width: 60px;" value="<?php echo $sp_giohang->getSoluongsanpham();?>" class="form-control">
                                             </td>
                                             <td class="dongia_sp"><?php echo $sp_giohang->getGiasanpham();  ?></td>
                                             <td class="thanhtien"><?php echo $sp_giohang->getGiasanpham()*$sp_giohang->getSoluongsanpham();  ?></td>
