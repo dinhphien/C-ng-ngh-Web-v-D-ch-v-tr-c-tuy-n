@@ -8,15 +8,6 @@ $(document).ready(function () {
       alert("Thành công");
   });
   $("p.buttons button").click(function () {
-
-      if($("#btdangnhap").text()==''){
-          $("#title_thôngbáo").text("Thông báo");
-          $("#mesage_thôngbáo").text("Hãy đăng nhập để tiếp tục mua hàng");
-          $('#warning-modal').modal('show');
-          window.setTimeout(function () {
-              $("#warning-modal").modal("hide");
-          },3000);
-      }else {
           var postdata ={
               id : $(this).attr('id')
           };
@@ -39,6 +30,6 @@ $(document).ready(function () {
               }
 
           });
-      }
+
   });
 });

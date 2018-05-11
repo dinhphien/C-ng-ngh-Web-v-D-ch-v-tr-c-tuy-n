@@ -120,6 +120,8 @@ _________________________________________________________ -->
                                     </li>
                                     <li><a href="#" data-toggle="modal" data-target="#register-modal">Đăng Kí</a>
                                     </li>
+                                    <li><a href="route.php?controller=controller_giohang&action=showSP_giohang">Giỏ Hàng</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

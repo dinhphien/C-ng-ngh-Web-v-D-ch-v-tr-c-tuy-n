@@ -21,7 +21,7 @@
                         <?php
                         $total_gia=0;
                         $total_sanpham=0;
-                        foreach ( $array_sp as $sp_giohang) {
+                        foreach ( $array_sp as  $sp_giohang) {
                             $total_gia+=$sp_giohang->getGiasanpham();
                             $total_sanpham+=$sp_giohang->getSoluongsanpham();
                         }
@@ -41,7 +41,7 @@
                                     </thead>
                                     <tbody>
                                     <?php
-                                    foreach ( $array_sp as $sp_giohang) {
+                                    foreach ( $array_sp as  $sp_giohang) {
                                     ?>
                                         <tr >
                                             <td>
