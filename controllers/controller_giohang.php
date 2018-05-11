@@ -24,7 +24,7 @@ class controller_giohang extends base_controller{
         }else{
             $sp=$this->modelSP->getSP_id($_POST['id']);
             if(isset($_SESSION['shop_cart'][$_POST['id']])){
-                $sl_cu=$sp->getSoluongsanpham();
+                $sl_cu=$_SESSION['shop_cart'][$_POST['id']]->getSoluongsanpham();
                 $sp->setSoluongsanpham($sl_cu+1);
                 $_SESSION['shop_cart'][$_POST['id']]=$sp;
 
@@ -51,9 +51,36 @@ class controller_giohang extends base_controller{
          require_once (__DIR__."/../views/khachhang/basket.php");
      }
      public function remove_SP(){
-
+        session_start();
+        $result="true";
+        if(isset($_SESSION['logged_user'])){
+            $result=$this->modelSP->remove_SP_giohang_by_id($_SESSION['logged_user']->getIdtaikhoan(),$_POST['id']);
+        }else{
+            if(isset($_SESSION['shop_cart'])){
+                unset($_SESSION['shop_cart'][$_POST['id']]);
+            }
+        }
+        echo json_encode($result);
      }
      public function update_SP(){
+//        $data1=$_POST['id'];
+//        $data2=$_POST['sl'];
+//        echo json_encode($data1);
+
+//        require_once (__DIR__."/../views/khachhang/testview.php");
+        session_start();
+        $result="true";
+         if(isset($_SESSION['logged_user'])){
+             $result=$this->modelSP->update_SP_giohang_by_id($_SESSION['logged_user']->getIdtaikhoan(),$_POST['id'],$_POST['sl']);
+         }else{
+             if(isset($_SESSION['shop_cart'])){
+                 $sp=$_SESSION['shop_cart'][$_POST['id']];
+                 $sp->setSoluongsanpham($_POST['sl']);
+                 $_SESSION['shop_cart'][$_POST['id']]=$sp;
+
+             }
+         }
+         echo json_encode($result);
 
      }
 

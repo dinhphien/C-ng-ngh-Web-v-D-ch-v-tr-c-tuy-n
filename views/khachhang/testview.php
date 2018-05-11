@@ -11,13 +11,14 @@ require_once (__DIR__."/../../models/sanpham.php");
 <!--</div>-->
 <div>
     <?php
-    $total_sanpham=0;
-    $total_gia=0;
-    foreach ( $array_sp as $sp_giohang) {
-        $total_gia+=$sp_giohang->getGiasanpham();
-        $total_sanpham+=$sp_giohang->getSoluongsanpham();
-    }
-    echo $total_sanpham;
+//    $total_sanpham=0;
+//    $total_gia=0;
+//    foreach ( $array_sp as $sp_giohang) {
+//        $total_gia+=$sp_giohang->getGiasanpham();
+//        $total_sanpham+=$sp_giohang->getSoluongsanpham();
+//    }
+    echo $data1;
+    echo  $data2;
     ?>
 </div>
 </body>

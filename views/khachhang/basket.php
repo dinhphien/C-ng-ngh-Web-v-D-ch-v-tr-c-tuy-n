@@ -22,7 +22,7 @@
                         $total_gia=0;
                         $total_sanpham=0;
                         foreach ( $array_sp as  $sp_giohang) {
-                            $total_gia+=$sp_giohang->getGiasanpham();
+                            $total_gia+=$sp_giohang->getGiasanpham()*$sp_giohang->getSoluongsanpham();
                             $total_sanpham+=$sp_giohang->getSoluongsanpham();
                         }
                         ?>
@@ -55,7 +55,7 @@
                                             <td class="soluong_sp">
                                                 <input type="number" min="1"  style="width: 60px;" value="<?php echo $sp_giohang->getSoluongsanpham();?>" class="form-control">
                                             </td>
-                                            <td class="dongia_sp"><?php echo $sp_giohang->getGiasanpham();  ?></td>
+                                            <td class="dongia_sp"> <?php echo $sp_giohang->getGiasanpham();  ?></td>
                                             <td class="thanhtien"><?php echo $sp_giohang->getGiasanpham()*$sp_giohang->getSoluongsanpham();  ?></td>
                                             <td><button id="<?php echo $sp_giohang->getIdsanpham(); ?>" class="btn btn-default"><i class="fa fa-trash-o"></i></button>
                                             </td>
@@ -82,7 +82,7 @@
                                     <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam" class="btn btn-primary"><i class="fa fa-chevron-left"></i>Tiếp tục mua sắm</a>
                                 </div>
                                 <div class="pull-right">
-                                    <button class="btn btn-primary"><i class="fa fa-refresh"></i>Cập nhật giỏ hàng</button>
+<!--                                    <button class="btn btn-primary"><i class="fa fa-refresh"></i>Cập nhật giỏ hàng</button>-->
                                 </div>
                             </div>
 
@@ -104,16 +104,17 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
+
                                         <td> (Tạm tính) Giá sản phẩm </td>
-                                        <th><?php echo $total_gia;?> VNĐ</th>
+                                        <th id="tong_tien_don_hang"><?php echo $total_gia;?> VNĐ</th>
                                     </tr>
                                     <tr>
                                         <td>(Tạm tính) Phí vận chuyển</td>
-                                        <th>30000 VNĐ</th>
+                                        <th id="phi_vc"><?php if($total_gia==0){ $chiphi_sp=0; } else{$chiphi_sp=30000;} echo $chiphi_sp;?> VNĐ</th>
                                     </tr>
                                     <tr class="total">
                                         <td>Tổng cộng</td>
-                                        <th><?php echo $total_gia+30000;?> VNĐ</th>
+                                        <th id="tongcong"><?php echo $total_gia+$chiphi_sp;?> VNĐ</th>
                                     </tr>
                                 </tbody>
                             </table>

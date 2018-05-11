@@ -82,6 +82,16 @@ class Model_Sanpham{
         return $array_sp_giohang;
 
     }
+    public function remove_SP_giohang_by_id($id_tk,$id_sp){
+        $sql="delete from sanphamgiohang where sanphamgiohang.idkhachhang='".$id_tk."'and sanphamgiohang.idsanpham='".$id_sp."';";
+        $result=$this->conn->query($sql);
+        return $result;
+    }
+    public function update_SP_giohang_by_id($id_tk,$id_sp,$sl){
+        $sql="update sanphamgiohang set sanphamgiohang.soluongsanphamgiohang='".$sl."'where sanphamgiohang.idkhachhang='".$id_tk."'and sanphamgiohang.idsanpham='".$id_sp."';";
+        $result=$this->conn->query($sql);
+        return $result;
+    }
 
 }
 ?>

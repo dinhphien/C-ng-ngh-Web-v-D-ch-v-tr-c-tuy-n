@@ -12,7 +12,7 @@ $(document).ready(function () {
      $('#warning-modal').modal('show');
      window.setTimeout(function () {
          $("#warning-modal").modal("hide");
-     },5000);
+     },3000);
  });
  $("tr td button ").click(function () {
      var currentrow=$(this).closest('tr');
@@ -21,7 +21,23 @@ $(document).ready(function () {
      $("#tonggiatri_giohang").text(total_giatri);
      $("#tongsanpham_giohang").text(total_sp);
      $("#tong_sp_giohang").text("Bạn đang có "+total_sp+" sản phẩm trong giỏ hàng");
+     $("#tong_tien_don_hang").text(total_giatri);
+     var phi_vc=30000;
+     if(total_giatri==0){phi_vc=0;}
+     $("#phi_vc").text(phi_vc);
+     $("#tongcong").text(parseInt(total_giatri)+phi_vc);
      currentrow.remove();
+     var postdata={
+         id : $(this).attr('id')
+     }
+     $.post("route.php?controller=controller_giohang&action=remove_SP",postdata,function (data,status) {
+         // var datares=JSON.parse(data);
+         // alert(datares+'34');
+         // if(datares=="true"){
+         //     alert(datares);
+         // }
+         console.log(data);
+     });
  });
  $("tr td input").bind('keyup mouseup',function () {
      var currentrow=$(this).closest('tr');
@@ -37,5 +53,22 @@ $(document).ready(function () {
      $("#tonggiatri_giohang").text(tong_gia);
      $("#tongsanpham_giohang").text(tong_sp);
      $("#tong_sp_giohang").text("Bạn đang có "+tong_sp+" sản phẩm trong giỏ hàng");
+     $("#tong_tien_don_hang").text(tong_gia+' VNĐ');
+     var phi_vc=30000;
+     if(tong_gia==0){phi_vc=0;}
+     $("#phi_vc").text(phi_vc+'VNĐ');
+     $("#tongcong").text(((parseInt(tong_gia)+phi_vc)+'VNĐ'));
+     // alert(currentrow.find("button").attr('id'));
+     // alert("false");
+     var postdata={
+         id : currentrow.find("button").attr('id'),
+         sl : so_luong_moi
+     }
+     $.post("route.php?controller=controller_giohang&action=update_SP",postdata,function (data,status) {
+         console.log(data);
+         // alert(data);
+     })
+
+
  });
 });

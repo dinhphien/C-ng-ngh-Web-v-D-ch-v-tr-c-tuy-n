@@ -13,20 +13,13 @@ $(document).ready(function () {
           };
           $.post("route.php?controller=controller_giohang&action=add_SP",postdata,function (data,status) {
               var datares= JSON.parse(data);
-              if(datares!="false" ){
+              if(datares!="false" ) {
                   $("#title_thôngbáo").text("Thông báo");
                   $("#mesage_thôngbáo").text("Đã thêm sản phẩm vào giỏ hàng");
                   $('#warning-modal').modal('show');
                   window.setTimeout(function () {
                       $("#warning-modal").modal("hide");
-                  },3000);
-              }else {
-                  $("#title_thôngbáo").text("Thông báo");
-                  $("#mesage_thôngbáo").text("Sản phẩm đã có trong giỏ hàng");
-                  $('#warning-modal').modal('show');
-                  window.setTimeout(function () {
-                      $("#warning-modal").modal("hide");
-                  },3000);
+                  }, 3000);
               }
 
           });
