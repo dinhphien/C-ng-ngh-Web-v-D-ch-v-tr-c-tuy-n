@@ -81,7 +81,28 @@ class controller_giohang extends base_controller{
              }
          }
          echo json_encode($result);
+     }
+     public function check_giohang(){
+        session_start();
+        $result=array("messeage"=>"true","ten_sp"=>" ","sl"=>-1);
+         if(isset($_SESSION['logged_user'])){
+             $result=$this->modelSP->check_SP_giohang($_SESSION['logged_user']->getIdtaikhoan());
+         }else{
+             if(isset($_SESSION['shop_cart'])){
+                 foreach ($_SESSION['shop_cart']as $key=>$value){
+                     $sp=$this->modelSP->getSP_id($key);
+                     if($sp->getSoluongsanpham()<$value->getSoluongsanpham()){
+                         $result['messeage']="false";
+                         $result['ten_sp']=$value->getTensanpham();
+                         $result['sl']=$value->getSoluongsanpham();
+                     }
 
+                 }
+
+
+             }
+         }
+         echo json_encode($result);
      }
 
 }

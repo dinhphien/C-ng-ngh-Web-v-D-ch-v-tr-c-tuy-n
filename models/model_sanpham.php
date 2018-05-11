@@ -92,6 +92,26 @@ class Model_Sanpham{
         $result=$this->conn->query($sql);
         return $result;
     }
+    public function check_SP_giohang($idkhachhang){
+        $sql="select * from sanpham,sanphamgiohang where sanpham.idsanpham=sanphamgiohang.idsanpham and sanphamgiohang.idkhachhang='".$idkhachhang."';";
+        $result=$this->conn->query($sql);
+        $array_check=array();
+        $check="true";
+        $ten_sp=" ";
+        $sl=-1;
+        while ($row=$result->fetch_assoc()){
+            if($row['soluongsanpham']<$row['soluongsanphamgiohang']){
+                $check="false";
+               $ten_sp=$row["tensanpham"];
+               $sl=$row["soluongsanphamgiohang"];
+                break;
+            }
+        }
+        $array_check['messeage']=$check;
+        $array_check['ten_sp']=$ten_sp;
+        $array_check["sl"]=$sl;
+        return $array_check;
+    }
 
 }
 ?>

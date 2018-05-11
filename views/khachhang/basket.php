@@ -106,15 +106,15 @@
                                     <tr>
 
                                         <td> (Tạm tính) Giá sản phẩm </td>
-                                        <th id="tong_tien_don_hang"><?php echo $total_gia;?> VNĐ</th>
+                                        <th id="tong_tien_don_hang"><?php echo $total_gia;?>VNĐ</th>
                                     </tr>
                                     <tr>
                                         <td>(Tạm tính) Phí vận chuyển</td>
-                                        <th id="phi_vc"><?php if($total_gia==0){ $chiphi_sp=0; } else{$chiphi_sp=30000;} echo $chiphi_sp;?> VNĐ</th>
+                                        <th id="phi_vc"><?php if($total_gia==0){ $chiphi_sp=0; } else{$chiphi_sp=30000;} echo $chiphi_sp;?>VNĐ</th>
                                     </tr>
                                     <tr class="total">
                                         <td>Tổng cộng</td>
-                                        <th id="tongcong"><?php echo $total_gia+$chiphi_sp;?> VNĐ</th>
+                                        <th id="tongcong"><?php echo $total_gia+$chiphi_sp;?>VNĐ</th>
                                     </tr>
                                 </tbody>
                             </table>

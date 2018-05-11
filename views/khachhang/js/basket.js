@@ -1,10 +1,10 @@
 $(document).ready(function () {
- $("input").keypress(function(event){
+ $("input").on('keypress','keydown','keyup',function(event){
      event.preventDefault();
  });
- $("#button_dat_hang").click(function () {
-     $("#basket-modal").modal("show");
- });
+ // $("#button_dat_hang").click(function () {
+ //     $("#basket-modal").modal("show");
+ // });
  $("#button_shipcode").click(function () {
      $("#basket-modal").modal("hide");
      $("#title_thôngbáo").text("Thông báo");
@@ -21,11 +21,11 @@ $(document).ready(function () {
      $("#tonggiatri_giohang").text(total_giatri);
      $("#tongsanpham_giohang").text(total_sp);
      $("#tong_sp_giohang").text("Bạn đang có "+total_sp+" sản phẩm trong giỏ hàng");
-     $("#tong_tien_don_hang").text(total_giatri);
+     $("#tong_tien_don_hang").text(total_giatri+"VNĐ");
      var phi_vc=30000;
      if(total_giatri==0){phi_vc=0;}
-     $("#phi_vc").text(phi_vc);
-     $("#tongcong").text(parseInt(total_giatri)+phi_vc);
+     $("#phi_vc").text(phi_vc+"VNĐ");
+     $("#tongcong").text(parseInt(total_giatri)+phi_vc+"VNĐ");
      currentrow.remove();
      var postdata={
          id : $(this).attr('id')
@@ -53,7 +53,7 @@ $(document).ready(function () {
      $("#tonggiatri_giohang").text(tong_gia);
      $("#tongsanpham_giohang").text(tong_sp);
      $("#tong_sp_giohang").text("Bạn đang có "+tong_sp+" sản phẩm trong giỏ hàng");
-     $("#tong_tien_don_hang").text(tong_gia+' VNĐ');
+     $("#tong_tien_don_hang").text(tong_gia+'VNĐ');
      var phi_vc=30000;
      if(tong_gia==0){phi_vc=0;}
      $("#phi_vc").text(phi_vc+'VNĐ');
@@ -69,6 +69,40 @@ $(document).ready(function () {
          // alert(data);
      })
 
+
+ });
+ $("#button_dat_hang").click(function () {
+     // alert("thanhcong");
+     if($("#tongcong").text()==='0VNĐ'){
+         $("#title_thôngbáo").text("Thông báo");
+         $("#mesage_thôngbáo").text("Giỏ hàng trống.Tiếp tục mua hàng!");
+         $('#warning-modal').modal('show');
+         window.setTimeout(function () {
+             $("#warning-modal").modal("hide");
+         },3000);
+     }else {
+         $.post("route.php?controller=controller_giohang&action=check_giohang",'',function (data,status) {
+             var datares=JSON.parse(data);
+             // alert(datares['messeage']+datares['ten_sp']);
+             // alert(datares['message']+datares['id_illegal']);
+             if(datares['messeage']=="false"){
+                 $("#title_thôngbáo").text("Thông báo");
+                 $("#mesage_thôngbáo").text("Không đủ "+datares['sl']+" sản phẩm "+datares['ten_sp']+" .Vui lòng cập nhật giỏ hàng");
+                 $('#warning-modal').modal('show');
+                 window.setTimeout(function () {
+                     $("#warning-modal").modal("hide");
+                 },3000);
+
+             }else {
+                 if($("#btdangnhap").text()==''){
+
+                 }else {
+                     $("#basket-modal").modal("show");
+                 }
+             }
+
+         });
+     }
 
  });
 });

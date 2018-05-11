@@ -31,7 +31,7 @@ class controller_sanpham {
     }
     public function showSP_detail(){
         $data=$this->modelSP->getSP_id($_GET['id_sp']);
-        $sp=$data[0];
+        $sp=$data;
         $data_sp=$this->modelSP->getSP_type_limit($sp-> getLoaisanpham(),0,4);
         require_once (__DIR__."/../views/khachhang/detail.php");
 
