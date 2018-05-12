@@ -17,8 +17,11 @@ require_once (__DIR__."/../../models/sanpham.php");
 //        $total_gia+=$sp_giohang->getGiasanpham();
 //        $total_sanpham+=$sp_giohang->getSoluongsanpham();
 //    }
-    echo $data1;
-    echo  $data2;
+    $date=date("d/m/Y");
+    $date2=date_create($date);
+    echo $date;
+//    echo $date2;
+    echo gettype($date2);
     ?>
 </div>
 </body>

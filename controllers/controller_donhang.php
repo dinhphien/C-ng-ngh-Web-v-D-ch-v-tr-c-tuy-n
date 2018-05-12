@@ -2,36 +2,56 @@
 require_once (__DIR__."/../models/model_sanpham.php");
 require_once (__DIR__."/../models/model_khachhang.php");
 require_once (__DIR__."/../models/model_donhang.php");
+require_once (__DIR__."/base_controller.php");
+require_once (__DIR__."/../models/taikhoan.php");
 class controller_donhang extends base_controller {
-    private $model_SP;
-    private $model_KH;
-    private $model_DH;
+    private $modelSP;
+    private $modelKH;
+    private $modelDH;
 
     /**
-     * controller_donhang constructor.
-     * @param $model_SP
-     * @param $model_KH
+     * _controllerDonhang constructor.
+     * @param $conn
      */
     public function __construct()
     {
-        $this->model_SP = new Model_Sanpham();
-        $this->model_KH = new Model_Khachhang();
-        $this->model_DH= new Model_Donhang();
+        $this->modelSP=new Model_Sanpham();
+        $this->modelKH= new Model_Khachhang();
+        $this->modelDH= new Model_Donhang();
     }
+
     public function create_donhang(){
         session_start();
-        $result="true";
+        $result=true;
+        $th_tien=$_POST['th_tien'];
+        $ht_thanhtoan=$_POST['ht_thanhtoan'];
+        $ngaylap=date("d/m/Y");
         if(isset($_SESSION['logged_user'])){
-//            $result=$this->modelSP->remove_SP_giohang_by_id($_SESSION['logged_user']->getIdtaikhoan(),$_POST['id']);
-
+            $id_khachhang=$_SESSION['logged_user']->getIdtaikhoan();
+            $result=$this->modelDH->insert_donhang($id_khachhang,$th_tien,$ngaylap,$ht_thanhtoan,"Chưa Duyệt");
+            if($result==true){
+                $id_dh=$this->modelDH->getLast_id_inserted();
+                $array_sp=$this->modelSP->getSP_giohang_by_idkhachhang($id_khachhang);
+                $result=$this->modelDH->insert_sp_donhang($id_dh,$array_sp);
+                $result=$this->modelDH->delete_sp_giohang_by_id_khachhang($id_khachhang);
+            }else{
+                $result=false;
+            }
         }else{
             if(isset($_SESSION['shop_cart'])){
-//                unset($_SESSION['shop_cart'][$_POST['id']]);
-
+                $id_khachhang=$_SESSION['id_khach_muahang'];
+                $result=$this->modelDH->insert_donhang($id_khachhang,$th_tien,$ngaylap,$ht_thanhtoan,"Chưa Duyệt");
+                if($result==true){
+                    $id_dh=$this->modelDH->getLast_id_inserted();
+                    $array_sp=$_SESSION['shop_cart'];
+                    $result=$this->modelDH->insert_sp_donhang($id_dh,$array_sp);
+                }else{
+                    $result=false;
+                }
             }
         }
-    }
 
+        echo json_encode($result);
+    }
 }
 ?>
-

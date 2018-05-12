@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd7ba01-9da4-4d0f-b23b-5ad7209dbc71" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controller_giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_giohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controller_taikhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_taikhoan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/test_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_donhang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_donhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_donhang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/js/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/js/basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/testview.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/testview.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,29 +20,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="controller_giohang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/controller_giohang.php">
+      <file leaf-file-name="controller_donhang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="61" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="446">
+              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_sanpham.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
+      <file leaf-file-name="testview.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="374">
+              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <element signature="e#320#343#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basket.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="basket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="148" column="34" lean-forward="true" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+            <state relative-caret-position="201">
+              <caret line="135" column="33" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -43,17 +53,8 @@
       <file leaf-file-name="basket.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/khachhang/basket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="182" selection-start-line="182" selection-end-line="183" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller_donhang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="226">
+              <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -61,44 +62,26 @@
       <file leaf-file-name="controller_taikhoan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/controller_taikhoan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+            <state relative-caret-position="352">
+              <caret line="70" column="39" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_taikhoan.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/model_taikhoan.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="donhang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/donhang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model_donhang.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model_donhang.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="305">
+              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
+      <file leaf-file-name="sanpham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/sanpham.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="168" column="130" lean-forward="true" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="130" />
+            <state relative-caret-position="272">
+              <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -120,7 +103,6 @@
         <option value="$PROJECT_DIR$/models/model_khachhang.php" />
         <option value="$PROJECT_DIR$/controllers/testcontroller.php" />
         <option value="$PROJECT_DIR$/controllers/controllerlogin.php" />
-        <option value="$PROJECT_DIR$/controllers/test_controller.php" />
         <option value="$PROJECT_DIR$/controllers/base_controller.php" />
         <option value="$PROJECT_DIR$/controllers/controllerRegister.php" />
         <option value="$PROJECT_DIR$/views/khachhang/customer-account.php" />
@@ -155,18 +137,19 @@
         <option value="$PROJECT_DIR$/views/khachhang/header.php" />
         <option value="$PROJECT_DIR$/views/khachhang/header.php" />
         <option value="$PROJECT_DIR$/views/khachhang/js/category.js" />
-        <option value="$PROJECT_DIR$/views/khachhang/testview.php" />
         <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
         <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
         <option value="$PROJECT_DIR$/models/model_sanpham.php" />
-        <option value="$PROJECT_DIR$/controllers/controller_giohang.php" />
         <option value="$PROJECT_DIR$/views/khachhang/basket.php" />
         <option value="$PROJECT_DIR$/models/donhang.php" />
-        <option value="$PROJECT_DIR$/models/model_donhang.php" />
-        <option value="$PROJECT_DIR$/controllers/controller_donhang.php" />
         <option value="$PROJECT_DIR$/models/model_taikhoan.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_giohang.php" />
         <option value="$PROJECT_DIR$/controllers/controller_taikhoan.php" />
+        <option value="$PROJECT_DIR$/controllers/test_controller.php" />
         <option value="$PROJECT_DIR$/views/khachhang/js/basket.js" />
+        <option value="$PROJECT_DIR$/views/khachhang/testview.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_donhang.php" />
+        <option value="$PROJECT_DIR$/models/model_donhang.php" />
       </list>
     </option>
   </component>
@@ -176,7 +159,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="258" />
     <option name="y" value="18" />
     <option name="width" value="1401" />
@@ -187,22 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
-              <item name="views" type="cbb8eebc:String" user="views" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +210,22 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="khachhang" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
+              <item name="views" type="cbb8eebc:String" user="views" />
             </path>
           </expand>
           <select />
@@ -326,27 +309,29 @@
       <workItem from="1525942203309" duration="8215000" />
       <workItem from="1525966436404" duration="1976000" />
       <workItem from="1526002985915" duration="25314000" />
-      <workItem from="1526083004795" duration="7556000" />
+      <workItem from="1526083004795" duration="10025000" />
+      <workItem from="1526113660483" duration="9338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264885000" />
+    <option name="totallyTimeSpent" value="276692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2099922" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2099922" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -355,7 +340,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +349,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controllerlogout.php" />
     <entry file="file://$PROJECT_DIR$/controllers/controllerRegister.php" />
     <entry file="file://$PROJECT_DIR$/views/khachhang/customer-account.php">
@@ -452,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/base_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/DBconnector.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -466,24 +450,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/test_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/orders-history.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -520,13 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="183" column="38" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/taikhoan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -586,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -607,29 +563,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/sanpham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="168" column="130" lean-forward="true" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/js/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="69" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="69" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/giohang.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/models/donhang.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -638,59 +577,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="85">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_giohang.php">
+    <entry file="file://$PROJECT_DIR$/controllers/config.php" />
+    <entry file="file://$PROJECT_DIR$/controllers/base_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/basket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="182" selection-start-line="182" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_taikhoan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        <state relative-caret-position="226">
+          <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controller_taikhoan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+        <state relative-caret-position="352">
+          <caret line="70" column="39" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="414">
+          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
+    <entry file="file://$PROJECT_DIR$/models/sanpham.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="148" column="34" lean-forward="true" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+        <state relative-caret-position="201">
+          <caret line="135" column="33" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/taikhoan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_taikhoan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_giohang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#320#343#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
         </state>
       </provider>
     </entry>

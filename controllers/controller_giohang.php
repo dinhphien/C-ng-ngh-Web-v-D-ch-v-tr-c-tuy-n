@@ -96,10 +96,7 @@ class controller_giohang extends base_controller{
                          $result['ten_sp']=$value->getTensanpham();
                          $result['sl']=$value->getSoluongsanpham();
                      }
-
                  }
-
-
              }
          }
          echo json_encode($result);
