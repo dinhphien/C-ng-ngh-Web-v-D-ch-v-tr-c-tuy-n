@@ -32,7 +32,7 @@ class controller_donhang extends base_controller {
             if($result==true){
                 $id_dh=$this->modelDH->getLast_id_inserted();
                 $array_sp=$this->modelSP->getSP_giohang_by_idkhachhang($id_khachhang);
-                $result=$this->modelDH->insert_sp_donhang($id_dh,$array_sp);
+                $this->modelDH->insert_sp_donhang($id_dh,$array_sp);
                 $result=$this->modelDH->delete_sp_giohang_by_id_khachhang($id_khachhang);
             }else{
                 $result=false;

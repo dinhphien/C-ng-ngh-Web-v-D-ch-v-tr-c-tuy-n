@@ -134,15 +134,15 @@ $(document).ready(function () {
             console.log(data);
             var datares=JSON.parse(data);
             console.log(datares);
-            // if(datares==true){
-            //     $("#basket-modal").modal("hide");
-            //     $("#title_thôngbáo").text("Thông báo");
-            //     $("#mesage_thôngbáo").text("Cảm ơn quý khách đã mua hàng. Hàng sẽ được giao trong vòng 7 ngày");
-            //     $('#warning-modal').modal('show');
-            //     window.setTimeout(function () {
-            //         $("#warning-modal").modal("hide");
-            //     },3000);
-            // }
+            if(datares==true){
+                $("#basket-modal").modal("hide");
+                $("#title_thôngbáo").text("Thông báo");
+                $("#mesage_thôngbáo").text("Cảm ơn quý khách đã mua hàng. Hàng sẽ được giao trong vòng 7 ngày");
+                $('#warning-modal').modal('show');
+                window.setTimeout(function () {
+                    $("#warning-modal").modal("hide");
+                },3000);
+            }
         });
 
     });

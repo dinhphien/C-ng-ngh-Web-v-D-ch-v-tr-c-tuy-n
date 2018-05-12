@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd7ba01-9da4-4d0f-b23b-5ad7209dbc71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/controller_giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_giohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/controller_taikhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_taikhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/test_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_donhang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_donhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_donhang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controller_donhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_donhang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/js/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/js/basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/khachhang/testview.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/testview.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="controller_donhang.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller_donhang.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="95">
+              <caret line="35" column="89" lean-forward="true" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -68,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_donhang.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model_donhang.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="480">
+              <caret line="29" selection-start-line="29" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -146,10 +140,10 @@
         <option value="$PROJECT_DIR$/controllers/controller_giohang.php" />
         <option value="$PROJECT_DIR$/controllers/controller_taikhoan.php" />
         <option value="$PROJECT_DIR$/controllers/test_controller.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/js/basket.js" />
         <option value="$PROJECT_DIR$/views/khachhang/testview.php" />
-        <option value="$PROJECT_DIR$/controllers/controller_donhang.php" />
         <option value="$PROJECT_DIR$/models/model_donhang.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/js/basket.js" />
+        <option value="$PROJECT_DIR$/controllers/controller_donhang.php" />
       </list>
     </option>
   </component>
@@ -310,12 +304,12 @@
       <workItem from="1525966436404" duration="1976000" />
       <workItem from="1526002985915" duration="25314000" />
       <workItem from="1526083004795" duration="10025000" />
-      <workItem from="1526113660483" duration="9338000" />
+      <workItem from="1526113660483" duration="9521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276692000" />
+    <option name="totallyTimeSpent" value="276875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -627,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="135" column="33" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/taikhoan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -665,17 +652,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
+    <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="201">
+          <caret line="135" column="33" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state relative-caret-position="480">
+          <caret line="29" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="35" column="89" lean-forward="true" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
         </state>
       </provider>
     </entry>
