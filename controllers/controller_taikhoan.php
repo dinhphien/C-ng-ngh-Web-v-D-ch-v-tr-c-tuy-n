@@ -64,6 +64,15 @@ class controller_taikhoan extends base_controller {
             echo json_encode("false");
         }
     }
+    public function create_khachhang(){
+        $result=$this->modelTK->insertKhachhang($_POST['ten_kh'],$_POST['email_kh'],$_POST['sdt_kh'],$_POST['diachi_kh']);
+        if($result=="true"){
+            session_start();
+            $_SESSION['id_khach_muahang']=$this->modelTK->getLast_id_inserted();
+        }
+        echo json_encode($result);
+
+    }
 
 
 }

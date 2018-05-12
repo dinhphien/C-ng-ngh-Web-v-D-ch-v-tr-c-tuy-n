@@ -33,6 +33,12 @@ class Model_Taikhoan{
         $lastid=$this->conn->insert_id;
         return $lastid;
     }
+    public function insertKhachhang($tenkh,$email,$sdt,$quequan){
+
+        $sql = "insert into khachhang(tenkhachhang,email,sodienthoai,quequan) values ('".$tenkh."','".$email."','".$sdt."','".$quequan."')";
+         $result=$this->conn->query($sql);
+         return $result;
+    }
 
 
 }

@@ -152,5 +152,42 @@
     </div>
 </div>
 
+<div class="modal fade" id="thongtinkhachhang-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Thông tin khách hàng</h4>
+            </div>
+            <div class="modal-body">
+                <form >
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="fullname_basket" placeholder="Tên khách hàng" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email_basket" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="mobilephone_basket" placeholder="Số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="address-basket" placeholder="Địa chỉ" required>
+                    </div>
+                    <p class="text-center " id="message_thongtinkhachhang" style="color: red;"></p>
+
+                </form>
+                <p class="text-center text-muted">Tôi đồng ý với các điều khoản của cửa hàng.</p>
+                <p class="text-center">
+                    <button class="btn btn-primary" id="button_dat_hang_modal"><i class="fa fa-sign-in"></i>Đặt hàng</button>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <?php include 'footer.php' ?>
 <script src="js/basket.js"></script>

@@ -92,13 +92,44 @@ $(document).ready(function () {
                  window.setTimeout(function () {
                      $("#warning-modal").modal("hide");
                  },3000);
-
              }else {
                  if($("#btdangnhap").text()==''){
-
+                     $("#thongtinkhachhang-modal").modal("show");
                  }else {
                      $("#basket-modal").modal("show");
                  }
+             }
+
+         });
+     }
+
+ });
+ $("#button_dat_hang_modal").click(function () {
+    var tenkh=$("#fullname_basket").val();
+     var emailkh=$("#email_basket").val();
+     var sdtkh=$("#mobilephone_basket").val();
+     var diachikh=$("#address-basket").val();
+     if((tenkh=='')||(emailkh=='')||(sdtkh=='')||(diachikh=='')){
+         $("#message_thongtinkhachhang").text("Vui lòng điền đầy đủ thông tin");
+
+     }else {
+         var postdata={
+             ten_kh : tenkh,
+             email_kh :emailkh,
+             sdt_kh :sdtkh,
+             diachi_kh :diachikh
+         }
+         $.post("route.php?controller=controller_taikhoan&action=create_khachhang",postdata,function (data,status) {
+             // console.log(data);
+             var datares=JSON.parse(data);
+             console.log(datares);
+             if(datares==true){
+                 window.setTimeout(function () {
+                     $("#thongtinkhachhang-modal").modal("hide");
+                 },500);
+                 window.setTimeout(function () {
+                     $("#basket-modal").modal("show");
+                 },1500);
              }
 
          });
