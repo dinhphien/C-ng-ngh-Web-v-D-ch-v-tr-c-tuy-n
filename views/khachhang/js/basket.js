@@ -2,18 +2,7 @@ $(document).ready(function () {
  $("input").on('keypress','keydown','keyup',function(event){
      event.preventDefault();
  });
- // $("#button_dat_hang").click(function () {
- //     $("#basket-modal").modal("show");
- // });
- $("#button_shipcode").click(function () {
-     $("#basket-modal").modal("hide");
-     $("#title_thôngbáo").text("Thông báo");
-     $("#mesage_thôngbáo").text("Cảm ơn quý khách đã mua hàng. Hàng sẽ được giao trong vòng 7 ngày");
-     $('#warning-modal').modal('show');
-     window.setTimeout(function () {
-         $("#warning-modal").modal("hide");
-     },3000);
- });
+
  $("tr td button ").click(function () {
      var currentrow=$(this).closest('tr');
      var total_sp=parseInt($("#tongsanpham_giohang").text())-parseInt(currentrow.find("td input").val());
@@ -136,4 +125,29 @@ $(document).ready(function () {
      }
 
  });
+    $("#button_shipcode").click(function () {
+        var postdata={
+            ht_thanhtoan:"Shipcode"
+        }
+        $.post("route.php?controller=controller_donhang&action=create_donhang",postdata,function (data,status) {
+            var datares=JSON.parse(data);
+            console.log(datares);
+            if(datares==true){
+                $("#basket-modal").modal("hide");
+                $("#title_thôngbáo").text("Thông báo");
+                $("#mesage_thôngbáo").text("Cảm ơn quý khách đã mua hàng. Hàng sẽ được giao trong vòng 7 ngày");
+                $('#warning-modal').modal('show');
+                window.setTimeout(function () {
+                    $("#warning-modal").modal("hide");
+                },3000);
+            }
+        });
+
+    });
+    $("#button_thanhtoanonline").click(function () {
+        var postdata={
+            ht_thanhtoan: "Online"
+        }
+        $.post("");
+    });
 });
