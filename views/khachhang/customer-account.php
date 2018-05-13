@@ -42,7 +42,7 @@
                                     <a href=""><i class="fa fa-user"></i>Cập nhật tài khoản</a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fa fa-sign-out"></i>Đăng xuất</a>
+                                    <a href="" id="logout_customer_account"><i class="fa fa-sign-out"></i>Đăng xuất</a>
                                 </li>
                             </ul>
                         </div>
@@ -71,22 +71,21 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="password_1">Mật khẩu mới</label>
-                                        <input type="password" class="form-control" id="password_1">
+                                        <input type="password" class="form-control" id="password_new_1">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="password_2">Nhập lại mật khẩu mới</label>
-                                        <input type="password" class="form-control" id="password_2">
+                                        <input type="password" class="form-control" id="password_new_2">
                                     </div>
                                 </div>
                             </div>
                             <!-- /.row -->
-
-                            <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>Lưu mật khẩu mới</button>
-                            </div>
                         </form>
+                        <div class="col-sm-12 text-center">
+                            <button id="button_luu_mk" class="btn btn-primary"><i class="fa fa-save"></i>Lưu mật khẩu mới</button>
+                        </div>
 
                         <hr>
 
@@ -96,13 +95,13 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="firstname">Tên khách hàng</label>
-                                        <input type="text" class="form-control" id="fullname">
+                                        <input type="text" class="form-control" id="fullname_change">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email">
+                                        <input type="text" class="form-control" id="email_change">
                                     </div>
                                 </div>
                             </div>
@@ -111,21 +110,21 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="phone">Số điện thoại</label>
-                                        <input type="text" class="form-control" id="phone">
+                                        <input type="text" class="form-control" id="phone_change">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="email">Địa chỉ</label>
-                                        <input type="text" class="form-control" id="address">
+                                        <input type="text" class="form-control" id="address_change">
                                     </div>
-                                </div>
-                                <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>Lưu thay đổi</button>
-
                                 </div>
                             </div>
                         </form>
+                        <div class="col-sm-12 text-center">
+                            <button id="button_thaydoi_thongtin" class="btn btn-primary"><i class="fa fa-save"></i>Lưu thay đổi</button>
+
+                        </div>
                     </div>
                 </div>
 
@@ -139,3 +138,4 @@
 
 </html>
 <?php include 'footer.php' ?>
+<script src="js/customer_account.js"></script>

@@ -39,6 +39,17 @@ class Model_Taikhoan{
          $result=$this->conn->query($sql);
          return $result;
     }
+    public function update_matkhau_TK($id_tk,$mk_moi){
+        $sql="update taikhoan set taikhoan.matkhau='".$mk_moi."'where taikhoan.idtaikhoan='".$id_tk."';";
+        $result=$this->conn->query($sql);
+        return $result;
+    }
+    public function update_thongtin_kh($id_tk,$ten_moi,$sdt_moi,$add_moi,$email_moi){
+        $sql="update khachhang set khachhang.tenkhachhang='".$ten_moi."',khachhang.email='".$email_moi."',khachhang.sodienthoai='".$sdt_moi."',khachhang.quequan='".$add_moi."'where khachhang.idtaikhoan='".$id_tk."';";
+        $result=$this->conn->query($sql);
+        return $result;
+    }
+
 
 
 }
