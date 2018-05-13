@@ -92,6 +92,18 @@ class Model_Sanpham{
         $result=$this->conn->query($sql);
         return $result;
     }
+    public function update_SP_sau_dathang($array_sp_moi){
+        $prep=$this->conn->prepare("update sanpham set sanpham.soluongsanpham=? where sanpham.idsanpham=?");
+        $prep->bind_param("ii",$sl_sp,$id_sp);
+        $result=true;
+        foreach ($array_sp_moi as $key=>$value){
+            $sl_sp=$value->getSoluongsanpham();
+            $id_sp=$value->getIdsanpham();
+            $prep->execute();
+        }
+        return $result;
+
+    }
     public function check_SP_giohang($idkhachhang){
         $sql="select * from sanpham,sanphamgiohang where sanpham.idsanpham=sanphamgiohang.idsanpham and sanphamgiohang.idkhachhang='".$idkhachhang."';";
         $result=$this->conn->query($sql);

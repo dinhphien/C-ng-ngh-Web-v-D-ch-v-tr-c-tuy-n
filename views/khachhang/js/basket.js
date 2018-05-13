@@ -142,6 +142,7 @@ $(document).ready(function () {
                 window.setTimeout(function () {
                     $("#warning-modal").modal("hide");
                 },3000);
+                window.location.href('index.php');
             }
         });
 

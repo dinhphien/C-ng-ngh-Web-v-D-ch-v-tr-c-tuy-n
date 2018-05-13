@@ -45,6 +45,17 @@ class Model_Donhang{
         $result=$this->conn->query($sql);
         return $result;
     }
+    public function get_SP_sau_dathang($id_dh){
+        $sql="select * from sanpham,sanphamdonhang where sanpham.idsanpham=sanphamdonhang.idsanpham and sanphamdonhang.iddonhang='".$id_dh."';";
+        $result=$this->conn->query($sql);
+        $array_sp_moi= array();
+        While($row=$result->fetch_assoc()){
+            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],($row['soluongsanpham']-  $row['soluong']),$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp_moi,$sp);
+        }
+        return $array_sp_moi;
+
+    }
 
 }
 ?>

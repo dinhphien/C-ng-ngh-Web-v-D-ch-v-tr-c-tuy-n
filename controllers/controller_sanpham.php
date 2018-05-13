@@ -13,11 +13,11 @@ class controller_sanpham {
     {
         $this->modelSP=new Model_Sanpham();
     }
-    public function loadView($data_control)
-    {
-        $data=$data_control;
-        require_once(__DIR__ . "/../views/khachhang/category.php");
-    }
+//    public function loadView($data_control)
+//    {
+//        $data=$data_control;
+//        require_once(__DIR__ . "/../views/khachhang/category.php");
+//    }
     public function showSP_type(){
         $data=$this->modelSP->getSP_type($_GET['type_sp']);
         require_once(__DIR__ . "/../views/khachhang/category.php");

@@ -31,8 +31,10 @@ class controller_donhang extends base_controller {
             $result=$this->modelDH->insert_donhang($id_khachhang,$th_tien,$ngaylap,$ht_thanhtoan,"Chưa Duyệt");
             if($result==true){
                 $id_dh=$this->modelDH->getLast_id_inserted();
-                $array_sp=$this->modelSP->getSP_giohang_by_idkhachhang($id_khachhang);
-                $this->modelDH->insert_sp_donhang($id_dh,$array_sp);
+                $array_sp_donhang=$this->modelSP->getSP_giohang_by_idkhachhang($id_khachhang);
+                $this->modelDH->insert_sp_donhang($id_dh,$array_sp_donhang);
+                $array_sp_moi=$this->modelDH->get_SP_sau_dathang($id_dh);
+                $this->modelSP->update_SP_sau_dathang($array_sp_moi);
                 $result=$this->modelDH->delete_sp_giohang_by_id_khachhang($id_khachhang);
             }else{
                 $result=false;
@@ -43,8 +45,10 @@ class controller_donhang extends base_controller {
                 $result=$this->modelDH->insert_donhang($id_khachhang,$th_tien,$ngaylap,$ht_thanhtoan,"Chưa Duyệt");
                 if($result==true){
                     $id_dh=$this->modelDH->getLast_id_inserted();
-                    $array_sp=$_SESSION['shop_cart'];
-                    $result=$this->modelDH->insert_sp_donhang($id_dh,$array_sp);
+                    $array_sp_donhang=$_SESSION['shop_cart'];
+                    $result=$this->modelDH->insert_sp_donhang($id_dh,$array_sp_donhang);
+                    $array_sp_moi=$this->modelDH->get_SP_sau_dathang($id_dh);
+                    $this->modelSP->update_SP_sau_dathang($array_sp_moi);
                 }else{
                     $result=false;
                 }

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd7ba01-9da4-4d0f-b23b-5ad7209dbc71" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/controller_donhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_donhang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controller_sanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller_sanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_donhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_donhang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_sanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_sanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/khachhang/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/khachhang/js/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/khachhang/js/basket.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,50 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="controller_donhang.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
+      <file leaf-file-name="model_sanpham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="35" column="89" lean-forward="true" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
+            <state relative-caret-position="244">
+              <caret line="103" selection-start-line="103" selection-end-line="104" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testview.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-              <folding>
-                <element signature="e#320#343#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basket.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="basket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="135" column="33" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+            <state relative-caret-position="225">
+              <caret line="144" column="50" lean-forward="true" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basket.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/khachhang/basket.php">
+      <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/khachhang/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="71" column="82" lean-forward="true" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller_taikhoan.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/controller_taikhoan.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="70" column="39" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="39" />
+            <state relative-caret-position="272">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -65,17 +49,35 @@
       <file leaf-file-name="model_donhang.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="463">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller_donhang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4">
               <caret line="29" selection-start-line="29" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanpham.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/sanpham.php">
+      <file leaf-file-name="product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="39" />
+            <state relative-caret-position="17">
+              <caret line="269" selection-start-line="269" selection-end-line="269" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller_sanpham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="13" selection-start-line="13" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -93,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/db_connector.php" />
         <option value="$PROJECT_DIR$/models/model_khachhang.php" />
         <option value="$PROJECT_DIR$/controllers/testcontroller.php" />
         <option value="$PROJECT_DIR$/controllers/controllerlogin.php" />
@@ -105,7 +106,6 @@
         <option value="$PROJECT_DIR$/views/admin/index.php" />
         <option value="$PROJECT_DIR$/views/admin/form.html" />
         <option value="$PROJECT_DIR$/views/admin/form.php" />
-        <option value="$PROJECT_DIR$/views/admin/product.php" />
         <option value="$PROJECT_DIR$/views/admin/order.php" />
         <option value="$PROJECT_DIR$/views/admin/user.php" />
         <option value="$PROJECT_DIR$/views/admin/transaction.php" />
@@ -120,7 +120,6 @@
         <option value="$PROJECT_DIR$/controllers/controller_dangnhap.php" />
         <option value="$PROJECT_DIR$/controllers/controller_dangnhap.php" />
         <option value="$PROJECT_DIR$/views/khachhang/css/style.default.css" />
-        <option value="$PROJECT_DIR$/views/khachhang/category.php" />
         <option value="$PROJECT_DIR$/views/admin/comment.html" />
         <option value="$PROJECT_DIR$/views/admin/header_admin.php" />
         <option value="$PROJECT_DIR$/views/khachhang/route.php" />
@@ -132,8 +131,6 @@
         <option value="$PROJECT_DIR$/views/khachhang/header.php" />
         <option value="$PROJECT_DIR$/views/khachhang/js/category.js" />
         <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
-        <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
-        <option value="$PROJECT_DIR$/models/model_sanpham.php" />
         <option value="$PROJECT_DIR$/views/khachhang/basket.php" />
         <option value="$PROJECT_DIR$/models/donhang.php" />
         <option value="$PROJECT_DIR$/models/model_taikhoan.php" />
@@ -141,9 +138,14 @@
         <option value="$PROJECT_DIR$/controllers/controller_taikhoan.php" />
         <option value="$PROJECT_DIR$/controllers/test_controller.php" />
         <option value="$PROJECT_DIR$/views/khachhang/testview.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/category.php" />
+        <option value="$PROJECT_DIR$/views/admin/route_admin.php" />
+        <option value="$PROJECT_DIR$/controllers/controller_sanpham.php" />
+        <option value="$PROJECT_DIR$/views/admin/product.php" />
         <option value="$PROJECT_DIR$/models/model_donhang.php" />
-        <option value="$PROJECT_DIR$/views/khachhang/js/basket.js" />
         <option value="$PROJECT_DIR$/controllers/controller_donhang.php" />
+        <option value="$PROJECT_DIR$/models/model_sanpham.php" />
+        <option value="$PROJECT_DIR$/views/khachhang/js/basket.js" />
       </list>
     </option>
   </component>
@@ -164,6 +166,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,6 +214,87 @@
               <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lists" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="middlenav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="notifications" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="topnav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="crown" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploader" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="BTL_Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BTL_Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="khachhang" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -204,22 +303,6 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="khachhang" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="BTL_Công nghệ Web và Dịch vụ trực tuyến" type="cbb8eebc:String" user="BTL_Công nghệ Web và Dịch vụ trực tuyến" />
-              <item name="views" type="cbb8eebc:String" user="views" />
             </path>
           </expand>
           <select />
@@ -304,28 +387,28 @@
       <workItem from="1525966436404" duration="1976000" />
       <workItem from="1526002985915" duration="25314000" />
       <workItem from="1526083004795" duration="10025000" />
-      <workItem from="1526113660483" duration="9521000" />
+      <workItem from="1526113660483" duration="12903000" />
+      <workItem from="1526185779184" duration="3154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276875000" />
+    <option name="totallyTimeSpent" value="283411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20686963" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2099922" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -334,6 +417,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,14 +427,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang2.php">
+    <entry file="file://$PROJECT_DIR$/views/admin/product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state relative-caret-position="4233">
+          <caret line="249" selection-start-line="249" selection-end-line="250" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controllerlogout.php" />
     <entry file="file://$PROJECT_DIR$/controllers/controllerRegister.php" />
     <entry file="file://$PROJECT_DIR$/views/khachhang/customer-account.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -452,13 +535,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/route.php" />
-    <entry file="file://$PROJECT_DIR$/models/model_khachhang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -487,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/header_admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -505,13 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="238" selection-start-line="238" selection-end-line="239" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -533,20 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1457" column="1" selection-start-line="1457" selection-start-column="1" selection-end-line="1457" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -586,13 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_donhang2.php" />
     <entry file="file://$PROJECT_DIR$/views/khachhang/basket.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -604,13 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="70" column="39" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -642,34 +677,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/khachhang/testview.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#320#343#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
+    <entry file="file://$PROJECT_DIR$/models/model_khachhang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="135" column="33" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
+    <entry file="file://$PROJECT_DIR$/views/admin/route_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="29" selection-start-line="29" selection-end-line="30" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller_sanpham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controller_donhang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="35" column="89" lean-forward="true" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
+        <state relative-caret-position="4">
+          <caret line="29" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_donhang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_sanpham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="103" selection-start-line="103" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/khachhang/js/basket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="144" column="50" lean-forward="true" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
         </state>
       </provider>
     </entry>

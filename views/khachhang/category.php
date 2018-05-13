@@ -1,5 +1,5 @@
 <?php
-require_once("C:/xampp/htdocs/BTL_Web/models/sanpham.php");
+require_once(__DIR__."/../../models/sanpham.php");
 include 'header.php';
 ?>
     <div id="all">
