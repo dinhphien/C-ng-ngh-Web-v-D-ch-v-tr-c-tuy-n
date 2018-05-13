@@ -36,5 +36,34 @@ class controller_sanpham {
         require_once (__DIR__."/../views/khachhang/detail.php");
 
     }
+    public function showSP_type_mausac(){
+        $array_sp=$this->modelSP->getSP_type_mausac($_POST['type_sp'],$_POST['mausac_sp']);
+        echo json_encode($array_sp);
+    }
+    public function showSP_type_name_mausac(){
+        $array_sp=$this->modelSP->getSP_type_name_mausac($_POST['type_sp'],$_POST['name_sp'],$_POST['mausac_sp']);
+        echo json_encode($array_sp);
+
+    }
+    public function showSP_type_size(){
+        $array_sp=$this->modelSP->getSP_type_size($_POST['type_sp'],$_POST['size_sp']);
+        echo json_encode($array_sp);
+
+    }
+    public function showSP_type_gia(){
+        $array_sp=$this->modelSP->getSP_type_gia($_POST['type_sp'],$_POST['gia_sp']);
+        echo json_encode($array_sp);
+
+    }
+    public function showSP_type_name_size(){
+        $array_sp=$this->modelSP->getSP_type_name_size($_POST['type_sp'],$_POST['name_sp'],$_POST['size_sp']);
+        echo json_encode($array_sp);
+
+    }
+    public function showSP_type_name_gia(){
+        $array_sp=$this->modelSP->getSP_type_name_gia($_POST['type_sp'],$_POST['name_sp'],$_POST['gia_sp']);
+        echo json_encode($array_sp);
+
+    }
 }
 ?>

@@ -124,6 +124,77 @@ class Model_Sanpham{
         $array_check["sl"]=$sl;
         return $array_check;
     }
+    public function getSP_type_mausac($type,$mausac){
+        $sql="select * from sanpham where sanpham.loaisanpham='".$type."'and sanpham.mausacsanpham='".$mausac."';";
+        $result=$this->conn->query($sql);
+        $array_sp= array();
+        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp,$row);
+        }
+        return $array_sp;
+    }
+    public function getSP_type_size($type,$size){
+        $sql="select * from sanpham where sanpham.loaisanpham='".$type."'and sanpham.sizesanpham='".$size."';";
+        $result=$this->conn->query($sql);
+        $array_sp= array();
+        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp,$row);
+        }
+        return $array_sp;
+
+    }
+    public function getSP_type_gia($type,$gia){
+        $sql="select * from sanpham where sanpham.loaisanpham='".$type."'and (sanpham.giasanpham between".$gia.");";
+        $result=$this->conn->query($sql);
+        $array_sp= array();
+        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp,$row);
+        }
+        return $array_sp;
+
+    }
+    public function getSP_type_name_mausac($type,$name,$mausac){
+        $sql="select * from sanpham where sanpham.loaisanpham='".$type."'and sanpham.tensanpham='".$name."'and sanpham.mausacsanpham='".$mausac."';";
+        $result=$this->conn->query($sql);
+        $array_sp= array();
+        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp,$row);
+        }
+        return $array_sp;
+
+    }
+    public function getSP_type_name_size($type,$name,$size){
+        $sql="select * from sanpham where sanpham.loaisanpham='".$type."'and sanpham.tensanpham='".$name."'and sanpham.sizesanpham='".$size."';";
+        $result=$this->conn->query($sql);
+        $array_sp= array();
+        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp,$row);
+        }
+        return $array_sp;
+
+    }
+    public function getSP_type_name_gia($type,$name,$gia){
+        $sql="select * from sanpham where sanpham.loaisanpham='".$type."'and sanpham.tensanpham='".$name."'and (sanpham.giasanpham between".$gia.");";
+        $result=$this->conn->query($sql);
+        $array_sp= array();
+        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp,$row);
+        }
+        return $array_sp;
+
+    }
 
 }
 ?>

@@ -13,7 +13,7 @@ include 'header.php';
                         <?php
                         if(!empty($_GET['type_sp'])){
                         ?>
-                            <li id="index_typesp"><a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=<?php echo $_GET['type_sp'];?>"> Thời trang <?php echo $_GET['type_sp'];?></a></li>
+                            <li id="index_typesp"><a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=<?php echo $_GET['type_sp'];?>"><?php echo $_GET['type_sp'];?></a></li>
                         <?php
                         }
                         ?>
@@ -21,10 +21,7 @@ include 'header.php';
                         if(!empty($_GET['type_sp'])&&!empty($_GET['name_sp'])){
 
                         ?>
-                        <li id="index_namesp">
-                            <a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=<?php echo $_GET['type_sp'];?>&name_sp=<?php echo $_GET['name_sp']; ?>">
-                                <?php  echo $_GET['name_sp'];?></a>
-                        </li>
+                        <li id="index_namesp"><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=<?php echo $_GET['type_sp'];?>&name_sp=<?php echo $_GET['name_sp']; ?>"><?php  echo $_GET['name_sp'];?></a></li>
                         <?php
                         }
                         ?>
@@ -43,7 +40,7 @@ include 'header.php';
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked category-menu">
                                 <li>
-                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam">thời trang nam</a>
+                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nam"> Thời trang nam</a>
                                     <ul>
                                         <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nam&name_sp=Áo Phông">Áo Phông</a>
                                         </li>
@@ -63,7 +60,7 @@ include 'header.php';
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nữ">Thời trang nữ</a>
+                                    <a href="route.php?controller=controller_sanpham&action=showSP_type&type_sp=Nữ"> Thời trang nữ</a>
                                     <ul>
                                         <li><a href="route.php?controller=controller_sanpham&action=showSP_name&type_sp=Nữ&name_sp=Áo Dài">Áo Dài</a>
                                         </li>
@@ -93,11 +90,11 @@ include 'header.php';
                                             <div class="products-sort-by">
                                                 <strong>Giá :</strong>
                                                 <select id="select_gia" name="price_sp" class="form-control">
-                                                    <option value="200000 and 500000"> 200.000-500.000VNĐ</option>
-                                                    <option value="500000 and 1000000">500.000-1000.000VNĐ</option>
-                                                    <option value="1000000 and 2000000">1000.000-2000.000VNĐ</option>
-                                                    <option value="2000000 and 5000000"> 2000.000-5000.000VNĐ</option>
-                                                    <option value="5000000 and 10000000">5000.000-10.000.000VNĐ</option>
+                                                    <option value='"200000" and "500000"'> 200.000-500.000VNĐ</option>
+                                                    <option value='"500000" and "1000000"'>500.000-1000.000VNĐ</option>
+                                                    <option value='"1000000" and "2000000"'>1000.000-2000.000VNĐ</option>
+                                                    <option value='"2000000" and "5000000"'> 2000.000-5000.000VNĐ</option>
+                                                    <option value='"5000000" and "10000000"'>5000.000-10.000.000VNĐ</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -110,7 +107,6 @@ include 'header.php';
                                                     <option value="L">L</option>
                                                     <option value="XL">XL</option>
                                                     <option value="XXL">XXL</option>
-                                                    <option value="all" selected>Tất cả </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -124,14 +120,13 @@ include 'header.php';
                                                     <option value="Xanh Lá Cây">Xanh Lá Cây</option>
                                                     <option value="Vàng">Vàng</option>
                                                     <option value="Đỏ">Đỏ</option>
-                                                    <option value="all" selected>Tất cả</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </form>
                             </div>
                         </div>
-                    <div class="row products">
+                    <div class="row products showproducts">
                         <?php
                         if(!empty($data)){
                             foreach ($data as $sp) {
