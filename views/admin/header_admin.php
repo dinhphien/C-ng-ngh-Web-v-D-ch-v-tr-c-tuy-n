@@ -74,8 +74,9 @@ session_start();
 
         <div class="sideProfile">
             <a href="#" title="" class="profileFace"><img width="40" src="images/user.png" /></a>
-            <span>Xin chào: <strong>Admin!</strong></span>
-            <span><?php echo $_SESSION['logged_admin']->getTentaikhoan(); ?></span>
+<!--            <span>Xin chào: <strong>Admin</strong></span>-->
+            <span>Tài khoản: <?php echo $_SESSION['logged_admin']->getTentaikhoan(); ?></span>
+            <span>Vai trò : Admin</span>
             <div class="clear"></div>
         </div>
         <div class="sidebarSep"></div>
@@ -94,15 +95,15 @@ session_start();
             </li>
             <li class="tran">
 
-                <a href="admin/tran.html" class=" exp" >
+                <a href="#" class=" exp" >
                     <span>Quản lý bán hàng</span>
                 </a>
 
                 <ul class="sub">
-                    <li >
-                        <a href="admin/tran.html">
-                            Giao dịch							</a>
-                    </li>
+<!--                    <li >-->
+<!--                        <a href="admin/tran.html">-->
+<!--                            Giao dịch							</a>-->
+<!--                    </li>-->
                     <li >
                         <a href="admin/product_order.html">
                             Đơn hàng sản phẩm							</a>
@@ -119,11 +120,11 @@ session_start();
                 <ul class="sub">
                     <li >
                         <a href="product.php">
-                            Sản phẩm							</a>
+                            Thống kê Sản phẩm							</a>
                     </li>
                     <li >
-                        <a href="catalog.php">
-                            Danh mục							</a>
+                        <a href="form.php">
+                            Thêm mới sản phẩm							</a>
                     </li>
                 </ul>
 
@@ -137,16 +138,16 @@ session_start();
                 <ul class="sub">
                     <li >
                         <a href="admin/admin.html">
-                            Ban quản trị							</a>
+                            Cập nhật tài khoản							</a>
                     </li>
                     <li >
                         <a href="admin/admin_group.html">
-                            Nhóm quản trị							</a>
+                            Đăng Xuất							</a>
                     </li>
-                    <li >
-                        <a href="admin/user.html">
-                            Thành viên							</a>
-                    </li>
+<!--                    <li >-->
+<!--                        <a href="admin/user.html">-->
+<!--                            Thành viên							</a>-->
+<!--                    </li>-->
                 </ul>
 
             </li>
@@ -157,21 +158,21 @@ session_start();
                 </a>
 
                 <ul class="sub">
-                    <li >
-                        <a href="admin/slide.html">
-                            Slide							</a>
-                    </li>
-                    <li >
-                        <a href="admin/news.html">
-                            Tin tức							</a>
-                    </li>
+<!--                    <li >-->
+<!--                        <a href="admin/slide.html">-->
+<!--                            Slide							</a>-->
+<!--                    </li>-->
+<!--                    <li >-->
+<!--                        <a href="admin/news.html">-->
+<!--                            Tin tức							</a>-->
+<!--                    </li>-->
                     <li >
                         <a href="admin/info.html">
                             Trang thông tin							</a>
                     </li>
                     <li >
                         <a href="admin/video.html">
-                            Video							</a>
+                            Thêm tin tức							</a>
                     </li>
                 </ul>
 
@@ -191,31 +192,30 @@ session_start();
 
     <div class="topNav">
         <div class="wrapper">
-            <div class="welcome">
-                <span>Xin chào: <b>admin!</b></span>
-            </div>
+<!--            <div class="welcome">-->
+<!--                <span>Xin chào: <b>Admin</b></span>-->
+<!--            </div>-->
 
-            <div class="userNav">
-                <ul>
-                    <li><a href="" target="_blank">
-                            <img style="margin-top:7px;" src="images/icons/light/home.png" />
-                            <span>Trang chủ</span>
-                        </a></li>
+<!--            <div class="userNav">-->
+<!--                <ul>-->
+<!--                    <li><a href="" target="_blank">-->
+<!--                            <img style="margin-top:7px;" src="images/icons/light/home.png" />-->
+<!--                            <span>Cập nhật tài khoản</span>-->
+<!--                        </a></li>-->
 
                     <!-- Logout -->
-                    <li><a href="admin/home/logout.html">
-                            <img src="images/icons/topnav/logout.png" alt="" />
-                            <span>Đăng xuất</span>
-                        </a></li>
+<!--                    <li><a href="admin/home/logout.html">-->
+<!--                            <img src="images/icons/topnav/logout.png" alt="" />-->
+<!--                            <span>Đăng xuất</span>-->
+<!--                        </a></li>-->
 
-                </ul>
-            </div>
+<!--                </ul>-->
+<!--            </div>-->
 
             <div class="clear"></div>
         </div>
     </div>
 
-    !-- Common -->
     <!-- Title area -->
     <div class="titleArea">
         <div class="wrapper">
