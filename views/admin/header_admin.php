@@ -26,7 +26,7 @@ session_start();
 
 <!--    <script type="text/javascript" src="../js/jquery/jquery.min.js"></script>-->
     <script type="text/javascript" src="crown/js/jquery.min.js"></script>
-    <script type="text/javascript" src="crown/js/jquery-migrate-3.0.0.js"></script>
+<!--    <script type="text/javascript" src="crown/js/jquery-migrate-3.0.0.js"></script>-->
 
 <!--    <script type="text/javascript" src="../js/jquery/jquery-ui.min.js"></script>-->
 
@@ -78,7 +78,7 @@ session_start();
         <div class="sideProfile">
             <a href="#" title="" class="profileFace"><img width="40" src="images/user.png" /></a>
 <!--            <span>Xin chào: <strong>Admin</strong></span>-->
-            <span>Tài khoản: <?php echo $_SESSION['logged_admin']->getTentaikhoan(); ?></span>
+            <span>Tài khoản: <?php if(isset($_SESSION['logged_admin']))echo $_SESSION['logged_admin']->getTentaikhoan(); ?></span>
             <span>Vai trò : Admin</span>
             <div class="clear"></div>
         </div>
@@ -140,11 +140,11 @@ session_start();
 
                 <ul class="sub">
                     <li >
-                        <a href="admin/admin.html">
+                        <a href="update_account_admin.php">
                             Cập nhật tài khoản							</a>
                     </li>
-                    <li >
-                        <a href="" id="logout_header_admin">Đăng Xuất</a>
+                    <li id="logout_header_admin" >
+                        <a href="" >Đăng Xuất</a>
                     </li>
 <!--                    <li >-->
 <!--                        <a href="admin/user.html">-->

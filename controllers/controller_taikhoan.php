@@ -78,6 +78,11 @@ class controller_taikhoan extends base_controller {
         $mk_tk=$_SESSION['logged_user']->getMatkhau();
         echo json_encode($mk_tk);
     }
+    public function showMatkhau_Admin(){
+        session_start();
+        $mk_admin=$_SESSION['logged_admin']->getMatkhau();
+        echo json_encode($mk_admin);
+    }
     public function capnhat_TK(){
         session_start();
         $result=$this->modelTK->update_matkhau_TK($_SESSION['logged_user']->getIdtaikhoan(),$_POST['mk_moi']);
@@ -85,7 +90,14 @@ class controller_taikhoan extends base_controller {
         $tk->setMatkhau($_POST['mk_moi']);
         $_SESSION['logged_user']=$tk;
         return json_encode($result);
-
+    }
+    public function capnhat_TK_admin(){
+        session_start();
+        $result=$this->modelTK->update_matkhau_TK($_SESSION['logged_admin']->getIdtaikhoan(),$_POST['mk_moi']);
+        $tk=$_SESSION['logged_admin'];
+        $tk->setMatkhau($_POST['mk_moi']);
+        $_SESSION['logged_admin']=$tk;
+        return json_encode($result);
     }
     public function capnhat_thongtin_kh(){
         session_start();
