@@ -8,22 +8,22 @@
 
 /* Table of Content
 ==================================================
-	# Basic styles
-	# Top navigation
-	# Left navigation & widgets
-	# Common styles
-	# Content
-	# Statistic row
-	# Gallery
-	# Buttons
-	# Content widgets
-	# Progress bars	
-	# Tables 
+        # Basic styles
+        # Top navigation
+        # Left navigation & widgets
+        # Common styles
+        # Content
+        # Statistic row
+        # Gallery
+        # Buttons
+        # Content widgets
+        # Progress bars	
+        # Tables 
     # Pagination
-	# Form styles	
-	# Footer
-	# Other plugin styles
-	# Media queries (remove them if you don't want to use responsive layout)
+        # Form styles	
+        # Footer
+        # Other plugin styles
+        # Media queries (remove them if you don't want to use responsive layout)
 ==================================================*/
 
 
@@ -159,18 +159,18 @@ select[multiple] { border: 1px solid #ddd; box-shadow: 0 0 0 2px #f4f4f4; -webki
 .sadEmo { background: url(../images/sadEmo.png) no-repeat; display: block; height: 62px; margin: 0 auto 0px auto; width: 62px; }
 .errorWrapper .errorTitle { display: block; text-shadow: 1px 0 0 #fff; text-align: center; font-size: 20px; border-bottom: 1px solid #cdcdcd; padding: 20px 14px; font-weight: bold; color: #d76a6a; font-style: italic; }
 .errorWrapper .errorNum { color: #fff; font-size: 200px; text-stroke: 1px transparent; padding: 120px 0 80px 0; display: block;
-text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15); }
+                          text-shadow: 0 1px 0 #ccc,
+                              0 2px 0 #c9c9c9,
+                              0 3px 0 #bbb,
+                              0 4px 0 #b9b9b9,
+                              0 5px 0 #aaa,
+                              0 6px 1px rgba(0,0,0,.1),
+                              0 0 5px rgba(0,0,0,.1),
+                              0 1px 3px rgba(0,0,0,.3),
+                              0 3px 5px rgba(0,0,0,.2),
+                              0 5px 10px rgba(0,0,0,.25),
+                              0 10px 10px rgba(0,0,0,.2),
+                              0 20px 20px rgba(0,0,0,.15); }
 
 .errorDesc { display: block; margin: 40px 0 25px 0; font-weight: bold; font-size: 14px; }
 
@@ -751,25 +751,25 @@ html ul.tabs li.activeTab a { color: #2E6B9B; }
 /* Tabs attributes*/
 table.attributes td
 {
-	padding:10px;
+    padding:10px;
 }
 table.attributes tr.head td
 {
-	font-weight:bold;
+    font-weight:bold;
 }
 
 ul.tab-attr
 {
-	border-top: 1px solid #CDCDCD;
-	border-left: 1px solid #CDCDCD;
+    border-top: 1px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
 }
 ul.tab-attr li
 {
-	border-left: medium none;
+    border-left: medium none;
     border-right: 1px solid #CDCDCD;
     font-size: 15px;
     line-height: 38px;
-	background: url(../images/backgrounds/titleBg.png) repeat-x; height: 38px; border-bottom: 1px solid #CDCDCD; 
+    background: url(../images/backgrounds/titleBg.png) repeat-x; height: 38px; border-bottom: 1px solid #CDCDCD; 
 }
 ul.tab-attr li a 
 {
@@ -781,10 +781,10 @@ ul.tab-attr li a
 }
 ul.tab-attr li a.selected
 {
-	color:#9F352B;
-	font-weight:bold;
-	background:#F9F9F9;
-	border-right:3px solid #9F352B;
+    color:#9F352B;
+    font-weight:bold;
+    background:#F9F9F9;
+    border-right:3px solid #9F352B;
 }
 /* Search widget */
 
@@ -1324,7 +1324,7 @@ li.plupload_droptext:hover { background: #fff; }
 .cPicker span { margin-left: 36px; font-size: 11px; white-space: nowrap; padding-top: 2px; display: block; }
 
 #cPicker {
-position: relative;
+    position: relative;
 }
 #cPicker div { position: absolute; top: 0px; left: 0px; width: 24px; height: 24px; background: url(../images/colorPicker/select.png) center no-repeat; cursor: pointer; }
 
@@ -1360,31 +1360,31 @@ position: relative;
 
 div.jGrowl { z-index: 9999; color: #fff; font-size: 12px; }
 div.ie6.top-right { 
-	right: 				auto;
-	bottom: 			auto;
-	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
-	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+    right: 				auto;
+    bottom: 			auto;
+    left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+    top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 div.ie6.top-left {
-	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
-	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+    left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+    top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 div.ie6.bottom-right {
-	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
-	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+    left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+    top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 div.ie6.bottom-left {
-	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
-	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+    left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+    top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 div.ie6.center {
-	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
-	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
-	width: 				100%;
+    left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+    top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+    width: 				100%;
 }
 
 /** Normal Style Positions **/
@@ -1399,19 +1399,19 @@ div.jGrowl.center { top: 0px; width: 50%; left: 25%; }
 /** Cross Browser Styling **/
 div.center div.jGrowl-notification, div.center div.jGrowl-closer { margin-left: auto; margin-right: auto; }
 div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
-background-color: black;
-opacity: .85;
--ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
-zoom: 1;
-width: 235px;
-padding: 10px;
-margin-top: 5px;
-margin-bottom: 5px;
-font-family: Tahoma,Arial,Helvetica,sans-serif;
-font-size: 1em;
-text-align: left;
-display: none;
+    background-color: black;
+    opacity: .85;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    zoom: 1;
+    width: 235px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    text-align: left;
+    display: none;
 }
 
 div.jGrowl div.jGrowl-notification { min-height: 40px; }

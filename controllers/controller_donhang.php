@@ -49,6 +49,7 @@ class controller_donhang extends base_controller {
                     $result=$this->modelDH->insert_sp_donhang($id_dh,$array_sp_donhang);
                     $array_sp_moi=$this->modelDH->get_SP_sau_dathang($id_dh);
                     $this->modelSP->update_SP_sau_dathang($array_sp_moi);
+                    unset($_SESSION["shop_cart"]);
                 }else{
                     $result=false;
                 }
@@ -56,6 +57,15 @@ class controller_donhang extends base_controller {
         }
 
         echo json_encode($result);
+    }
+    public function show_dh(){
+        $data = $this->modelDH->show_dh();
+        require_once(__DIR__ . "/../views/admin/order.php");
+    }
+    public function show_donhang_by_ID(){
+        $data = $this->modelDH->show_donhang_by_ID($_POST['iddonhang']);
+//        var_dump($data);
+        echo json_encode($data);
     }
 }
 ?>

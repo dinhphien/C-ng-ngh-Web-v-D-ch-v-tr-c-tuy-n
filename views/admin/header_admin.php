@@ -108,7 +108,7 @@ session_start();
 <!--                            Giao dịch							</a>-->
 <!--                    </li>-->
                     <li >
-                        <a href="admin/product_order.html">
+                        <a href="route_admin.php?controller=controller_donhang&action=show_dh">
                             Đơn hàng sản phẩm							</a>
                     </li>
                 </ul>
