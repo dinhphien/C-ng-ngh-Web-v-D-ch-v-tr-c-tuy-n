@@ -67,5 +67,10 @@ class controller_donhang extends base_controller {
 //        var_dump($data);
         echo json_encode($data);
     }
+       public function duyet_don_hang(){
+        $data = $this->modelDH->duyet_don_hang($_POST['id']);
+//        var_dump($data);
+        echo json_encode($data);
+    }
 }
 ?>

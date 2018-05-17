@@ -16,6 +16,12 @@ class Model_Donhang {
         $dbconnect = new DBConnector();
         $this->conn = $dbconnect->connect();
     }
+    public function duyet_don_hang($id){
+        $sql="update donhang set trangthai='Đã duyệt' where iddonhang='".$id."'";
+//        var_dump($sql);
+        $result = $this->conn->query($sql);
+        return $sql;
+    }
 
     public function show_dh() {
         $sql = "SELECT iddonhang,khachhang.tenkhachhang,khachhang.sodienthoai,thanhtien,ngaylapdonhang,hinhthucthanhtoan,trangthai FROM donhang,khachhang WHERE donhang.idkhachhang=khachhang.idkhachhang";
@@ -29,7 +35,7 @@ class Model_Donhang {
     }
 
     public function show_donhang_by_ID($id) {
-        $sql = "SELECT khachhang.tenkhachhang,sanpham.tensanpham,sanphamdonhang.giaspdh,sanphamdonhang.soluong,donhang.ngaylapdonhang,donhang.thanhtien,khachhang.sodienthoai 
+        $sql = "SELECT khachhang.tenkhachhang,sanpham.tensanpham,sanphamdonhang.giaspdh,sanphamdonhang.soluong,donhang.ngaylapdonhang,donhang.thanhtien,khachhang.sodienthoai,donhang.iddonhang 
             FROM donhang,khachhang,sanphamdonhang,sanpham
             WHERE donhang.idkhachhang=khachhang.idkhachhang AND
              donhang.iddonhang=sanphamdonhang.iddonhang AND
