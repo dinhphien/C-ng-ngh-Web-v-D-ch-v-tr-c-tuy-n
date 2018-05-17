@@ -41,5 +41,11 @@ class Model_Tintuc{
         }
         return $array_tt;
     }
+
+    public function delTT($id){
+        $sql="delete from tintuc where tintuc.idtintuc='".$id."';";
+        $result=$this->conn->query($sql);
+        return $result;
+    }
 }
 ?>
