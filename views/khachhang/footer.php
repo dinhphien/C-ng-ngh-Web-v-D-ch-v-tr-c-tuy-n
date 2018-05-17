@@ -14,7 +14,7 @@
                             </li>
                             <li><a href="route.php?controller=controller_giohang&action=showSP_giohang">Giỏ hàng</a>
                             </li>
-                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="route.php?controller=controller_tintuc&action=showTT">Tin tức</a></li>
                         </ul>
 
                         <hr class="hidden-md hidden-lg hidden-sm">
