@@ -27,7 +27,7 @@ include 'header.php';
                 </div>
 
                 <!-- *** LEFT COLUMN ***
-		     _________________________________________________________ -->
+             _________________________________________________________ -->
 
                 <div class="col-sm-9" id="blog-listing">
 
@@ -74,13 +74,21 @@ include 'header.php';
                     <!-- /.col-md-3 -->
 
                     <!-- *** BLOG MENU END *** -->
+                        <div class="panel-body">
 
-                    <div class="banner">
-                        <a href="route.php?controller=controller_tintuc&action=showTT">
-                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="active">
+                                    <a href="blog.php">Giới thiệu</a>
+                                 </li>   
+                                <li>
+                                    <a href="faq.php">Câu hỏi thường gặp</a>
+                                </li>
+                                <li>
+                                    <a href="post.php">Tin tức</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
 
 
             </div>

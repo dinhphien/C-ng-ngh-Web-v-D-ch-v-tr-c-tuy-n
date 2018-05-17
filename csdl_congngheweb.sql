@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 17, 2018 at 07:20 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th5 17, 2018 lúc 07:25 PM
+-- Phiên bản máy phục vụ: 10.1.31-MariaDB
+-- Phiên bản PHP: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `csdl_congngheweb`
+-- Cơ sở dữ liệu: `csdl_congngheweb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donhang`
+-- Cấu trúc bảng cho bảng `donhang`
 --
 
 CREATE TABLE `donhang` (
@@ -40,7 +40,7 @@ CREATE TABLE `donhang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `khachhang`
+-- Cấu trúc bảng cho bảng `khachhang`
 --
 
 CREATE TABLE `khachhang` (
@@ -53,7 +53,7 @@ CREATE TABLE `khachhang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `khachhang`
+-- Đang đổ dữ liệu cho bảng `khachhang`
 --
 
 INSERT INTO `khachhang` (`idkhachhang`, `idtaikhoan`, `tenkhachhang`, `email`, `sodienthoai`, `quequan`) VALUES
@@ -76,7 +76,7 @@ INSERT INTO `khachhang` (`idkhachhang`, `idtaikhoan`, `tenkhachhang`, `email`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nhanvien`
+-- Cấu trúc bảng cho bảng `nhanvien`
 --
 
 CREATE TABLE `nhanvien` (
@@ -92,7 +92,7 @@ CREATE TABLE `nhanvien` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sanpham`
+-- Cấu trúc bảng cho bảng `sanpham`
 --
 
 CREATE TABLE `sanpham` (
@@ -108,9 +108,8 @@ CREATE TABLE `sanpham` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `sanpham`
+-- Đang đổ dữ liệu cho bảng `sanpham`
 --
-
 
 INSERT INTO `sanpham` (`idsanpham`, `tensanpham`, `loaisanpham`, `giasanpham`, `mausacsanpham`, `sizesanpham`, `soluongsanpham`, `motasanpham`, `urlanhsanpham`) VALUES
 (1, 'Áo Sơ Mi', 'Nam', 400000, 'Trắng', 'M', 10, 'Chắc hẳn chàng trai nào cũng có ít nhất cho mình một chiếc áo sơ mi trắng như Áo Sơ Mi Trắng ASM876. Thiết kế thanh lịch, trang nhã, diện vào chỉ có chuẩn \"soái ca\".', 'img/product6.jpg'),
@@ -122,18 +121,22 @@ INSERT INTO `sanpham` (`idsanpham`, `tensanpham`, `loaisanpham`, `giasanpham`, `
 (7, 'Quần Jean', 'Nam', 350000, 'Đen', 'XL', 10, ' Tạo nét chấm phá với những đường xước nhẹ trên nền jean đen. Form quần skinny ôm dáng giúp bạn vừa theo kịp xu hướng vừa thể hiện phong cách riêng biệt.', 'img/product10.jpg'),
 (8, 'Áo Vest', 'Nam', 500000, 'Xanh Dương', 'XL', 7, 'Áo Vest Cao Cấp Xanh Biển Đậm AV1090 với màu xanh biển trẻ trung, cá tính. Thiết kế theo form dáng body, kiểu áo 1 nút, cổ áo ve nhỏ, có túi ngực và hai túi nắp hai bên hông tiện dụng, tay áo phối nút thời trang. Chất liệu vải âu hai lớp cao cấp, bền đẹp, khẳng định đẳng cấp của quý ông.', 'img/product1_2.jpg'),
 (9, 'Quần âu', 'Nam', 500000, 'Đen', 'XL', 9, 'Quần âu dáng body Hàn Quốc thời trang', 'img/product11.jpg'),
-(10, 'Quần Jean', 'Nam', 370000, 'Xanh Dương', 'XL', 9, 'Quần Jean Xanh QJ1450 với đường nét tổng thể hài hòa, tinh tế, phối những đường xước nhẹ nhàng ở mặt trước. Chất liệu jean bền đẹp, dày dặn, nhưng co giản nên rất thoải mái, ứng dụng cao trong nhiều hoàn cảnh. Kiểu dáng trẻ trung, bạn có thể xắn gấu quần lên cao cho thêm phần bụi bặm.', 'img/product12.jpg'),
 (11, 'Váy', 'Nữ', 450000, 'Trắng', 'XL', 9, 'Váy thêu gấm cổ tròn đính khuy Nadine kiểu dáng thời trang tinh tế, họa tiết cánh hoa độc đáo lạ mắt thu hút mọi ánh nhìn, dễ mix đồ thật thời trang', 'img/product20.jpg'),
-(12, 'Áo Khoác', 'Nữ', 900000, 'Trắng', 'L', 5, 'Áo khoác phao nữ PLBBB dáng dài chữ A may ôm thân thon gọn, thiết kế liền mũ trùm cùng chất liệu bông cao cấp siêu ấm ấm, mang đến cho bạn vẻ trẻ trung, năng động, rất thích hợp diện xuống phố trong những ngày rét lạnh mùa đông', 'img/product25.jpg'),
-(13, 'ÁO THUN', 'Nữ', 150000, 'Trắng', 'L', 5, 'Áo thunPLBBB dáng dài chữ A may ôm thân thon gọn, mang đến cho bạn vẻ trẻ trung, năng động, rất thích hợp diện xuống phố.', 'img/product2.jpg'),
 (14, 'Áo Khoác', 'Nữ', 700000, 'Xanh Dương', 'M', 6, 'Áo khoác phao nữ PLBBB dáng dài chữ A may ôm thân thon gọn, thiết kế liền mũ trùm cùng chất liệu bông cao cấp siêu ấm ấm, mang đến cho bạn vẻ trẻ trung, năng động, rất thích hợp diện xuống phố trong những ngày rét lạnh mùa đông', 'img/product27.jpg'),
 (15, 'Váy', 'Nữ', 200000, 'Vàng', 'M', 6, 'Váy xòe xếp ly Cadafe cổ tròn, phong cách quý cô thời thượng, hiện đại, thanh lịch; toát lên nét đẹp dịu dàng, nữ tính, khắc phục nhược điểm các vòng không như ý', 'img/product28.jpg'),
-(16, 'Chân váy', 'Nữ', 320000, 'Xanh Dương', 'M', 6, 'Chân váy denim chữ A My manufacture queen style Hàn Quốc đơn giản, trẻ trung, năng động, đường may khéo léo; dễ mặc, dễ kết hợp nhiều loại trang phục như sơ mi, áo pull, cardigan...', 'img/product29.jpg');
+(16, 'Chân váy', 'Nữ', 320000, 'Xanh Dương', 'M', 6, 'Chân váy denim chữ A My manufacture queen style Hàn Quốc đơn giản, trẻ trung, năng động, đường may khéo léo; dễ mặc, dễ kết hợp nhiều loại trang phục như sơ mi, áo pull, cardigan...', 'img/product29.jpg'),
+(17, 'Váy', 'Nữ', 320000, 'Xanh Dương', 'M', 8, 'Váy công sở tông hồng dịu dàng nữ tính', 'img/product29.jpg'),
+(18, 'Váy', 'Nữ', 320000, 'Trắng', 'XL', 8, 'VÁY NGỦ COTTON VC-6001 mặc nhà', 'img/product32.jpg'),
+(19, 'Quần Jean', 'Nam', 350000, 'Đen', 'XL', 20, 'BST quần Jeans CANIFA giúp phái mạnh thêm phần nam tính và \"phong độ\" ', 'img/product34.jpg'),
+(20, 'Áo Sơ Mi', 'Nam', 500000, 'Xanh Dương', 'XXL', 20, 'Đồng phục cồng sở PQ232 với form dáng truyền thống được cách điệu một vài chi tiết mang đến cho dân văn phòng một làn gió mới trong phong cách thời trang công sở', 'img/product36.jpg'),
+(21, 'Áo Phông', 'Nam', 150000, 'Đỏ', 'XL', 20, 'Áo thun Polo năng động cá tính', 'img/product38.jpg'),
+(22, 'Áo Sơ Mi', 'Nam', 300000, 'Trắng', 'XXL', 22, 'Đồng phục cồng sở PQ232 với form dáng truyền thống được cách điệu một vài chi tiết mang đến cho dân văn phòng một làn gió mới trong phong cách thời trang công sở', 'img/product39.jpg'),
+(23, 'Váy', 'Nữ', 350000, 'Đỏ', 'XXL', 22, '\r\nVáy công sở tông hồng nữ tính', 'img/product30.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sanphamdonhang`
+-- Cấu trúc bảng cho bảng `sanphamdonhang`
 --
 
 CREATE TABLE `sanphamdonhang` (
@@ -145,7 +148,7 @@ CREATE TABLE `sanphamdonhang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sanphamgiohang`
+-- Cấu trúc bảng cho bảng `sanphamgiohang`
 --
 
 CREATE TABLE `sanphamgiohang` (
@@ -155,7 +158,7 @@ CREATE TABLE `sanphamgiohang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `sanphamgiohang`
+-- Đang đổ dữ liệu cho bảng `sanphamgiohang`
 --
 
 INSERT INTO `sanphamgiohang` (`idkhachhang`, `idsanpham`, `soluongsanphamgiohang`) VALUES
@@ -164,7 +167,7 @@ INSERT INTO `sanphamgiohang` (`idkhachhang`, `idsanpham`, `soluongsanphamgiohang
 -- --------------------------------------------------------
 
 --
--- Table structure for table `taikhoan`
+-- Cấu trúc bảng cho bảng `taikhoan`
 --
 
 CREATE TABLE `taikhoan` (
@@ -175,7 +178,7 @@ CREATE TABLE `taikhoan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `taikhoan`
+-- Đang đổ dữ liệu cho bảng `taikhoan`
 --
 
 INSERT INTO `taikhoan` (`idtaikhoan`, `tentaikhoan`, `matkhau`, `vaitro`) VALUES
@@ -193,19 +196,19 @@ INSERT INTO `taikhoan` (`idtaikhoan`, `tentaikhoan`, `matkhau`, `vaitro`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tintuc`
+-- Cấu trúc bảng cho bảng `tintuc`
 --
 
 CREATE TABLE `tintuc` (
   `idtintuc` int(11) NOT NULL,
-  `tentintuc` text CHARACTER SET utf8 NOT NULL,
-  `noidungtintuc` text CHARACTER SET utf8 NOT NULL,
+  `tentintuc` text NOT NULL,
+  `noidungtintuc` text NOT NULL,
   `urlanhtintuc` varchar(255) NOT NULL,
   `ngayviet` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tintuc`
+-- Đang đổ dữ liệu cho bảng `tintuc`
 --
 
 INSERT INTO `tintuc` (`idtintuc`, `tentintuc`, `noidungtintuc`, `urlanhtintuc`, `ngayviet`) VALUES
@@ -216,76 +219,76 @@ INSERT INTO `tintuc` (`idtintuc`, `tentintuc`, `noidungtintuc`, `urlanhtintuc`, 
 (5, 'Những thông tin mới nhất về các xu hướng và thương hiệu thời trang', 'Hãng đồng hồ và trang sức cao cấp Chopard vừa công bố từ tháng 7/ 2018, Chopard sẽ sử dụng 100% “Ethical Gold” (vàng rõ nguồn gốc) trong việc chế tác đồng hồ và đồ trang sức. “Ethical Gold” trở thành một cụm từ quý hơn vàng khi nâng cao tính bền vững, trách nhiệm với xã hội và môi trường của thương hiệu. Theo đó, Chopard sẽ sử dụng nguồn nguyên liệu vàng một cách có trách nhiệm. Hãng cam kết chỉ lấy vàng từ những nguồn khai thác đạt tiêu chuẩn quốc tế về an toàn môi trường và xã hội. Chopard chỉ sử dụng vàng từ hai nguồn: vàng từ các mỏ tham gia vào Hiệp hội Vàng Swiss Better Gold Association (SBGA), và vàng của RJC Chain of Custody. Để có nguồn nguyên liệu vàng cung cấp cho ngành chế tác, nhiều mỏ khai thác hoạt động không tuân thủ quy định môi trường hoặc không đảm bảo an toàn lao động. Chopard trở thành thương hiệu trang sức tiên phong minh bạch về nguyên liệu đầu vào, góp phần bảo vệ môi trường và phát triển bền vững. Còn đối với các thương hiệu thời trang lớn như Versace, Gucci, Maison Margiela, Michael Kors, cuộc cách mạng “thời trang có trách nhiệm” được hiện thực hóa bằng việc ngưng sử dụng lông thú. Thương hiệu thời trang Gucci sẽ tiếp tục góp phần bảo vệ động vật, đồng thời hãng hy vọng sẽ trở thành nguồn cảm hứng trong công cuộc đổi mới ngành thời trang cao cấp và nâng cao nhận thức của người tiêu dùng. Thương hiệu thời trang Versace sẽ chính thức ngưng trình làng và bày bán các sản phẩm lông thú bắt đầu từ năm 2019. NTK Donatella Versace chia sẻ niềm hy vọng về tương lai đổi mới của ngành thời trang khi rời bỏ những hành động phi nhân đạo với động vật và tìm kiếm những chất liệu phù hợp hơn. Gần đây nhất, vào đầu tháng 4, Giám đốc Sáng tạo John Galliano của thương hiệu thời trang Maison Margiela tuyên bố không sử dụng lông thú: “Ngày nay, chúng ta không chỉ đơn giản muốn một sản phẩm, chúng ta muốn nhiều hơn thế – đạo đức. Đây cũng là điều bảo vệ những giá trị mà chúng tôi hằng ngưỡng mộ”.', '../admin/images/newsimg5.jpg', '17/05/2018');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `khachhang`
+-- Chỉ mục cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
   ADD PRIMARY KEY (`idkhachhang`),
   ADD UNIQUE KEY `idtaikhoan` (`idtaikhoan`);
 
 --
--- Indexes for table `nhanvien`
+-- Chỉ mục cho bảng `nhanvien`
 --
 ALTER TABLE `nhanvien`
   ADD PRIMARY KEY (`idnhanvien`),
   ADD KEY `idtaikhoan` (`idtaikhoan`);
 
 --
--- Indexes for table `sanpham`
+-- Chỉ mục cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
   ADD PRIMARY KEY (`idsanpham`);
 
 --
--- Indexes for table `taikhoan`
+-- Chỉ mục cho bảng `taikhoan`
 --
 ALTER TABLE `taikhoan`
   ADD PRIMARY KEY (`idtaikhoan`),
   ADD UNIQUE KEY `tentaikhoan` (`tentaikhoan`);
 
 --
--- Indexes for table `tintuc`
+-- Chỉ mục cho bảng `tintuc`
 --
 ALTER TABLE `tintuc`
   ADD PRIMARY KEY (`idtintuc`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `khachhang`
+-- AUTO_INCREMENT cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
   MODIFY `idkhachhang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `sanpham`
+-- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `idsanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idsanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `taikhoan`
+-- AUTO_INCREMENT cho bảng `taikhoan`
 --
 ALTER TABLE `taikhoan`
   MODIFY `idtaikhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `khachhang`
+-- Các ràng buộc cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
   ADD CONSTRAINT `khachhang_ibfk_1` FOREIGN KEY (`idtaikhoan`) REFERENCES `taikhoan` (`idtaikhoan`);
 
 --
--- Constraints for table `nhanvien`
+-- Các ràng buộc cho bảng `nhanvien`
 --
 ALTER TABLE `nhanvien`
   ADD CONSTRAINT `nhanvien_ibfk_1` FOREIGN KEY (`idtaikhoan`) REFERENCES `taikhoan` (`idtaikhoan`);
