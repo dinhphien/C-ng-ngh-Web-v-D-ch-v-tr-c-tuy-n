@@ -72,11 +72,7 @@ _________________________________________________________ -->
                 </li>
 
                 <li>
-                    <a href="post.php">Tin Tức</a>
-                </li>
-
-                <li>
-                    <a href="blog.php">Giới thiệu</a>
+                    <a href="route.php?controller=controller_tintuc&action=showTT">Bảng tin</a>
                 </li>
 
                 <li>
