@@ -111,15 +111,24 @@ CREATE TABLE `sanpham` (
 -- Dumping data for table `sanpham`
 --
 
+
 INSERT INTO `sanpham` (`idsanpham`, `tensanpham`, `loaisanpham`, `giasanpham`, `mausacsanpham`, `sizesanpham`, `soluongsanpham`, `motasanpham`, `urlanhsanpham`) VALUES
-(1, 'Áo Phông', 'Nam', 400000, 'Trắng', 'M', 10, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product1.jpg'),
-(2, 'Áo Phông', 'Nữ', 500000, 'Trắng', 'L', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product2.jpg'),
-(3, 'Áo Sơ Mi', 'Nam', 740000, 'Đen', 'XL', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product1_2.jpg'),
-(4, 'Áo Khoác', 'Nam', 740000, 'Đen', 'XXL', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product1_2.jpg'),
-(5, 'Áo Vest', 'Nam', 400000, 'Trắng', 'M', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product1.jpg'),
-(6, 'Quần Âu', 'Nam', 500000, 'Trắng', 'L', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product2.jpg'),
-(7, 'Quần Jean', 'Nam', 740000, 'Đen', 'XL', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product1_2.jpg'),
-(8, 'Quần Short', 'Nam', 740000, 'Đen', 'XXL', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên ..........', 'img/product1_2.jpg');
+(1, 'Áo Sơ Mi', 'Nam', 400000, 'Trắng', 'M', 10, 'Chắc hẳn chàng trai nào cũng có ít nhất cho mình một chiếc áo sơ mi trắng như Áo Sơ Mi Trắng ASM876. Thiết kế thanh lịch, trang nhã, diện vào chỉ có chuẩn \"soái ca\".', 'img/product6.jpg'),
+(2, 'Váy', 'Nữ', 350000, 'Trắng', 'L', 40, 'Váy liền gợi cảm phong cách Hàn Quốc ôm sát giúp tôn lên vóc dáng quyến rũ, các nét gợi cảm của phái đẹp', 'img/product26.jpg'),
+(3, 'Áo Khoác', 'Nam', 740000, 'Đen', 'XL', 40, ' \r\n\r\nÁo Khoác nam Kaki Cao Cấp . Thiết kế thời trang kết hợp đường may tinh tế, tỉ mỉ', 'img/product7.jpg'),
+(4, 'Áo Sơ Mi', 'Nam', 740000, 'Đen', 'XXL', 40, 'Áo Sơ Mi Giá Rẻ ', 'img/product5.jpg'),
+(5, 'Áo Vest', 'Nam', 400000, 'Đen', 'M', 40, 'Áo Vest Cao Cấp Đen AV1089 thiết kế dạng vest cổ bẻ, tay dài, 1 nút gài, form áo ôm vừa tạo giúp tôn dáng quý ông. Áo màu đen mạnh mẽ, có một túi viền trắng trước ngực và 2 túi bên hông có nắp bẻ, tay áo được phối nút tạo cho chàng nét lịch thiệp, mạnh mẽ hơn trong mắt đồng nghiệp, đối tác.', 'img/product8.jpg'),
+(6, 'Áo Sơ Mi', 'Nam', 500000, 'XANH DƯƠNG', 'L', 40, 'Đây là dòng sản phẩm xuân hè cao cấp phù hợp với thanh niên', 'img/product9.jpg'),
+(7, 'Quần Jean', 'Nam', 350000, 'Đen', 'XL', 10, ' Tạo nét chấm phá với những đường xước nhẹ trên nền jean đen. Form quần skinny ôm dáng giúp bạn vừa theo kịp xu hướng vừa thể hiện phong cách riêng biệt.', 'img/product10.jpg'),
+(8, 'Áo Vest', 'Nam', 500000, 'Xanh Dương', 'XL', 7, 'Áo Vest Cao Cấp Xanh Biển Đậm AV1090 với màu xanh biển trẻ trung, cá tính. Thiết kế theo form dáng body, kiểu áo 1 nút, cổ áo ve nhỏ, có túi ngực và hai túi nắp hai bên hông tiện dụng, tay áo phối nút thời trang. Chất liệu vải âu hai lớp cao cấp, bền đẹp, khẳng định đẳng cấp của quý ông.', 'img/product1_2.jpg'),
+(9, 'Quần âu', 'Nam', 500000, 'Đen', 'XL', 9, 'Quần âu dáng body Hàn Quốc thời trang', 'img/product11.jpg'),
+(10, 'Quần Jean', 'Nam', 370000, 'Xanh Dương', 'XL', 9, 'Quần Jean Xanh QJ1450 với đường nét tổng thể hài hòa, tinh tế, phối những đường xước nhẹ nhàng ở mặt trước. Chất liệu jean bền đẹp, dày dặn, nhưng co giản nên rất thoải mái, ứng dụng cao trong nhiều hoàn cảnh. Kiểu dáng trẻ trung, bạn có thể xắn gấu quần lên cao cho thêm phần bụi bặm.', 'img/product12.jpg'),
+(11, 'Váy', 'Nữ', 450000, 'Trắng', 'XL', 9, 'Váy thêu gấm cổ tròn đính khuy Nadine kiểu dáng thời trang tinh tế, họa tiết cánh hoa độc đáo lạ mắt thu hút mọi ánh nhìn, dễ mix đồ thật thời trang', 'img/product20.jpg'),
+(12, 'Áo Khoác', 'Nữ', 900000, 'Trắng', 'L', 5, 'Áo khoác phao nữ PLBBB dáng dài chữ A may ôm thân thon gọn, thiết kế liền mũ trùm cùng chất liệu bông cao cấp siêu ấm ấm, mang đến cho bạn vẻ trẻ trung, năng động, rất thích hợp diện xuống phố trong những ngày rét lạnh mùa đông', 'img/product25.jpg'),
+(13, 'ÁO THUN', 'Nữ', 150000, 'Trắng', 'L', 5, 'Áo thunPLBBB dáng dài chữ A may ôm thân thon gọn, mang đến cho bạn vẻ trẻ trung, năng động, rất thích hợp diện xuống phố.', 'img/product2.jpg'),
+(14, 'Áo Khoác', 'Nữ', 700000, 'Xanh Dương', 'M', 6, 'Áo khoác phao nữ PLBBB dáng dài chữ A may ôm thân thon gọn, thiết kế liền mũ trùm cùng chất liệu bông cao cấp siêu ấm ấm, mang đến cho bạn vẻ trẻ trung, năng động, rất thích hợp diện xuống phố trong những ngày rét lạnh mùa đông', 'img/product27.jpg'),
+(15, 'Váy', 'Nữ', 200000, 'Vàng', 'M', 6, 'Váy xòe xếp ly Cadafe cổ tròn, phong cách quý cô thời thượng, hiện đại, thanh lịch; toát lên nét đẹp dịu dàng, nữ tính, khắc phục nhược điểm các vòng không như ý', 'img/product28.jpg'),
+(16, 'Chân váy', 'Nữ', 320000, 'Xanh Dương', 'M', 6, 'Chân váy denim chữ A My manufacture queen style Hàn Quốc đơn giản, trẻ trung, năng động, đường may khéo léo; dễ mặc, dễ kết hợp nhiều loại trang phục như sơ mi, áo pull, cardigan...', 'img/product29.jpg');
 
 -- --------------------------------------------------------
 
