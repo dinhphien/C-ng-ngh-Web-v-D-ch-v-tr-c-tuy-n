@@ -2,9 +2,6 @@
 <!-- Main content wrapper -->
 <div class="wrapper">
     
-	   	<!-- Form -->
-		<form class="form" id="add_news" action="product/add.html" method="post" enctype="multipart/form-data">
-			<fieldset>
 				<div class="widget">
 				    <div class="title">
 						<h6>Chi tiết bài viết : <?php  echo $tt->getTentintuc();?></h6>
@@ -40,8 +37,7 @@
 
 <div class="clear"></div>
                 </div>
-</fieldset>
-</form>
+
 
 </div>
 <?php include "footer_admin.php" ?>
