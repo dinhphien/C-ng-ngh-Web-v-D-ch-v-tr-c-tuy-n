@@ -3,7 +3,7 @@
 <div class="wrapper">
     
 	   	<!-- Form -->
-		<form class="form" id="add_news" action="product/add.html" method="post" enctype="multipart/form-data">
+		<form class="form" id="add_news" action="route_admin.php?controller=controller_tintuc&action=insertTTadmin" method="post" enctype="multipart/form-data">
 			<fieldset>
 				<div class="widget">
 				    <div class="title">
@@ -11,10 +11,10 @@
 						<h6>Thêm mới bài viết</h6>
                     </div>
                     
-                    <ul class="tabs">
-		                <li><a href="#tab1">Bài viết</a></li>
+                    <div class="title">
+		                <h6>Bài viết</h6>
 		                
-                    </ul>
+                    </div>
                     
 <div class="tab_container">
     <div id="tab1" class="tab_content pd0">
@@ -22,6 +22,16 @@
 	        <label class="formLeft" for="param_name">Tên:<span class="req">*</span></label>
 	        <div class="formRight">
 		        <span class="oneTwo"><input name="name" id="param_name" _autocheck="true" type="text" /></span>
+		        <span name="name_autocheck" class="autocheck"></span>
+		        <div name="name_error" class="clear error"></div>
+	        </div>
+	        <div class="clear"></div>
+        </div>
+
+        <div class="formRow">
+	        <label class="formLeft" for="param_name">Ngày viết:<span class="req">*</span></label>
+	        <div class="formRight">
+		        <span class="oneTwo"><input name="date" id="param_name" _autocheck="true" type="text" /></span>
 		        <span name="name_autocheck" class="autocheck"></span>
 		        <div name="name_error" class="clear error"></div>
 	        </div>
