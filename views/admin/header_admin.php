@@ -169,11 +169,11 @@ session_start();
 <!--                            Tin tức							</a>-->
 <!--                    </li>-->
                     <li >
-                        <a href="admin/info.html">
+                        <a href="route_admin.php?controller=controller_tintuc&action=showTTadmin">
                             Trang thông tin							</a>
                     </li>
                     <li >
-                        <a href="admin/video.html">
+                        <a href="add_news.php">
                             Thêm tin tức							</a>
                     </li>
                 </ul>
