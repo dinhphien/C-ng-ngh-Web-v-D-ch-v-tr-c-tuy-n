@@ -15,9 +15,9 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="#">Trang chủ</a>
                         </li>
-                        <li>FAQ</li>
+                        <li>Câu hỏi thường gặp</li>
                     </ul>
 
                 </div>
@@ -28,21 +28,21 @@
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Pages</h3>
+                            <h3 class="panel-title">TKTP Shop</h3>
                         </div>
 
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="text.html">Text page</a>
+                                    <a href="faq.php">Câu hỏi thường gặp</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact page</a>
+                                    <a href="contact.php">Liên hệ</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">FAQ</a>
+                                    <a href="blog.php">Giới thiệu</a>
                                 </li>
-
+    
                             </ul>
 
                         </div>
@@ -51,21 +51,17 @@
                     <!-- *** PAGES MENU END *** -->
 
 
-                    <div class="banner">
-                        <a href="#">
-                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
-                        </a>
-                    </div>
+                   
                 </div>
 
                 <div class="col-md-9">
 
 
                     <div class="box" id="contact">
-                        <h1>Frequently asked questions</h1>
+                        <h1>Các câu hỏi thường gặp</h1>
 
-                        <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
-                        <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                        <p class="lead">Bạn thắc mắc về điều gì đó? Bạn Có vấn đề về sản phẩm của chúng tôi?</p>
+                        <p>Xin vui lòng liên hệ với chúng tôi, trung tâm dịch vụ chăm sóc khách hàng đang làm việc 24/7</p>
 
                         <hr>
 
@@ -75,23 +71,20 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
 
-					    <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
 
-						1. What to do if I have still not received the order?
+                        1. Tôi muốn mua hàng phải làm sao?
 
-					    </a>
+                        </a>
 
-					</h4>
+                    </h4>
                                 </div>
                                 <div id="faq1" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                                            Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                        <ul>
-                                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                            <li>Aliquam tincidunt mauris eu risus.</li>
-                                            <li>Vestibulum auctor dapibus neque.</li>
-                                        </ul>
+                                        <div><span style="font-size:14px">Khi bạn muốn mua một mặt hàng tại 4MEN, bạn có thể đến shop mua trực tiếp, gọi điện cho 4MEN hoặc đặt hàng trên website<br />
+                                        </span>
+                                        
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -101,19 +94,17 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
 
-					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 
-						2. What are the postal rates?
+                        2. Tôi ở xa có mua hàng được không? Shop có giao hàng không?
 
-					    </a>
+                        </a>
 
-					</h4>
+                    </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                      TKTP giao hàng và thu tiền tận nơi trên toàn quốc, miễn phí giao hàng cho hóa đơn từ 01 triệu đồng trở lên, nên các bạn yên tâm thoải mái mua hàng nhé!
                                     </div>
                                 </div>
                             </div>
@@ -124,19 +115,37 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
 
-					    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
 
-						3. Do you send overseas?
+                        4. Sao tôi có thể tin tưởng khi chuyển tiền rồi, tôi sẽ nhận được hàng?
 
-					    </a>
+                        </a>
 
-					</h4>
+                    </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Khác với một số shop chỉ bán hàng trôi nổi trên mạng không rõ địa chỉ, TKTP là một hệ thống cửa hàng có địa chỉ rõ ràng cụ thể được đăng tải trên website của shop. <strong>Đặc biệt</strong> 4MEN sử dụng dịch vụ giao hàng và thu tiền tại nhà, khi nào khách hàng nhận được hàng thì mới thanh toán, nên rủi ro là 0%. Uy tín và đảm bảo chất lượng hàng hoá cũng như lợi ích của khách hàng luôn là tiêu chí hàng đầu của 4MEN
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.panel -->
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+
+                        5. Tôi mua hàng rồi, không vừa ý có thể đổi lại hay không?
+
+                        </a>
+
+                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        KHàng đã mua quý khách được đổi trong vòng 5 ngày với điều kiện hàng được đổi phải đảm bảo còn mới 100% chưa qua sử dụng. TKTP không giải quyết các trường hợp đổi hàng đã sử dụng qua hoặc các trường hợp trả lại hàng.
                                     </div>
                                 </div>
                             </div>
