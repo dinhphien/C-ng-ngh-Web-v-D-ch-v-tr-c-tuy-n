@@ -188,7 +188,7 @@
                                     <img src="img/product36.jpg" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=20">VÁY NGỦ COTTON VC-6001</a></h3>
+                                    <h3><a href="route.php?controller=controller_sanpham&action=showSP_detail&id_sp=20">Áo  sơ mi Công Sở</a></h3>
                                     <p class="price">500000</p>
                                 </div>
                                 <!-- /.text -->
