@@ -13,6 +13,56 @@ class Model_Sanpham{
         $dbconnect= new DBConnector();
         $this->conn = $dbconnect->connect();
     }
+      public function update($id, $ten, $loai, $gia, $size, $soluong, $mausac, $url, $mota) {
+        $sql = "update sanpham set sanpham.idsanpham='" . $id . "', sanpham.tensanpham='" . $ten . "', sanpham.loaisanpham='" . $loai . "', sanpham.giasanpham='" . $gia . "', sanpham.mausacsanpham='" . $mausac . "', sanpham.sizesanpham='" . $size . "', sanpham.soluongsanpham='" . $soluong . "', sanpham.motasanpham='" . $mota . "', sanpham.urlanhsanpham='" . $url . "' where sanpham.idsanpham='" . $id . "';";
+        $result = $this->conn->query($sql);
+        return $result;
+    }
+
+    public function getSP_all() {
+        $sql = "select * from sanpham";
+        $result = $this->conn->query($sql);
+        $array_sp = array();
+        while ($row = $result->fetch_assoc()) {
+            $sp = new sanpham($row['idsanpham'], $row['tensanpham'], $row['loaisanpham'], $row['giasanpham'], $row['mausacsanpham'], $row['sizesanpham'], $row['soluongsanpham'], $row['motasanpham'], $row['urlanhsanpham']);
+            array_push($array_sp, $sp);
+        }
+        return $array_sp;
+    }
+
+    public function filter($id, $name, $category) {
+        $sql = "select * from sanpham where idsanpham like '%" . $id . "%' and tensanpham like '%" . $name . "%' and loaisanpham='" . $category . "'";
+        $result = $this->conn->query($sql);
+        $array_sp = array();
+        while ($row = $result->fetch_assoc()) {
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+            array_push($array_sp, $row);
+        }
+        return $array_sp;
+    }
+
+    public function getSP_By_ID($id) {
+        $sql = "select * from sanpham where sanpham.idsanpham='" . $id . "';";
+        $result = $this->conn->query($sql);
+//        while($row=$result->fetch_assoc()){
+//            $sp= new sanpham($row['idsanpham'],$row['tensanpham'],$row['loaisanpham'],$row['giasanpham'],$row['mausacsanpham'],$row['sizesanpham'],
+//                $row['soluongsanpham'],$row['motasanpham'],$row['urlanhsanpham']);
+//        }
+        $row = $result->fetch_assoc();
+        return $row;
+    }
+
+ 
+    public function up_anh($tmp_name, $name) {
+        $target_dir1 = "F:\\workspace\\cnw\\views\\admin\\img\\";
+        $target_dir2 = "F:\\workspace\\cnw\\views\\khachhang\\img\\";
+        $target_file1 = $target_dir1 . $name;
+        move_uploaded_file($tmp_name, $target_file1);
+        $target_file2 = $target_dir2 . $name;
+        copy($target_file1, $target_file2);
+    }
+
     public function getSP_type($type){
         $sql="select * from sanpham where sanpham.loaisanpham='".$type."';";
         $result=$this->conn->query($sql);

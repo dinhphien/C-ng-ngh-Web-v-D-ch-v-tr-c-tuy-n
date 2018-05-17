@@ -17,7 +17,42 @@ class controller_sanpham {
 //    {
 //        $data=$data_control;
 //        require_once(__DIR__ . "/../views/khachhang/category.php");
+//        
 //    }
+     public function showSP_all() {
+        $data = $this->modelSP->getSP_all();
+        require_once(__DIR__ . "/../views/admin/product.php");
+    }
+
+    public function filter() {
+        $data = $this->modelSP->filter($_POST['id'], $_POST['name'], $_POST['category']);
+        echo json_encode($data);
+    }
+
+    public function showSP_by_ID() {
+        $data = $this->modelSP->getSP_By_ID($_POST['id_sp']);
+        echo json_encode($data);
+    }
+
+    public function update() {
+       var_dump($FILES['file']);
+        if (isset($_FILES['file'])) {
+            if ($_FILES['file']['error'][0] == 0) {
+                $file1="F:/workspace/Cong_nghe_Web_and_Dich_vu_truc_tuyen/views/admin/".$_POST['url'];
+                unlink($file1);
+                $file2="F:/workspace/Cong_nghe_Web_and_Dich_vu_truc_tuyen/views/khachhang/".$_POST['url'];
+                unlink($file2);
+                $this->modelSP->up_anh($_FILES['file']['tmp_name'], $_FILES['file']['name']);
+                $result = true;
+                $result = $this->modelSP->update($_POST['id'], $_POST['ten'], $_POST['loai'], $_POST['gia'], $_POST['size'], $_POST['soluong'], $_POST['mausac'],"img/".$_FILES['file']['name'], $_POST['mota']);
+                return json_encode($result);
+            } else {    
+            };
+        } else {
+           $result = $this->modelSP->update($_POST['id'], $_POST['ten'], $_POST['loai'], $_POST['gia'], $_POST['size'], $_POST['soluong'], $_POST['mausac'], $_POST['url'], $_POST['mota']);
+                return json_encode($result); 
+        };
+    }
     public function showSP_type(){
         $data=$this->modelSP->getSP_type($_GET['type_sp']);
         require_once(__DIR__ . "/../views/khachhang/category.php");

@@ -122,7 +122,7 @@ session_start();
 
                 <ul class="sub">
                     <li >
-                        <a href="product.php">
+                        <a href="route_admin.php?controller=controller_sanpham&action=showSP_all">
                             Thống kê Sản phẩm							</a>
                     </li>
                     <li >
