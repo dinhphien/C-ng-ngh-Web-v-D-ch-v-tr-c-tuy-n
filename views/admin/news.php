@@ -25,7 +25,7 @@
 		<table cellpadding="0" cellspacing="0" width="100%" class="sTable mTable myTable" id="checkAll">
 			
 			<thead class="filter"><tr><td colspan="6">
-				<form class="list_filter form" action="index.php/admin/product.html" method="get">
+				<form class="list_filter form" action="route_admin.php?controller=controller_tintuc&action=filter" method="post">
 					<table cellpadding="0" cellspacing="0" width="80%"><tbody>
 					
 						<tr>
@@ -36,7 +36,7 @@
                             <td class="item" style="width:155px;" ><input name="name" value="" id="filter_iname" type="text" style="width:155px;" /></td>
                             <td style='width:150px'>
 							<input type="submit" class="button blueB" value="Lọc" />
-							<input type="reset" class="basic" value="Reset" onclick="window.location.href = 'route_admin.php?controller=controller_tintuc&action=showTTadmin'; ">
+							<input type="reset" class="basic" value="Reset" onclick="window.location.href = 'route_admin.php?controller=controller_tintuc&action=showTTadmin'; "/>
                             </td>
                             
                         </tr>
@@ -86,7 +86,7 @@
 							<a  href="route_admin.php?controller=controller_tintuc&action=showTTadmindetail&id_tt=<?php echo $tt->getIdtintuc()?>" target='_blank' class='tipS' title="Xem chi tiết bài viết">
 									<img src="images/icons/color/view.png" />
 							</a>
-							<a href="route_admin.php?controller=controller_tintuc&action=showTTadmindetail&id_tt=<?php echo $tt->getIdtintuc()?>" target='_blank' title="Chỉnh sửa" class="tipS">
+							<a href="route_admin.php?controller=controller_tintuc&action=updateTTadmin&id_tt=<?php echo $tt->getIdtintuc()?>" target='_blank' title="Chỉnh sửa" class="tipS">
 								<img src="images/icons/color/edit.png" />
 							</a>
 							
