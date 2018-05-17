@@ -193,7 +193,7 @@ CREATE TABLE `tintuc` (
   `noidungtintuc` text CHARACTER SET utf8 NOT NULL,
   `urlanhtintuc` varchar(255) NOT NULL,
   `ngayviet` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tintuc`
