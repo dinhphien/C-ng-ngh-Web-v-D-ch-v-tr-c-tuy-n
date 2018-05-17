@@ -24,5 +24,22 @@ class controller_tintuc {
         $tt=$data;
         require_once(__DIR__ . "/../views/khachhang/post.php");
     }
+
+    public function showTTadmin(){
+        $dataTT=$this->modelTT->getTT();
+        require_once(__DIR__ . "/../views/admin/news.php");
+    }
+
+    public function showTTadmindetail(){
+        $data=$this->modelTT->getTT_id($_GET['id_tt']);
+        $tt=$data;
+        require_once(__DIR__ . "/../views/admin/detail.php");
+    }
+
+    public function delTTadmin(){
+        $this->modelTT->delTT($_GET['id_tt']);
+        $dataTT=$this->modelTT->getTT();
+        require_once(__DIR__ . "/../views/admin/news.php");
+    }
 }
 ?>
