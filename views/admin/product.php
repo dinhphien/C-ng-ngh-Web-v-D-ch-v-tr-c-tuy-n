@@ -71,7 +71,7 @@
 
         <table cellpadding="0" cellspacing="0" width="100%" class="sTable mTable myTable" id="checkAll">
 
-            <thead class="filter"><tr><td colspan="6">
+            <thead class="filter"><tr><td colspan="7">
 
                         <table cellpadding="0" cellspacing="0" width="80%"><tbody>
 
@@ -102,31 +102,18 @@
 
             <thead>
                 <tr>
-                    <td style="width:21px;"><img src="images/icons/tableArrows.png" /></td>
+                    
                     <td style="width:60px;">Mã số</td>
-                    <td>Tên</td>
+                    <td style="width:200px;">Tên</td>
                     <td>Giá</td>
                     <td>Loại</td>
-                    <td>Màu sắc</td>
+                    <td style="width:60px;">Màu sắc</td>
                     <td>Size</td>
-                    <td>Hành động</td>
+                    <td style="width:200px;">Hành động</td>
                 </tr>
             </thead>
 
-            <tfoot class="auto_check_pages">
-                <tr>
-                    <td colspan="6">
-                        <div class="list_action itemActions">
-                            <a href="#submit" id="submit" class="button blueB" url="admin/product/del_all.html">
-                                <span style='color:white;'>Xóa hết</span>
-                            </a>
-                        </div>
-
-                        <div class='pagination'>
-                        </div>
-                    </td>
-                </tr>
-            </tfoot>
+           
             <tbody class="list_item" id="dssp">
                 <?php
 //                <?php print("ok");
@@ -136,7 +123,7 @@
 
 
                         <tr>
-                            <td><input type="checkbox" name="id[]" value="<?php print($sp->getIdsanpham()); ?>" /></td>
+                           
 
                             <td class="textC"><?php print($sp->getIdsanpham()); ?></td>
 
@@ -166,9 +153,12 @@
 
                             <td>
                                 <p class="buttons">
-                                    <button class="btn btn-primary" id="<?php print($sp->getIdsanpham()); ?>" >Xem chi tiết</button>
+                                    <button class="btn btn-primary" name='sua' id="<?php print($sp->getIdsanpham()); ?>" >Xem chi tiết</button>
+                                    <button class="btn btn-danger" name='xoasp'>Xóa</button>
+                                   
                                     <!--                                <a href="" title="Gán là nhạc tiêu biểu" class="tipE">
                                                                         <img src="images/icons/color/star.png" />
+                                    <script src="crown/js/product.js" type="text/javascript"></script>
                                                                     </a>
                                                                     <a id="xemchitiet" href="" class='tipS' title="Xem chi tiết sản phẩm">
                                                                         <img src="images/icons/color/view.png" />

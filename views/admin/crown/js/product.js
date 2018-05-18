@@ -19,7 +19,7 @@ $(document).ready(function () {
                 for (i in array_sp) {
                     var sp = array_sp[i];
                     $("#dssp").append('<tr>'
-                            + '<td><input type="checkbox" name="id[]" value="' + sp['idsanpham'] + '"/></td>'
+
                             + '<td class="textC">' + sp['idsanpham'] + '</td>'
                             + '<td>'
                             + '<div class="image_thumb"><img src="' + sp['urlanhsanpham'] + '" height="50">'
@@ -36,6 +36,7 @@ $(document).ready(function () {
                             + '<td>'
                             + '<p class="buttons">'
                             + '<button class="btn btn-primary" id="' + sp['idsanpham'] + '" >Xem chi tiết</button>'
+                            + '<button class="btn btn-danger" name="xoasp">Xóa</button>'
                             + '</p>'
                             + ' </td>'
                             + '</tr>'
@@ -44,7 +45,7 @@ $(document).ready(function () {
             }
         });
     });
-    $("tbody#dssp").on('click', "button", function () {
+    $("tbody#dssp").on('click', "button[name=sua]", function () {
         $("#thanhcong").empty();
         $("#coloixayra").empty();
         var id = parseInt($(this).attr('id'));
@@ -207,4 +208,14 @@ $(document).ready(function () {
             });
         }
     });
+    $("tbody#dssp").on('click', "button[name=xoasp]", function () {
+        var currentrow = $(this).closest("tr");
+        var id = currentrow.find('td:eq(0)').text();
+        console.log(id);
+        var postdata = {
+            id: id
+        }
+        $.post("route_admin.php?controller=controller_sanpham&action=xoasp", postdata);
+        location.reload();
+    })
 }); 

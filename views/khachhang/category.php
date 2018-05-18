@@ -160,7 +160,7 @@ include 'header.php';
 <!--                        <p class="loadMore">-->
 <!--                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>-->
 <!--                        </p>-->
-
+<!--
                         <ul class="pagination">
                             <li><a href="#">&laquo;</a>
                             </li>
@@ -176,7 +176,7 @@ include 'header.php';
                             </li>
                             <li><a href="#">&raquo;</a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
 
 

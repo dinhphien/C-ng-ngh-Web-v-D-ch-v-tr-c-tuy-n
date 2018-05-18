@@ -219,7 +219,7 @@ session_start();
     </div>
 
     <!-- Title area -->
-    <div class="titleArea">
+<!--    <div class="titleArea">
         <div class="wrapper">
             <div class="pageTitle">
                 <h5>Phản hồi</h5>
@@ -228,6 +228,6 @@ session_start();
             <div class="clear"></div>
         </div>
     </div>
-    <div class="line"></div>
+    <div class="line"></div>-->
 
     <script src="crown/js/header_admin.js"></script>

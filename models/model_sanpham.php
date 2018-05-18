@@ -13,10 +13,20 @@ class Model_Sanpham{
         $dbconnect= new DBConnector();
         $this->conn = $dbconnect->connect();
     }
+    public function xoasp($id){
+        $sql="delete from sanpham where idsanpham='".$id."'";
+        $this->conn->query($sql);
+    }
+
+    public function insert($ten, $loai, $gia, $size, $soluong, $mausac, $url, $mota) {
+        $sql = "insert into sanpham(tensanpham,loaisanpham,giasanpham,mausacsanpham,sizesanpham,soluongsanpham,motasanpham,urlanhsanpham)values ('".$ten."','".$loai."','".$gia."','".$mausac."','".$size."','".$soluong."','".$mota."','".$url."')";
+        $result = $this->conn->query($sql);
+       // var_dump($sql);
+    }
       public function update($id, $ten, $loai, $gia, $size, $soluong, $mausac, $url, $mota) {
         $sql = "update sanpham set sanpham.idsanpham='" . $id . "', sanpham.tensanpham='" . $ten . "', sanpham.loaisanpham='" . $loai . "', sanpham.giasanpham='" . $gia . "', sanpham.mausacsanpham='" . $mausac . "', sanpham.sizesanpham='" . $size . "', sanpham.soluongsanpham='" . $soluong . "', sanpham.motasanpham='" . $mota . "', sanpham.urlanhsanpham='" . $url . "' where sanpham.idsanpham='" . $id . "';";
         $result = $this->conn->query($sql);
-        return $result;
+        return $sql;
     }
 
     public function getSP_all() {

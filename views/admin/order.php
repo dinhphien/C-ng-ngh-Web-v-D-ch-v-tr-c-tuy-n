@@ -50,20 +50,6 @@
                 <span>Quản lý đơn hàng</span>
             </div>
 
-            <div class="horControlB menu_action">
-                <ul>
-
-                    <li><a href="admin/product_order.html">
-                            <img src="images/icons/control/16/list.png" />
-                            <span>Danh sách</span>
-                        </a></li>
-
-                    <li><a href="">
-                            <img src="images/excel.png" />
-                            <span>Xuất file excel</span>
-                        </a></li>
-                </ul>
-            </div>
 
             <div class="clear"></div>
         </div>
